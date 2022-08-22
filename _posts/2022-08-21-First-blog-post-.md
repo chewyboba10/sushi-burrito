@@ -19,7 +19,8 @@ comments: true
 - Sleep
 - Eat
 - Violin
-- Run (XC and Track & Field)
+- Cross Country
+- Track and Field
 - Watch YouTube
 
 ## Other Things that I like
