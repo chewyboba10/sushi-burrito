@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "First Jupyter Notebook",
-            "content": "Trying things out . I&#39;m going to see if I can actually do something with Python . print(&quot;Hello everyone&quot;) . Hello everyone . It Worked! . Let&#39;s do something a little harder . def main(): a = 2 b = 5 c = (a + b) d = 7 if (c == d): for i in range(3): print(&quot;2+5 is equal to 7&quot;) . That&#39;s all for now! .",
+            "content": "Trying things out . I&#39;m going to see if I can actually do something with Python . print(&quot;Hello everyone&quot;) . Hello everyone . It Worked! . Let&#39;s do something a little harder . a = 2 b = 5 c = (a + b) d = 7 if (c == d): for i in range(3): print(&quot;2+5 is equal to 7&quot;) . 2+5 is equal to 7 2+5 is equal to 7 2+5 is equal to 7 . That&#39;s all for now! .",
             "url": "https://chewyboba10.github.io/sushi-burrito/jupyter/2022/08/20/first-notebook.html",
             "relUrl": "/jupyter/2022/08/20/first-notebook.html",
             "date": " • Aug 20, 2022"
