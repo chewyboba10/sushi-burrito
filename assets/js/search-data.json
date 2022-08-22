@@ -4,8 +4,8 @@
         "post0": {
             "title": "First Blog Post",
             "content": "Hello Everyone . This is my first blog post! My name is Evan Aparri, and I currently have no experience with Computer Science. I am excited to learn how to continue working on my blog. . My Hobbies . Here are some of the things that I like to do when I have free time: . Sleep | Eat | Violin | Run “(XC and Track &amp; Field)” | Watch YouTube | . Other Things that I like . The color blue | Sushi | Traveling | . Thanks for visiting . Please let me know if there is anything that I could improve .",
-            "url": "https://chewyboba10.github.io/sushi-burrito/markdown/2022/08/21/chewyboba-post-1.html",
-            "relUrl": "/markdown/2022/08/21/chewyboba-post-1.html",
+            "url": "https://chewyboba10.github.io/sushi-burrito/markdown/2022/08/21/First-blog-post.html",
+            "relUrl": "/markdown/2022/08/21/First-blog-post.html",
             "date": " • Aug 21, 2022"
         }
         
@@ -13,10 +13,10 @@
   
     
         ,"post1": {
-            "title": "Title",
-            "content": "hello world! .",
-            "url": "https://chewyboba10.github.io/sushi-burrito/2022/08/20/first-notebook.html",
-            "relUrl": "/2022/08/20/first-notebook.html",
+            "title": "First Jupyter Notebook",
+            "content": "Trying things out . I&#39;m going to see if I can actually do something with Python .",
+            "url": "https://chewyboba10.github.io/sushi-burrito/jupyter/2022/08/20/first-notebook.html",
+            "relUrl": "/jupyter/2022/08/20/first-notebook.html",
             "date": " • Aug 20, 2022"
         }
         
