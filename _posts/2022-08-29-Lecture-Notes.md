@@ -1,10 +1,12 @@
 ---
-layouts: post
-title: APCSP Lecture Notes Week 2 August 29, 2022
 toc: true
+layout: post
+description: Lecture Notes August 29, 2022
+categories: [markdown]
+title: Lecture Notes - Data Abstraction
 author: Evan Aparri
-comments: true
 show_tags: true
+comments: true
 ---
 
 # Lecture 8/29/22

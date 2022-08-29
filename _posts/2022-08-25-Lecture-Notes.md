@@ -1,13 +1,15 @@
 ---
-layouts: notebook
-title: APCSP Lecture Notes Week 1
 toc: true
+layout: post
+description: Lecture Notes for August 25, 2022
+categories: [markdown]
+title: Lecture Notes - Bash and Cloud
 author: Evan Aparri
+show_tags: true
+comments: true
 ---
 
 # Notes
-
-## August 25, 2022
 
 The cloud has all git repositories. Individual computers can clone repositories from the cloud takes it to their SSD
 
