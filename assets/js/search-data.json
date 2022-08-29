@@ -117,6 +117,22 @@
   
 
   
+      ,"page3": {
+          "title": "Lecture Notes",
+          "content": "Lecture Notes . This page contains the notes I have taken during Mr. Mortenson’s lecture . . toc: true — . Table of Contents . Week 0 . Date Subject . Blank | Blank | . Week 1 . Date Subject . 8/25/22 | Blank | .",
+          "url": "https://chewyboba10.github.io/sushi-burrito/_pages/lecture-notes.html",
+          "relUrl": "/_pages/lecture-notes.html",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -125,18 +141,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://chewyboba10.github.io/sushi-burrito/robots.txt",
