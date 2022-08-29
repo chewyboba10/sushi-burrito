@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "APCSP Lecture Notes Week 2 August 29, 2022",
+            "title": "Lecture Notes - Data Abstraction",
             "content": "Lecture 8/29/22 . Data Abstraction . Managing data is a key skill Data Abstractions are very important in creating successful programs . Important for sharing data . Among the Internet Working in technologies like BioMed, Data Science . Variables can name, store, data and reference data . Lists are the [] square brackets . Group Data in an order sequence Important Requirement in the College Board Create Task Project Dictionaries are the {} curly braces Group data into key-value relationships .",
-            "url": "https://chewyboba10.github.io/sushi-burrito/2022/08/29/Lecture-Notes.html",
-            "relUrl": "/2022/08/29/Lecture-Notes.html",
+            "url": "https://chewyboba10.github.io/sushi-burrito/markdown/2022/08/29/Lecture-Notes.html",
+            "relUrl": "/markdown/2022/08/29/Lecture-Notes.html",
             "date": " • Aug 29, 2022"
         }
         
@@ -35,10 +35,10 @@
   
     
         ,"post3": {
-            "title": "APCSP Lecture Notes Week 1",
-            "content": "Notes . August 25, 2022 . The cloud has all git repositories. Individual computers can clone repositories from the cloud takes it to their SSD . A pull action will pull any new updates made at the repository down to our local repository and update it with the latest changes. . A push action will push any new updates made at the local repository to our remote repository in the cloud and contribute to the git repository. . A sequence is two or more lines of code .",
-            "url": "https://chewyboba10.github.io/sushi-burrito/2022/08/25/Lecture-Notes.html",
-            "relUrl": "/2022/08/25/Lecture-Notes.html",
+            "title": "Lecture Notes - Bash and Cloud",
+            "content": "Notes . The cloud has all git repositories. Individual computers can clone repositories from the cloud takes it to their SSD . A pull action will pull any new updates made at the repository down to our local repository and update it with the latest changes. . A push action will push any new updates made at the local repository to our remote repository in the cloud and contribute to the git repository. . A sequence is two or more lines of code .",
+            "url": "https://chewyboba10.github.io/sushi-burrito/markdown/2022/08/25/Lecture-Notes.html",
+            "relUrl": "/markdown/2022/08/25/Lecture-Notes.html",
             "date": " • Aug 25, 2022"
         }
         
