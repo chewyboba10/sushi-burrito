@@ -5,11 +5,8 @@ permalink:
 ---
 # Lecture Notes
 
->This page contains the notes I have taken during Mr. Mortenson's lecture
+This page contains the notes I have taken during Mr. Mortenson's lecture
 
----
-toc: true
----
 # Table of Contents
 
 ## Week 0
