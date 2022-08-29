@@ -22,4 +22,11 @@ toc: true
 
 | Date | Subject |
 |-|-|
-| 8/25/22 | Blank |
+| 8/24/22 | Blog Posting and Configuration |
+| 8/25/22 | Bash and Cloud |
+
+## Week 2
+
+| Date | Subject |
+|-|-|
+| 8/29/22 | Data Abstraction |
