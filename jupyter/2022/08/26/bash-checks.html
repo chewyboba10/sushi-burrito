@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      2 min read
     
 </span></p>
 
@@ -138,7 +138,6 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#Jupyter">Jupyter </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#Jupyter-Kernels-Check">Jupyter Kernels Check </a></li>
-<li class="toc-entry toc-h2"><a href="#Kernel-installation-for-python">Kernel installation for python </a></li>
 </ul>
 </li>
 </ul><!--
@@ -496,104 +495,6 @@ Traceback (most recent call last):
     print("Available kernels:")
 BrokenPipeError: [Errno 32] Broken pipe
      - Jupyter  kernel not found</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>jupyter --version
-jupyter kernelspec list
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Selected Jupyter core packages...
-IPython          : 8.2.0
-ipykernel        : 6.9.1
-ipywidgets       : 7.6.5
-jupyter_client   : 6.1.12
-jupyter_core     : 4.9.2
-jupyter_server   : 1.13.5
-jupyterlab       : 3.3.2
-nbclient         : 0.5.13
-nbconvert        : 6.4.4
-nbformat         : 5.3.0
-notebook         : 6.4.8
-qtconsole        : 5.3.0
-traitlets        : 5.1.1
-Available kernels:
-  bash          /home/chewyboba10/.local/share/jupyter/kernels/bash
-  javascript    /home/chewyboba10/.local/share/jupyter/kernels/javascript
-  python3       /home/chewyboba10/anaconda3/share/jupyter/kernels/python3
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Kernel-installation-for-python">
-<a class="anchor" href="#Kernel-installation-for-python" aria-hidden="true"><span class="octicon octicon-link"></span></a>Kernel installation for python<a class="anchor-link" href="#Kernel-installation-for-python"> </a>
-</h2>
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nv">test</span><span class="o">=</span><span class="s2">"python3"</span> <span class="c1"># keyword</span>
-<span class="nv">check</span><span class="o">=</span><span class="sb">`</span>jupyter kernelspec list <span class="p">|</span> grep <span class="nv">$test</span><span class="sb">`</span> <span class="c1"># run command</span>
-<span class="nv">n</span><span class="o">=</span><span class="si">${#</span><span class="nv">check</span><span class="si">}</span> <span class="c1"># determine length</span>
-
-<span class="k">if</span> <span class="o">[[</span> <span class="si">${</span><span class="nv">n</span><span class="si">}</span> &gt; <span class="m">0</span> <span class="o">]]</span><span class="p">;</span>  <span class="c1"># testt length</span>
-<span class="k">then</span> <span class="c1"># greater than zero</span>
-    <span class="nb">echo</span> <span class="s2">"</span><span class="nv">$check</span><span class="s2">"</span>
-<span class="k">else</span> <span class="c1"># less than zero</span>
-    <span class="nb">echo</span> <span class="s2">"</span><span class="nv">$test</span><span class="s2"> not found"</span>
-<span class="k">fi</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>  python3       /home/chewyboba10/anaconda3/share/jupyter/kernels/python3
-</pre>
 </div>
 </div>
 
