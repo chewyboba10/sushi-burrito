@@ -149,6 +149,14 @@
   
 
   
+      ,"page8": {
+          "title": "Vocab",
+          "content": "Vocab Definition Example . Input | Data that is taken in by the computer from the user | print(“hello world!”) | . Output | Data that is returned by the computer to the user | input(“What are your hobbies?”) | .",
+          "url": "https://chewyboba10.github.io/sushi-burrito/_pages/vocab.html",
+          "relUrl": "/_pages/vocab.html",
+          "date": ""
+      }
+      
   
 
   
@@ -158,7 +166,10 @@
   
 
   
-      ,"page11": {
+  
+
+  
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://chewyboba10.github.io/sushi-burrito/robots.txt",
