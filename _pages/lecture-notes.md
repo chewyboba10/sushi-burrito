@@ -3,7 +3,6 @@ layout: page
 title: Lecture Notes
 permalink: 
 ---
-# Lecture Notes
 
 This page contains the notes I have taken during Mr. Mortenson's lecture
 
