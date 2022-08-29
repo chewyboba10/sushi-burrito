@@ -26,4 +26,4 @@ This page contains the notes I have taken during Mr. Mortenson's lecture
 
 | Date | Subject |
 |-|-|
-| 8/29/22 | Data Abstraction |
+| 8/29/22 | [Data Abstraction]() |

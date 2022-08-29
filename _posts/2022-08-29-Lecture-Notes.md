@@ -1,8 +1,11 @@
 ---
-layouts: notebook
+layouts: post
 title: APCSP Lecture Notes Week 2 August 29, 2022
 toc: true
+categories: [markdown]
 author: Evan Aparri
+comments: true
+show_tags: true
 ---
 
 # Lecture 8/29/22
