@@ -1,10 +1,8 @@
 ---
 layouts: notebook
 title: APCSP Lecture Notes Week 1
-
 toc: true
 author: Evan Aparri
-permalink: /notes/
 ---
 
 # Notes
