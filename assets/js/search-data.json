@@ -35,10 +35,10 @@
   
     
         ,"post3": {
-            "title": "HTML Fragments",
-            "content": "Lecture Notes - HTML Fragments . Notes on what HTML Fragments are . toc:true- layout: post | description: Lecture Notes September 1, 2022 | categories: [T1, Notes, Week 2] | title: Lecture Notes - HTML Fragments | author: Evan Aparri | show_tags: true | comments: true | .",
-            "url": "https://chewyboba10.github.io/sushi-burrito/2022/08/31/Lecture-Notes.html",
-            "relUrl": "/2022/08/31/Lecture-Notes.html",
+            "title": "Lecture Notes - HTML Fragments",
+            "content": "HTML Fragments . procedural abstraction and data abstraction - taking little pieces of information and putting them into different files so that something can take it in the bigger system . markdown gets converted into html everything in your website gets converted to html .",
+            "url": "https://chewyboba10.github.io/sushi-burrito/t1/notes/week%202/2022/08/31/Lecture-Notes.html",
+            "relUrl": "/t1/notes/week%202/2022/08/31/Lecture-Notes.html",
             "date": " • Aug 31, 2022"
         }
         
