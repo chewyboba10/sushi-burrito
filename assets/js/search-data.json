@@ -194,6 +194,17 @@
 
   
       ,"page8": {
+          "title": "Theme Switch",
+          "content": "JS Theme Switcher . What? | How? | Why? | Bonus | . Because JS is where it&#39;s at. Ready to Switch Themes? Click away, my friend. . Light Theme Dark Theme InvisiTheme What? . The purpose of this CodePen is to show how you can use javascript and CSS to effect HTML and, therefore change the look or layout of a page. I wrote this in javascript without the use of any javascript libraries (no jQuery). . How? . The basic concept is to create two (or more) sets of styles. One style is the default and uses dark texts on a light background. The second uses the opposite; light text on a dark background. I included two buttons that, when clicked, add or remove the additional class that will change the look of the page (theme). . document.querySelector . is used here to target the buttons we&#39;re after as well as the body. Once those are defined we use a combination of addEventListener . and classList . and then either add . or remove . to... add or remove the &quot;dark&quot; class from the class list of the body. Pretty simple. . Why? . I created this pen because my son is learning Javascript and wanted to understand some of the ways you could actually tie scripts to your page for something useful. This is one of many ways you can do that. Hopefully others can learn from this as well. . Bonus Round: Replacing HTML text with input text . Type in the box below to replace the header above with the text you typed. I created a backup function that lets you hit the button to switch the text as well. .",
+          "url": "https://chewyboba10.github.io/sushi-burrito/theme-switch/",
+          "relUrl": "/theme-switch/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page9": {
           "title": "Vocab",
           "content": "Vocab Definition Example . Input | Data that is taken in by the computer from the user | print(“hello world!”) | . Output | Data that is returned by the computer to the user | input(“What are your hobbies?”) | .",
           "url": "https://chewyboba10.github.io/sushi-burrito/_pages/vocab.html",
@@ -213,7 +224,7 @@
   
 
   
-      ,"page12": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://chewyboba10.github.io/sushi-burrito/robots.txt",
