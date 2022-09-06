@@ -19,7 +19,7 @@ This page contains the notes I have taken during Mr. Mortenson's lecture
 | Date | Subject |
 |-|-|
 | 8/24/22 | Blog Posting and Configuration |
-| 8/25/22 | Bash and Cloud |
+| 8/25/22 | [Bash and Cloud](https://chewyboba10.github.io/sushi-burrito/markdown/2022/08/25/Lecture-Notes.html) |
 
 ## Week 2
 
