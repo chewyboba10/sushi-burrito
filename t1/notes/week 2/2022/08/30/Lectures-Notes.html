@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      7 min read
     
 </span></p>
 
@@ -135,9 +135,16 @@ window.onload = wrap_img;
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h3"><a href="#Lists">Lists </a></li>
 <li class="toc-entry toc-h3"><a href="#Dictionary">Dictionary </a></li>
-<li class="toc-entry toc-h1"><a href="#A-list-of-dictionaries">A list of dictionaries </a>
+<li class="toc-entry toc-h1"><a href="#A-list-of-dictionaries">A list of dictionaries </a></li>
+<li class="toc-entry toc-h1"><a href="#Hacks">Hacks </a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#Formatting-output-of-List/Dictionary">Formatting output of List/Dictionary </a></li>
+<li class="toc-entry toc-h2"><a href="#.append()">.append() </a></li>
+<li class="toc-entry toc-h2"><a href="#For-loop">For loop </a></li>
+<li class="toc-entry toc-h2"><a href="#While-loop">While loop </a></li>
+<li class="toc-entry toc-h2"><a href="#Printing-in-reverse">Printing in reverse </a></li>
+<li class="toc-entry toc-h2"><a href="#Recursion">Recursion </a></li>
+<li class="toc-entry toc-h2"><a href="#Adding-to-the-List-using-Input">Adding to the List using Input </a></li>
+<li class="toc-entry toc-h2"><a href="#Quiz">Quiz </a></li>
 </ul>
 </li>
 </ul><!--
@@ -167,7 +174,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"list"</span><span class="p">,</span> <span class="nb">list</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="nb">list</span><span class="p">),</span> <span class="s2">"length"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'- list[3]'</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="nb">list</span><span class="p">[</span><span class="mi">3</span><span class="p">]))</span>
 
@@ -177,6 +184,23 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>list [1, 2, 3, 4] &lt;class 'list'&gt; length 4
+- list[3] 4 &lt;class 'int'&gt;
+langs ['Python', 'JavaScript', 'Java', 'bash'] &lt;class 'list'&gt;
+- langs[0] Python &lt;class 'str'&gt;
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -190,11 +214,25 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">"Evan"</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">"Evan"</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"What is the value of variable name:"</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>What is the value of variable name: Evan
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -237,7 +275,7 @@ Define data patterns</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="c1"># Append to List a Dictionary of key/values related to a person and cars</span>
 <span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
@@ -275,18 +313,612 @@ Define data patterns</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{'FirstName': 'Evan', 'LastName': 'Aparri', 'DOB': 'November 10, 2005', 'Residence': 'San Diego', 'Email': 'evanaparri@gmail.com', 'Owns_Cars': 'none', 'Hobbies': ['sleeping']}]
+
+
+[{'FirstName': 'Evan', 'LastName': 'Aparri', 'DOB': 'November 10, 2005', 'Residence': 'San Diego', 'Email': 'evanaparri@gmail.com', 'Owns_Cars': 'none', 'Hobbies': ['sleeping']}, {'FirstName': 'Sunny', 'LastName': 'Naidu', 'DOB': 'August 2', 'Residence': 'Temecula', 'Email': 'snaidu@powayusd.com', 'Owns_Cars': '4Runner', 'Hobbies': ['eating']}]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Formatting-output-of-List/Dictionary">
-<a class="anchor" href="#Formatting-output-of-List/Dictionary" aria-hidden="true"><span class="octicon octicon-link"></span></a>Formatting output of List/Dictionary<a class="anchor-link" href="#Formatting-output-of-List/Dictionary"> </a>
+<h1 id="Hacks">
+<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+</h1>
+<h2 id=".append()">
+<a class="anchor" href="#.append()" aria-hidden="true"><span class="octicon octicon-link"></span></a>.append()<a class="anchor-link" href="#.append()"> </a>
 </h2>
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># InfoDB is a data structure with expected Keys and Values</span>
+
+<span class="c1"># Append to List a Dictionary of key/values related to a person</span>
+
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"John"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Mortensen"</span><span class="p">,</span>
+    <span class="s2">"Gender"</span><span class="p">:</span> <span class="s2">"Male"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"October 21"</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"jmortensen@powayusd.com"</span><span class="p">,</span>
+    <span class="s2">"Fav_Color"</span><span class="p">:</span> <span class="s2">"Unknown"</span><span class="p">,</span>
+    <span class="s2">"Sleep_Schedule"</span> <span class="p">:</span> <span class="s2">"Unknown"</span><span class="p">,</span>
+    <span class="s2">"is_Teacher"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s2">"Hobbies"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Teaching"</span><span class="p">,</span> <span class="s2">"Programming"</span><span class="p">],</span>
+    <span class="s2">"Games"</span><span class="p">:</span> <span class="p">[],</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2015-Fusion"</span><span class="p">,</span> <span class="s2">"2011-Ranger"</span><span class="p">,</span> <span class="s2">"2003-Excursion"</span><span class="p">,</span> <span class="s2">"1997-F350"</span><span class="p">,</span> <span class="s2">"1969-Cadillac"</span><span class="p">]</span>
+<span class="p">})</span>
+
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Evan"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Aparri"</span><span class="p">,</span>
+    <span class="s2">"Gender"</span><span class="p">:</span> <span class="s2">"Male"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"November 10, 2005"</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"evanaparri@gmail.com"</span><span class="p">,</span>
+    <span class="s2">"Fav_Color"</span><span class="p">:</span> <span class="s2">"Blue"</span><span class="p">,</span>
+    <span class="s2">"Sleep_Schedule"</span> <span class="p">:</span> <span class="s2">"2am"</span><span class="p">,</span>
+    <span class="s2">"is_Teacher"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s2">"Hobbies"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Running"</span><span class="p">,</span> <span class="s2">"Reading"</span><span class="p">,</span> <span class="s2">"Eating Asian Food/ Food Connoisseur"</span><span class="p">,</span> <span class="s2">"Sleeping"</span><span class="p">,</span> <span class="s2">"Homework"</span><span class="p">,</span> <span class="s2">"Programming"</span><span class="p">],</span>
+    <span class="s2">"Games"</span><span class="p">:</span> <span class="p">[],</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2001-Camry"</span><span class="p">]</span> 
+<span class="p">})</span>
+
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Alex"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Lu"</span><span class="p">,</span>
+    <span class="s2">"Gender"</span><span class="p">:</span> <span class="s2">"Male"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"November 29, 2006"</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"maodou1258@gmail.com"</span><span class="p">,</span>
+    <span class="s2">"Fav_Color"</span><span class="p">:</span> <span class="s2">"White"</span><span class="p">,</span>
+    <span class="s2">"Sleep_Schedule"</span> <span class="p">:</span> <span class="s2">"1am"</span><span class="p">,</span>
+    <span class="s2">"is_Teacher"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s2">"Hobbies"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Programming"</span><span class="p">,</span> <span class="s2">"Tennis"</span><span class="p">,</span> <span class="s2">"Reading"</span><span class="p">,</span> <span class="s2">"Sleeping"</span><span class="p">],</span>
+    <span class="s2">"Games"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"League of Legends"</span><span class="p">,</span> <span class="s2">"VALORANT"</span><span class="p">,</span> <span class="s2">"Minecraft"</span><span class="p">,</span> <span class="s2">"OSU"</span><span class="p">],</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[]</span>
+    
+<span class="p">})</span>
+
+
+
+<span class="c1"># Print the data structure</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{'FirstName': 'John', 'LastName': 'Mortensen', 'Gender': 'Male', 'DOB': 'October 21', 'Residence': 'San Diego', 'Email': 'jmortensen@powayusd.com', 'Fav_Color': 'Unknown', 'Sleep_Schedule': 'Unknown', 'is_Teacher': True, 'Hobbies': ['Teaching', 'Programming'], 'Games': [], 'Owns_Cars': ['2015-Fusion', '2011-Ranger', '2003-Excursion', '1997-F350', '1969-Cadillac']}, {'FirstName': 'Evan', 'LastName': 'Aparri', 'Gender': 'Male', 'DOB': 'November 10, 2005', 'Residence': 'San Diego', 'Email': 'evanaparri@gmail.com', 'Fav_Color': 'Blue', 'Sleep_Schedule': '2am', 'is_Teacher': False, 'Hobbies': ['Running', 'Reading', 'Eating Asian Food/ Food Connoisseur', 'Sleeping', 'Homework', 'Programming'], 'Games': [], 'Owns_Cars': ['2001-Camry']}, {'FirstName': 'Alex', 'LastName': 'Lu', 'Gender': 'Male', 'DOB': 'November 29, 2006', 'Residence': 'San Diego', 'Email': 'maodou1258@gmail.com', 'Fav_Color': 'White', 'Sleep_Schedule': '1am', 'is_Teacher': False, 'Hobbies': ['Programming', 'Tennis', 'Reading', 'Sleeping'], 'Games': ['League of Legends', 'VALORANT', 'Minecraft', 'OSU'], 'Owns_Cars': []}]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="For-loop">
+<a class="anchor" href="#For-loop" aria-hidden="true"><span class="octicon octicon-link"></span></a>For loop<a class="anchor-link" href="#For-loop"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">d_rec</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"FirstName"</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"LastName"</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Residence:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Residence"</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Birth Day:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"DOB"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Email:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Email"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Favorite Color:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Fav_Color"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Is Teacher?:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"is_Teacher"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Hours of Sleep:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Sleep_Schedule"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Hobbies: "</span> <span class="o">+</span> <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"Hobbies"</span><span class="p">]))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Games: "</span> <span class="o">+</span> <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"Games"</span><span class="p">]))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Cars Owned: "</span> <span class="o">+</span> <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"Owns_Cars"</span><span class="p">]))</span>
+    <span class="nb">print</span><span class="p">()</span>
+
+
+<span class="c1"># for loop algorithm iterates on length of InfoDb</span>
+<span class="k">def</span> <span class="nf">for_loop</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"For loop output</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">InfoDb</span><span class="p">:</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+
+<span class="n">for_loop</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>For loop output
+
+John Mortensen
+	 Residence: San Diego
+	 Birth Day: October 21
+	 Email: jmortensen@powayusd.com
+	 Favorite Color: Unknown
+	 Is Teacher?: True
+	 Hours of Sleep: Unknown
+	 Hobbies: Teaching, Programming
+	 Games: 
+	 Cars Owned: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+
+Evan Aparri
+	 Residence: San Diego
+	 Birth Day: November 10, 2005
+	 Email: evanaparri@gmail.com
+	 Favorite Color: Blue
+	 Is Teacher?: False
+	 Hours of Sleep: 2am
+	 Hobbies: Running, Reading, Eating Asian Food/ Food Connoisseur, Sleeping, Homework, Programming
+	 Games: 
+	 Cars Owned: 2001-Camry
+
+Alex Lu
+	 Residence: San Diego
+	 Birth Day: November 29, 2006
+	 Email: maodou1258@gmail.com
+	 Favorite Color: White
+	 Is Teacher?: False
+	 Hours of Sleep: 1am
+	 Hobbies: Programming, Tennis, Reading, Sleeping
+	 Games: League of Legends, VALORANT, Minecraft, OSU
+	 Cars Owned: 
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="While-loop">
+<a class="anchor" href="#While-loop" aria-hidden="true"><span class="octicon octicon-link"></span></a>While loop<a class="anchor-link" href="#While-loop"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">while_loop</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"While loop output</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">):</span>
+        <span class="n">record</span> <span class="o">=</span> <span class="n">InfoDb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span>
+
+<span class="n">while_loop</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>While loop output
+
+John Mortensen
+	 Residence: San Diego
+	 Birth Day: October 21
+	 Email: jmortensen@powayusd.com
+	 Favorite Color: Unknown
+	 Is Teacher?: True
+	 Hours of Sleep: Unknown
+	 Hobbies: Teaching, Programming
+	 Games: 
+	 Cars Owned: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+
+Evan Aparri
+	 Residence: San Diego
+	 Birth Day: November 10, 2005
+	 Email: evanaparri@gmail.com
+	 Favorite Color: Blue
+	 Is Teacher?: False
+	 Hours of Sleep: 2am
+	 Hobbies: Running, Reading, Eating Asian Food/ Food Connoisseur, Sleeping, Homework, Programming
+	 Games: 
+	 Cars Owned: 2001-Camry
+
+Alex Lu
+	 Residence: San Diego
+	 Birth Day: November 29, 2006
+	 Email: maodou1258@gmail.com
+	 Favorite Color: White
+	 Is Teacher?: False
+	 Hours of Sleep: 1am
+	 Hobbies: Programming, Tennis, Reading, Sleeping
+	 Games: League of Legends, VALORANT, Minecraft, OSU
+	 Cars Owned: 
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Printing-in-reverse">
+<a class="anchor" href="#Printing-in-reverse" aria-hidden="true"><span class="octicon octicon-link"></span></a>Printing in reverse<a class="anchor-link" href="#Printing-in-reverse"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">reversed_for_loop</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Reversed output of For loop:"</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="n">reversed_for_loop</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Reversed output of For loop:
+Alex Lu
+	 Residence: San Diego
+	 Birth Day: November 29, 2006
+	 Email: maodou1258@gmail.com
+	 Favorite Color: White
+	 Is Teacher?: False
+	 Hours of Sleep: 1am
+	 Hobbies: Programming, Tennis, Reading, Sleeping
+	 Games: League of Legends, VALORANT, Minecraft, OSU
+	 Cars Owned: 
+
+Evan Aparri
+	 Residence: San Diego
+	 Birth Day: November 10, 2005
+	 Email: evanaparri@gmail.com
+	 Favorite Color: Blue
+	 Is Teacher?: False
+	 Hours of Sleep: 2am
+	 Hobbies: Running, Reading, Eating Asian Food/ Food Connoisseur, Sleeping, Homework, Programming
+	 Games: 
+	 Cars Owned: 2001-Camry
+
+John Mortensen
+	 Residence: San Diego
+	 Birth Day: October 21
+	 Email: jmortensen@powayusd.com
+	 Favorite Color: Unknown
+	 Is Teacher?: True
+	 Hours of Sleep: Unknown
+	 Hobbies: Teaching, Programming
+	 Games: 
+	 Cars Owned: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Recursion">
+<a class="anchor" href="#Recursion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Recursion<a class="anchor-link" href="#Recursion"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">recursive_loop</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">):</span>
+        <span class="n">record</span> <span class="o">=</span> <span class="n">InfoDb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+        <span class="n">recursive_loop</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Recursive loop output</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">recursive_loop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Recursive loop output
+
+John Mortensen
+	 Residence: San Diego
+	 Birth Day: October 21
+	 Email: jmortensen@powayusd.com
+	 Favorite Color: Unknown
+	 Is Teacher?: True
+	 Hours of Sleep: Unknown
+	 Hobbies: Teaching, Programming
+	 Games: 
+	 Cars Owned: 2015-Fusion, 2011-Ranger, 2003-Excursion, 1997-F350, 1969-Cadillac
+
+Evan Aparri
+	 Residence: San Diego
+	 Birth Day: November 10, 2005
+	 Email: evanaparri@gmail.com
+	 Favorite Color: Blue
+	 Is Teacher?: False
+	 Hours of Sleep: 2am
+	 Hobbies: Running, Reading, Eating Asian Food/ Food Connoisseur, Sleeping, Homework, Programming
+	 Games: 
+	 Cars Owned: 2001-Camry
+
+Alex Lu
+	 Residence: San Diego
+	 Birth Day: November 29, 2006
+	 Email: maodou1258@gmail.com
+	 Favorite Color: White
+	 Is Teacher?: False
+	 Hours of Sleep: 1am
+	 Hobbies: Programming, Tennis, Reading, Sleeping
+	 Games: League of Legends, VALORANT, Minecraft, OSU
+	 Cars Owned: 
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Adding-to-the-List-using-Input">
+<a class="anchor" href="#Adding-to-the-List-using-Input" aria-hidden="true"><span class="octicon octicon-link"></span></a>Adding to the List using Input<a class="anchor-link" href="#Adding-to-the-List-using-Input"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">add_entry</span><span class="p">():</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"First and last name seperated by spaces: "</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="n">gender</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your gender? "</span><span class="p">)</span>
+    <span class="n">birthdate</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"When were you born? "</span><span class="p">)</span> <span class="c1"># Not gonna care about date time formatting cuz all programmers hate that</span>
+    <span class="n">residence</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"City you live in? "</span><span class="p">)</span>
+    <span class="n">email</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"email? "</span><span class="p">)</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"favorite color? "</span><span class="p">)</span>
+    <span class="n">sleep</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"When do you go to bed? "</span><span class="p">)</span>
+    <span class="n">is_teacher</span> <span class="o">=</span> <span class="n">bool_input</span><span class="p">(</span><span class="s2">"Are you a teacher? [yes/no] "</span><span class="p">)</span>
+    <span class="n">hobbies</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"hobbies? "</span><span class="p">)</span>
+    <span class="n">hobbies</span> <span class="o">=</span> <span class="n">multi_input</span><span class="p">(</span><span class="n">hobbies</span><span class="p">)</span>
+    <span class="n">games</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Games? "</span><span class="p">)</span>
+    <span class="n">games</span> <span class="o">=</span> <span class="n">multi_input</span><span class="p">(</span><span class="n">games</span><span class="p">)</span>
+    <span class="n">cars</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What car(s) do you own? "</span><span class="p">)</span>
+
+
+    <span class="n">entry</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="n">name</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+    <span class="s2">"Gender"</span><span class="p">:</span> <span class="n">gender</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="n">birthdate</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="n">residence</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="n">email</span><span class="p">,</span>
+    <span class="s2">"Fav_Color"</span><span class="p">:</span> <span class="n">color</span><span class="p">,</span>
+    <span class="s2">"Sleep_Schedule"</span><span class="p">:</span> <span class="n">sleep</span><span class="p">,</span> 
+    <span class="s2">"is_Teacher"</span><span class="p">:</span> <span class="n">is_teacher</span><span class="p">,</span>
+    <span class="s2">"Hobbies"</span><span class="p">:</span> <span class="n">hobbies</span><span class="p">,</span> 
+    <span class="s2">"Games"</span> <span class="p">:</span> <span class="n">games</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="n">cars</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">entry</span>
+
+<span class="k">def</span> <span class="nf">bool_input</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+           <span class="k">return</span> <span class="p">{</span><span class="s2">"yes"</span><span class="p">:</span><span class="kc">True</span><span class="p">,</span><span class="s2">"no"</span><span class="p">:</span><span class="kc">False</span><span class="p">}[</span><span class="nb">input</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()]</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+           <span class="nb">print</span><span class="p">(</span><span class="s2">"Invalid input please enter yes or no"</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">multi_input</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="s2">""</span>
+    <span class="k">while</span> <span class="n">temp</span> <span class="o">!=</span> <span class="s2">"none"</span><span class="p">:</span>
+        <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Please enter item number </span><span class="si">{0}</span><span class="s2">, type none to proceede "</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)))</span>
+        <span class="k">if</span> <span class="n">temp</span><span class="o">.</span><span class="n">lower</span> <span class="o">!=</span> <span class="s2">"none"</span><span class="p">:</span>
+            <span class="n">arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">arr</span>
+    
+
+
+<span class="n">new_entry</span> <span class="o">=</span> <span class="n">add_entry</span><span class="p">()</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_entry</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Quiz">
+<a class="anchor" href="#Quiz" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quiz<a class="anchor-link" href="#Quiz"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Questions_Answers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"What is 1 + 1 equal to?"</span> <span class="p">:</span> <span class="p">[</span><span class="s2">"2"</span><span class="p">],</span>
+    <span class="s2">"What is 1 times 1 equal to?"</span> <span class="p">:</span> <span class="p">[</span><span class="s2">"1"</span><span class="p">],</span>
+    <span class="s2">"What is 1 divided by 1 equal to?"</span> <span class="p">:</span> <span class="p">[</span><span class="s2">"1"</span><span class="p">],</span>
+    <span class="s2">"What is 1 divided by 0 equal to?"</span> <span class="p">:</span> <span class="p">[</span><span class="s2">"Undefined"</span><span class="p">,</span> <span class="s2">"undefined"</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">get_pair</span><span class="p">(</span><span class="nb">dict</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">q</span> <span class="k">for</span> <span class="n">q</span><span class="p">,</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">dict</span><span class="o">.</span><span class="n">items</span><span class="p">()],</span> <span class="p">[</span><span class="n">a</span> <span class="k">for</span> <span class="n">q</span><span class="p">,</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">dict</span><span class="o">.</span><span class="n">items</span><span class="p">()]</span>
+
+<span class="k">def</span> <span class="nf">percentage</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+
+        <span class="k">return</span> <span class="s1">'</span><span class="si">{0:.2f}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">100</span> <span class="o">*</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">y</span><span class="p">))</span>
+
+<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">total</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">Questions_Answers</span><span class="p">)</span>
+
+<span class="n">Questions_Answers_pairs</span> <span class="o">=</span> <span class="n">get_pair</span><span class="p">(</span><span class="n">Questions_Answers</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">Questions_Answers_pairs</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+    <span class="n">rsp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Question: "</span> <span class="o">+</span> <span class="n">Questions_Answers_pairs</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">rsp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">Questions_Answers_pairs</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" was correct!"</span><span class="p">)</span>
+        <span class="n">correct</span><span class="o">+=</span><span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="si">{0}</span><span class="s2"> was incorrect, the correct answer was: </span><span class="si">{1}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">rsp</span><span class="p">,</span> <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">Questions_Answers_pairs</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">])))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Congratulations, you got </span><span class="si">{0}% o</span><span class="s2">n this quiz"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">percentage</span><span class="p">(</span><span class="n">correct</span><span class="p">,</span><span class="n">total</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2 was correct!
+1 was correct!
+0 was incorrect, the correct answer was: 1
+undefined was correct!
+Congratulations, you got 75.00% on this quiz
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
