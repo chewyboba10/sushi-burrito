@@ -25,4 +25,6 @@ This page contains the notes I have taken during Mr. Mortenson's lecture
 
 | Date | Subject |
 |-|-|
-| 8/29/22 | [Data Abstraction]() |
+| 8/29/22 | [Data Abstraction](https://chewyboba10.github.io/sushi-burrito/markdown/2022/08/29/Lecture-Notes.html) |
+| 8/30/22 | [List, Dictionaries, Iteration](https://chewyboba10.github.io/sushi-burrito/t1/notes/week%202/2022/08/30/Lectures-Notes.html)
+| 9/1/22 | [HTML Fragments]()
