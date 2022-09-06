@@ -10,6 +10,7 @@ comments: true
 ---
 
 # Lecture Notes - HTML Fragments
+
 > What Lists, Dictionaries, and Iterations are and how to use them
 
 ## HTML Fragments
