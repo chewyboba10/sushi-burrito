@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Lecture Notes August 31, 2022
-categories: [T1, Notes, Week 2]
+categories: [T1, Notes, Week 2, markdown]
 title: Lecture Notes - HTML Fragments
 author: Evan Aparri
 show_tags: true
