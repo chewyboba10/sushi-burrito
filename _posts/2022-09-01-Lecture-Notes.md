@@ -26,14 +26,14 @@ The theme of the Blog could be changed in the `_config.yml` file in the home dir
 
 I ran into a minor problem of naming the remote theme wrong, but that was quickly fixed
 
-![]({{site.baseurl}}images/theme-mistake.png)
+![]({{site.baseurl}}/images/theme-mistake.png)
 
 Here is what the homepage looked like:
 
-![]({{site.baseurl}}images/midnight-theme.png)
+![]({{site.baseurl}}/images/midnight-theme.png)
 
 The problems that I noticed were that the changes removed the blog's navigation bar such as the search and tabs. That is the main problem I saw. When opening some of my posts, they were no negatively affected, but you are unable to open the homepage once you have left:
 
-![]({{site.baseurl}}images/no-homepage-access.png)
+![]({{site.baseurl}}/images/no-homepage-access.png)
 
 One last thing that I noticed before I changed back to the `minima` theme is that the icon of the blog does not show up. The conclusion that I came from this experiment is that other Jekyll themes are not entirely compatible with fastpages and that `minima` is the preferred theme.
