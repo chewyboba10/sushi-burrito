@@ -2,8 +2,8 @@
 toc: true
 layout: post
 description: AppLab Quiz Notes
-categories: [T1, Notes, Week 2, markdown, post]
-title: Lecture Notes - HTML Fragments
+categories: [T1, Notes, Week 3, markdown, post]
+title: Notes - AppLab Quiz Creation
 author: Evan Aparri
 show_tags: true
 comments: true
