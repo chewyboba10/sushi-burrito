@@ -30,7 +30,7 @@ Create lists and dictionaries that show what the nationality of the recipe, the 
 ### Row 3: Managing Complexity
 >Explain how abstraction manages complexity (Skill Abstraction in Program Development explain complexity)
 
-Similar to how my posts are tagged, I want to create different tags for the recipes I put in the program so that it can be sorted out that way. Make 
+Similar to how my posts are tagged, I want to create different tags for the recipes I put in the program so that it can be sorted out that way. Make different functions to reduce the complexity and therefore compartmentalizing the code.
 
 ### Row 4: Procedural Abstraction
 >Use abstraction to manage complexity in a program (Skill Abstraction in Program Development - procedures/functions)
