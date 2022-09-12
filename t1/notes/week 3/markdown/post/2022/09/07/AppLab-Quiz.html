@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -114,15 +114,70 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#applab-quiz-creation">AppLab Quiz Creation</a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#starting-off">Starting off</a></li>
+<li class="toc-entry toc-h2"><a href="#plan">Plan</a></li>
+<li class="toc-entry toc-h2"><a href="#process">Process</a></li>
+<li class="toc-entry toc-h2"><a href="#results-and-findings">Results and Findings</a></li>
 </ul>
 </li>
 </ul><h1 id="applab-quiz-creation">
 <a class="anchor" href="#applab-quiz-creation" aria-hidden="true"><span class="octicon octicon-link"></span></a>AppLab Quiz Creation</h1>
-<p>Here is the link to my <a href="">quiz</a></p>
+
+<p>Here is the link to my <a href="https://studio.code.org/projects/applab/5_onrC4AXLX0LVnWsf8bupLPLI6vCGO9nh-xtGI9vmU">quiz</a></p>
 
 <h2 id="starting-off">
 <a class="anchor" href="#starting-off" aria-hidden="true"><span class="octicon octicon-link"></span></a>Starting off</h2>
-<p>I noticed that the dimensions of the screen were 320 by 450</p>
+
+<p>Here is what I noticed when exploring:</p>
+<ul>
+  <li>the dimensions of the screen were 320 by 450. This Note is mainly used to help center the objects I add</li>
+  <li>I could change the color of the objects color, or the color of texts using setting the rgba values</li>
+  <li>I can duplicate the screen if I want to keep the format of the screen I created</li>
+  <li>I saw that the user can input text and that they can choose from a dropdown menu</li>
+  <li>I can switch between block code and text code</li>
+</ul>
+
+<h2 id="plan">
+<a class="anchor" href="#plan" aria-hidden="true"><span class="octicon octicon-link"></span></a>Plan</h2>
+
+<ul>
+  <li>Create a math themed quiz</li>
+  <li>Create different difficulties</li>
+  <li>Find a way to go to a quiz of matching difficulty using the dropdown menu</li>
+  <li>Be able to show the final score at the end of the quiz</li>
+  <li>Be able to use only</li>
+</ul>
+
+<h2 id="process">
+<a class="anchor" href="#process" aria-hidden="true"><span class="octicon octicon-link"></span></a>Process</h2>
+
+<p>I ended up designing a total of 13 different screens with three pairs of 3 questions, each with a different corresponding difficulty, a starting screen: <code class="language-plaintext highlighter-rouge">Start_Window</code>, a correct answer screen: <code class="language-plaintext highlighter-rouge">CorrectScreen</code>, a incorrect answer screen: <code class="language-plaintext highlighter-rouge">WrongAnswer</code>, and a end screen: <code class="language-plaintext highlighter-rouge">End_Screen</code></p>
+
+<p><img src="/sushi-burrito/images/appscreen.png" alt="" title="List of the different screens in the app"></p>
+
+<p>I created 3 different difficulties corresponding to different school levels</p>
+
+<p><img src="/sushi-burrito/images/differentdifficulties.png" alt="" title="List of the different difficulties in the quiz"></p>
+
+<p>I initially had problems figuring out how to make it so that the dropdown option I chose would result in the app taking me to the different quizzes. However, after exploring a bit more in the code blocks, I was able to create an if else statement that would take me to different screens depending on what was chosen from the dropdown option.</p>
+
+<p><img src="/sushi-burrito/images/changedifficultycode.png" alt="" title="Here is the code on how I managed to switch to different quizzes"></p>
+
+<p>The format for all the questions is a user inputted response based one. The code I wrote makes it so that after you click the button the reads “Check Answer”, if the inputted texts matches the answer, you go to the <code class="language-plaintext highlighter-rouge">CorrectScreen</code> screen. If you get it wrong, you’ll go to the <code class="language-plaintext highlighter-rouge">WrongAnswer</code> screen. (the question shown below, <code class="language-plaintext highlighter-rouge">Normal_Question_1</code>, is the only one where there were two possible answers, which I was able to do using double vertical bars)</p>
+
+<p><img src="/sushi-burrito/images/question-example.png" alt="" title="Screen and code for that screen"></p>
+
+<p>For the final question of each difficulty, I created a string concatenation that would show the results of the quiz in the blank text box in the <code class="language-plaintext highlighter-rouge">End_Screen</code>.</p>
+
+<p><img src="/sushi-burrito/images/appresultsmessage.png" alt="" title="Screen and code for that screen"></p>
+
+<h2 id="results-and-findings">
+<a class="anchor" href="#results-and-findings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Results and Findings</h2>
+
+<p>The block form of code made it really easy to visualize how each block of code worked and made it easier to find out what went wrong. It was also cool to be able to convert the blocks into JavaScript, which made JavaScript muc easier to understand. While thinking back to how I made this quiz, I realize there are a few bugs that need to be patched up such as:</p>
+<ul>
+  <li>If I go back to the <code class="language-plaintext highlighter-rouge">Start_Window</code> clicking a “Quit” or “Home” button, the dropdown menu defaults to the previously chosen item. So if I end up choose the “Choose Difficulty” item and press start, it goes to the “Hard” difficulty.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">var correct</code> does not reset back to 0 after starting another quiz</li>
+</ul>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
