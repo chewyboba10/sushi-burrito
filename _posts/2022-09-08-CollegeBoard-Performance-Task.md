@@ -13,8 +13,9 @@ comments: true
 
 ## Plan and ideas
 
-- Something about cooking and recipes from around the world
-- 
+- Organizing various recipes based on where it originates, the ingredients it uses, and how long the recipe takes
+- Organizing various animals based on where it lives, what it eats, it population size, etc.
+- More ideas coming soon
 
 ### Row 1: Program Purpose and Function
 
