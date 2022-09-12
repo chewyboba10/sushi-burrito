@@ -11,30 +11,47 @@ comments: true
 
 # College Board Create Performance Task
 
-## Row 1: Program Purpose and Function
+## Plan and ideas
+
+- Something about cooking and recipes from around the world
+- 
+
+### Row 1: Program Purpose and Function
 
 Know the difference between program **purpose** and **function**
 > In College Board scoring guidelines
 
-## Row 2: Data Abstraction
+The purpose of my program will be to sort out different recipe and their ingredients while the function will be that users can specify what things they are looking for in a recipe (nationality, ingredients, time) that will be sorted by the computer.
+
+### Row 2: Data Abstraction
 
 Assesses students' ability to use abstraction to manage complexity in a program (Skill Abstraction in Program Development - data)
 
-## Row 3: Managing Complexity
+Create lists and dictionaries that show what the nationality of the recipe, the ingredients that it uses, and how long it takes.
+
+### Row 3: Managing Complexity
 
 Explain how abstraction manages complexity (Skill Abstraction in Program Development explain complexity)
 
-## Row 4: Procedural Abstraction
+Similar to how my posts are tagged, I want to create different tags for the recipes I put in the program so that it can be sorted out that way. Make 
+
+### Row 4: Procedural Abstraction
 
 Use abstraction to manage complexity in a program (Skill Abstraction in Program Development - procedures/functions)
 
-## Row 5: Algorithm Implementation
+Find a way to sort it out the recipes based on input the user provides.
+
+### Row 5: Algorithm Implementation
 
 Implement and apply an algorithm (Skill Algorithms and Program Development)
 
-## Row 6: Testing
+Still need to learn how to make good algorithms that are more efficient and are more complex
+
+### Row 6: Testing
 
 Investigate the situation, context, or task (Skill Computational Solution Design - testing)
+
+Test that the recipes sort out in the different ways I want them to. Ask for others' opinions during the tests
 
 ## Different Ways to study
 
