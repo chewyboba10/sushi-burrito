@@ -28,7 +28,8 @@ Here is what I noticed when exploring:
 - Create different difficulties
 - Find a way to go to a quiz of matching difficulty using the dropdown menu
 - Users will be able to input their answers and the computer will be able to sort out if the answer is correct
-- Be able to show the final score at the end of the quiz
+- Be able to show the final score at the end of the quiz by abstracting the number of correct answers
+- - create a variable that defines the number of questions and number of answers
 
 ## Process
 
@@ -40,11 +41,11 @@ I created 3 different difficulties corresponding to different school levels
 
 ![]({{ site.baseurl }}/images/differentdifficulties.png "List of the different difficulties in the quiz")
 
-I initially had problems figuring out how to make it so that the dropdown option I chose would result in the app taking me to the different quizzes. However, after exploring a bit more in the code blocks, I was able to create an if else statement that would take me to different screens depending on what was chosen from the dropdown option.
+I initially had problems figuring out how to use the dropdown to manage which difficulty quiz I would go to. However, after exploring a bit more in the code blocks, I was able to create an if else statement that would take me to different screens depending on what was chosen from the dropdown option.
 
 ![]({{ site.baseurl }}/images/changedifficultycode.png "Here is the code on how I managed to switch to different quizzes")
 
-The format for all the questions is a user inputted response based one. The code I wrote makes it so that after you click the button the reads "Check Answer", if the inputted texts matches the answer, you go to the `CorrectScreen` screen. If you get it wrong, you'll go to the `WrongAnswer` screen. (the question shown below, `Normal_Question_1`, is the only one where there were two possible answers, which I was able to do using double vertical bars)
+The format for all the questions is a user inputted response based one. The algorithm that I wrote makes it so that after you click the button the reads "Check Answer", if the inputted texts matches the answer, you go to the `CorrectScreen` screen. If you get it wrong, you'll go to the `WrongAnswer` screen (The question shown below, `Normal_Question_1`, is the only one where there were two possible answers, which I was able to do using double vertical bars).
 
 ![]({{ site.baseurl }}/images/question-example.png "Screen and code for that screen")
 
