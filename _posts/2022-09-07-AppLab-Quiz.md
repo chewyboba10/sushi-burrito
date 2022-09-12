@@ -24,11 +24,11 @@ Here is what I noticed when exploring:
 
 ## Plan
 
-- Create a math themed quiz
+- Create a math themed quiz that tests users on their math knowledge
 - Create different difficulties
 - Find a way to go to a quiz of matching difficulty using the dropdown menu
+- Users will be able to input their answers and the computer will be able to sort out if the answer is correct
 - Be able to show the final score at the end of the quiz
-- Be able to use only
 
 ## Process
 
@@ -53,7 +53,7 @@ For the final question of each difficulty, I created a string concatenation that
 ![]({{ site.baseurl }}/images/appresultsmessage.png "Screen and code for that screen")
 
 
-## Results and Findings
+## Results and Findings (Testing)
 
 The block form of code made it really easy to visualize how each block of code worked and made it easier to find out what went wrong. It was also cool to be able to convert the blocks into JavaScript, which made JavaScript muc easier to understand. While thinking back to how I made this quiz, I realize there are a few bugs that need to be patched up such as:
 - If I go back to the `Start_Window` clicking a "Quit" or "Home" button, the dropdown menu defaults to the previously chosen item. So if I end up choose the "Choose Difficulty" item and press start, it goes to the "Hard" difficulty.

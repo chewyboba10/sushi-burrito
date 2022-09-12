@@ -22,7 +22,7 @@ comments: true
 Know the difference between program **purpose** and **function**
 > In College Board scoring guidelines
 
-The purpose of my program will be to sort out different recipe and their ingredients while the function will be that users can specify what things they are looking for in a recipe (nationality, ingredients, time) that will be sorted by the computer.
+The purpose of my program will be to find specific recipes with conditions the user sets while the function will that users can specify what things they are looking for in a recipe (nationality, ingredients, time) that will be sorted by the computer.
 
 ### Row 2: Data Abstraction
 
