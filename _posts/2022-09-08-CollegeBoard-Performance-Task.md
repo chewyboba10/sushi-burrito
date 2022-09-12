@@ -22,7 +22,7 @@ Assesses students' ability to use abstraction to manage complexity in a program 
 
 ## Row 3: Managing Complexity
 
-Explain how abstraction manages complexity (Skill Abstraction in Program Development explain complexity
+Explain how abstraction manages complexity (Skill Abstraction in Program Development explain complexity)
 
 ## Row 4: Procedural Abstraction
 
@@ -35,3 +35,9 @@ Implement and apply an algorithm (Skill Algorithms and Program Development)
 ## Row 6: Testing
 
 Investigate the situation, context, or task (Skill Computational Solution Design - testing)
+
+## Different Ways to study
+
+- Khan Academny
+- Look at notes/old code
+- research on the internet
