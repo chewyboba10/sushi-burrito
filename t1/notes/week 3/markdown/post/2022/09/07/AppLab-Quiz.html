@@ -144,7 +144,12 @@ window.onload = wrap_img;
   <li>Create different difficulties</li>
   <li>Find a way to go to a quiz of matching difficulty using the dropdown menu</li>
   <li>Users will be able to input their answers and the computer will be able to sort out if the answer is correct</li>
-  <li>Be able to show the final score at the end of the quiz</li>
+  <li>Be able to show the final score at the end of the quiz by abstracting the number of correct answers</li>
+  <li>
+    <ul>
+      <li>create a variable that defines the number of questions and number of answers</li>
+    </ul>
+  </li>
 </ul>
 
 <h2 id="process">
@@ -158,11 +163,11 @@ window.onload = wrap_img;
 
 <p><img src="/sushi-burrito/images/differentdifficulties.png" alt="" title="List of the different difficulties in the quiz"></p>
 
-<p>I initially had problems figuring out how to make it so that the dropdown option I chose would result in the app taking me to the different quizzes. However, after exploring a bit more in the code blocks, I was able to create an if else statement that would take me to different screens depending on what was chosen from the dropdown option.</p>
+<p>I initially had problems figuring out how to use the dropdown to manage which difficulty quiz I would go to. However, after exploring a bit more in the code blocks, I was able to create an if else statement that would take me to different screens depending on what was chosen from the dropdown option.</p>
 
 <p><img src="/sushi-burrito/images/changedifficultycode.png" alt="" title="Here is the code on how I managed to switch to different quizzes"></p>
 
-<p>The format for all the questions is a user inputted response based one. The code I wrote makes it so that after you click the button the reads “Check Answer”, if the inputted texts matches the answer, you go to the <code class="language-plaintext highlighter-rouge">CorrectScreen</code> screen. If you get it wrong, you’ll go to the <code class="language-plaintext highlighter-rouge">WrongAnswer</code> screen. (the question shown below, <code class="language-plaintext highlighter-rouge">Normal_Question_1</code>, is the only one where there were two possible answers, which I was able to do using double vertical bars)</p>
+<p>The format for all the questions is a user inputted response based one. The algorithm that I wrote makes it so that after you click the button the reads “Check Answer”, if the inputted texts matches the answer, you go to the <code class="language-plaintext highlighter-rouge">CorrectScreen</code> screen. If you get it wrong, you’ll go to the <code class="language-plaintext highlighter-rouge">WrongAnswer</code> screen (The question shown below, <code class="language-plaintext highlighter-rouge">Normal_Question_1</code>, is the only one where there were two possible answers, which I was able to do using double vertical bars).</p>
 
 <p><img src="/sushi-burrito/images/question-example.png" alt="" title="Screen and code for that screen"></p>
 
