@@ -38,6 +38,6 @@ Investigate the situation, context, or task (Skill Computational Solution Design
 
 ## Different Ways to study
 
-- Khan Academny
+- Khan Academy
 - Look at notes/old code
 - research on the internet
