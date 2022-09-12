@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -181,6 +181,12 @@ window.onload = wrap_img;
 <p>The block form of code made it really easy to visualize how each block of code worked and made it easier to find out what went wrong. It was also cool to be able to convert the blocks into JavaScript, which made JavaScript muc easier to understand. While thinking back to how I made this quiz, I realize there are a few bugs that need to be patched up such as:</p>
 <ul>
   <li>If I go back to the <code class="language-plaintext highlighter-rouge">Start_Window</code> clicking a “Quit” or “Home” button, the dropdown menu defaults to the previously chosen item. So if I end up choose the “Choose Difficulty” item and press start, it goes to the “Hard” difficulty.</li>
+  <li>
+    <ul>
+      <li>edit: I was able to fix this by assigning a value to the variable: <code class="language-plaintext highlighter-rouge">correct = 0</code>
+</li>
+    </ul>
+  </li>
   <li>The <code class="language-plaintext highlighter-rouge">var correct</code> does not reset back to 0 after starting another quiz</li>
 </ul>
 
