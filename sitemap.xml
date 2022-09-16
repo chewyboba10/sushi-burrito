@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://chewyboba10.github.io/sushi-burrito/markdown/2020/01/14/test-markdown-post.html</loc>
-<lastmod>2020-01-14T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://chewyboba10.github.io/sushi-burrito/jupyter/2020/02/20/test.html</loc>
-<lastmod>2020-02-20T00:00:00-06:00</lastmod>
-</url>
-<url>
 <loc>https://chewyboba10.github.io/sushi-burrito/jupyter/2022/08/20/first-notebook.html</loc>
 <lastmod>2022-08-20T00:00:00-05:00</lastmod>
 </url>
@@ -49,8 +41,16 @@
 <lastmod>2022-09-08T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://chewyboba10.github.io/sushi-burrito/2022/09/11/APEC-Chapter-29-Assignment-1.html</loc>
-<lastmod>2022-09-11T00:00:00-05:00</lastmod>
+<loc>https://chewyboba10.github.io/sushi-burrito/2022/09/14/APEC-Chapter-29-Assignment-1.html</loc>
+<lastmod>2022-09-14T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://chewyboba10.github.io/sushi-burrito/2022/09/15/APEC-Chapter-29-Assignment-1.html</loc>
+<lastmod>2022-09-15T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://chewyboba10.github.io/sushi-burrito/2022/09/15/docker-server.html</loc>
+<lastmod>2022-09-15T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://chewyboba10.github.io/sushi-burrito/about/</loc>
