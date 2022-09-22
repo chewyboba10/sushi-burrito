@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://chewyboba10.github.io/sushi-burrito/jupyter/2020/02/20/test.html</loc>
+<lastmod>2020-02-20T00:00:00-06:00</lastmod>
+</url>
+<url>
 <loc>https://chewyboba10.github.io/sushi-burrito/jupyter/2022/08/20/first-notebook.html</loc>
 <lastmod>2022-08-20T00:00:00-05:00</lastmod>
 </url>
@@ -13,6 +17,10 @@
 <lastmod>2022-08-23T00:00:00-05:00</lastmod>
 </url>
 <url>
+<loc>https://chewyboba10.github.io/sushi-burrito/2022/08/25/APEC-Chapter-29-Assignment-1.html</loc>
+<lastmod>2022-08-25T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>https://chewyboba10.github.io/sushi-burrito/markdown/2022/08/25/Lecture-Notes.html</loc>
 <lastmod>2022-08-25T00:00:00-05:00</lastmod>
 </url>
@@ -23,6 +31,10 @@
 <url>
 <loc>https://chewyboba10.github.io/sushi-burrito/collegeboard/python_lists</loc>
 <lastmod>2022-08-29T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://chewyboba10.github.io/sushi-burrito/t1/notes/week%202/2022/08/30/Lectures-Notes-copy.html</loc>
+<lastmod>2022-08-30T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://chewyboba10.github.io/sushi-burrito/t1/notes/week%202/2022/08/30/Lectures-Notes.html</loc>
@@ -49,8 +61,8 @@
 <lastmod>2022-09-15T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://chewyboba10.github.io/sushi-burrito/2022/09/20/APEC-Chapter-29-Assignment-1.html</loc>
-<lastmod>2022-09-20T00:00:00-05:00</lastmod>
+<loc>https://chewyboba10.github.io/sushi-burrito/2022/09/21/APEC-Chapter-29-Assignment-1.html</loc>
+<lastmod>2022-09-21T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://chewyboba10.github.io/sushi-burrito/about/</loc>
@@ -69,5 +81,8 @@
 </url>
 <url>
 <loc>https://chewyboba10.github.io/sushi-burrito/_pages/vocab.html</loc>
+</url>
+<url>
+<loc>https://chewyboba10.github.io/sushi-burrito/page2/</loc>
 </url>
 </urlset>
