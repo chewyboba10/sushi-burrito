@@ -1,0 +1,11 @@
+a = "Yea"
+b = "python"
+c = "is"
+d = "really"
+e = "cool"
+f = "right?"
+
+g = "This"
+h = "joke"
+i = "is"
+j = "sneezy"
