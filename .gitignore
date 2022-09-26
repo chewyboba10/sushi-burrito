@@ -12,10 +12,10 @@ _notebooks/.ipynb_checkpoints
 .netlify
 .tweet-cache
 __pycache__
-_notebooks/2022-08-20-first-notebook.ipynb
-_notebooks/2022-08-23-Python-Quiz.ipynb
-_notebooks/2022-08-26-bash-checks.ipynb
-_notebooks/2022-08-29-TP120-python_lists.ipynb
-_notebooks/2022-08-30-Lecture-Notes.ipynb
-
-_word/APEC Chapter 29 Assignment #1.docx
+_posts/2022-08-20-first-notebook.md
+_posts/2022-08-23-Python-Quiz.md
+_posts/2022-08-26-bash-checks.md
+_posts/2022-08-29-TP120-python_lists.md
+_posts/2022-08-30-Lecture-Notes.md
+_posts/2022-09-21-APEC-Chapter-29-Assignment-#1.md
+_posts/2022-09-25-javascript-usage.md
