@@ -15,7 +15,7 @@ comments: true
 
 ## HTML Fragments
 
-procedural abstraction and data abstraction - taking little pieces of information and putting them into different files so that something can take it in the bigger system
+procedural abstraction and data abstraction - taking little pieces of information and putting them into different files so that something can take it in the bigger system.
 
 markdown gets converted into html.
 everything in your website gets converted to html.
