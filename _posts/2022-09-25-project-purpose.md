@@ -39,4 +39,4 @@ Arguably the more challenging half of this project, the backend would primarily 
 # SCRUM Team
 > Here is an infographic of the scrum process showing our roles as a team
 
-![]({{ site.baseurl }}/images/scrum_methodology.png "")
+![]({{site.baseurl}}/scrum_methodology.png)
