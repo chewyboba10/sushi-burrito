@@ -77,3 +77,5 @@ Investigation in a development process is useful for understanding and identifyi
 
 ## Problems that I thought were challenging
 
+![]({{site.baseurl}}/images/unit1-question.png)
+![]({{site.baseurl}}/images/unit1-answer.png)
