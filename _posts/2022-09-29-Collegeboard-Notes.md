@@ -52,3 +52,28 @@ A program needs to work for a variety of inputs and situations
 The behavior of a program is how a program functions during execution and is often described by how a user interacted with it
 
 A program can be described broadly by what it does, or in detail by both what the program does and how the programs statements accomplish this function
+
+## 1.3: Program Design and Development
+
+A development process can be ordered and intentional or exploratory in nature
+
+There are multiple development processes. Commonly used phrases when developing a program:
+- investigating and reflecting
+- designing
+- prototyping
+- testing
+
+A development process that is iterative requires refinement and revision based on feedback, testing, or reflection throughout the process. This may require revisiting earlier phrases of hte process.
+
+A development process that is incremental is one that breaks the problem into smaller pieces and make sure each piece works before adding it to the whole
+
+The design of a program incorporates investigation to determine its requirements.
+
+Investigation in a development process is useful for understanding and identifying the program constraints, as well as the concerns and interests of the people who will use the program.
+
+# Quiz Results
+
+![]({{site.baseurl}}/images/apcsp-quiz.png)
+
+## Problems that I thought were challenging
+
