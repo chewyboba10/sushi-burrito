@@ -145,8 +145,8 @@ layout: notebook
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">letter</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What letter would you like to check?&quot;</span><span class="p">)</span>
 
+<span class="n">count</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">alphabetList</span><span class="p">:</span>
-    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">letter</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The letter &quot;</span> <span class="o">+</span> <span class="n">letter</span> <span class="o">+</span> <span class="s2">&quot; is the &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">count</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; letter in the alphabet&quot;</span><span class="p">)</span>
     <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -162,7 +162,7 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The letter d is the 0 letter in the alphabet
+<pre>The letter z is the 26 letter in the alphabet
 </pre>
 </div>
 </div>
@@ -204,6 +204,20 @@ layout: notebook
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0, 2, 4, 6, 8, 10]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 
@@ -222,7 +236,7 @@ layout: notebook
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">odds</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
 
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">:</span>
     <span class="n">odds</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
@@ -232,6 +246,20 @@ layout: notebook
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1, 3, 5, 7, 9]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -269,6 +297,20 @@ layout: notebook
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0, 2, 4, 6, 8, 10]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 
@@ -290,13 +332,27 @@ layout: notebook
 <span class="n">odds</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
         <span class="n">odds</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">odds</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1, 3, 5, 7, 9]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -330,15 +386,32 @@ layout: notebook
     <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">continue</span>
     <span class="k">if</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="n">newNumbers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-    <span class="k">if</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="n">newNumbers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
 
 <span class="nb">print</span><span class="p">(</span><span class="n">newNumbers</span><span class="p">)</span> 
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[2, 4, 5, 6, 8, 10, 12, 14, 15, 16, 18, 20, 22, 24, 25, 26, 28, 30, 32, 34, 35, 36, 38, 40, 42, 44, 45, 46, 48, 50, 52, 54, 55, 56, 58, 60, 62, 64, 65, 66, 68, 70, 72, 74, 75, 76, 78, 80, 82, 84, 85, 86, 88, 90, 92, 94, 95, 96, 98]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -382,10 +455,30 @@ layout: notebook
     <span class="nb">print</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="s2">&quot;  $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> <span class="c1">#why does v have &quot;str&quot; in front of it?</span>
 
 <span class="c1">#ideally the code should prompt the user multiple times</span>
-<span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu&quot;</span><span class="p">)</span>
+<span class="n">question</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;would you like to buy an item from the menu? Please type &#39;yes&#39; or &#39;no&#39;&quot;</span><span class="p">)</span>
 
 <span class="c1">#code should add the price of the menu items selected by the user </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+<span class="n">num_of_items</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many items do you wish to buy? &quot;</span><span class="p">))</span>
+<span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">burgers</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">fries</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">drinks</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">counter</span> <span class="o">&lt;</span> <span class="n">num_of_items</span><span class="p">:</span>
+    <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;burger&quot;</span><span class="p">:</span>
+        <span class="n">burgers</span><span class="o">+=</span><span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;fries&quot;</span><span class="p">:</span>
+        <span class="n">fries</span> <span class="o">+=</span><span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;drink&quot;</span><span class="p">:</span>
+        <span class="n">drinks</span><span class="o">+=</span><span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid Input&quot;</span><span class="p">)</span>
+        <span class="n">num_of_items</span><span class="o">+=</span><span class="mi">1</span>
+        <span class="k">continue</span>
+    <span class="n">total</span> <span class="o">+=</span> <span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+    <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="c1">#code should add the price of the menu items selected by the user </span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You bought </span><span class="si">{0}</span><span class="s2"> burgers, </span><span class="si">{1}</span><span class="s2"> fries, and </span><span class="si">{2}</span><span class="s2"> drinks for a total of </span><span class="si">{3}</span><span class="s2">$&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">burgers</span><span class="p">,</span><span class="n">fries</span><span class="p">,</span><span class="n">drinks</span><span class="p">,</span><span class="n">total</span><span class="p">))</span>
 </pre></div>
 
     </div>
