@@ -455,8 +455,6 @@ layout: notebook
     <span class="nb">print</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="s2">&quot;  $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> <span class="c1">#why does v have &quot;str&quot; in front of it?</span>
 
 <span class="c1">#ideally the code should prompt the user multiple times</span>
-<span class="n">question</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;would you like to buy an item from the menu? Please type &#39;yes&#39; or &#39;no&#39;&quot;</span><span class="p">)</span>
-
 <span class="c1">#code should add the price of the menu items selected by the user </span>
 <span class="n">num_of_items</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many items do you wish to buy? &quot;</span><span class="p">))</span>
 <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
@@ -482,6 +480,24 @@ layout: notebook
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Menu
+burger  $3.99
+fries  $1.99
+drink  $0.99
+You bought 2 burgers, 1 fries, and 1 drinks for a total of 10.96$
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
