@@ -457,7 +457,7 @@ layout: notebook
 <span class="c1">#ideally the code should prompt the user multiple times</span>
 <span class="c1">#code should add the price of the menu items selected by the user </span>
 <span class="n">num_of_items</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many items do you wish to buy? &quot;</span><span class="p">))</span>
-<span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">counter</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">burgers</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">fries</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">drinks</span> <span class="o">=</span> <span class="mi">0</span>
@@ -466,18 +466,20 @@ layout: notebook
     <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;burger&quot;</span><span class="p">:</span>
         <span class="n">B</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many burgers do you wish to buy?&quot;</span><span class="p">))</span>
         <span class="n">burgers</span><span class="o">+=</span><span class="n">B</span>
+        <span class="n">counter</span><span class="o">+=</span><span class="n">B</span>
     <span class="k">elif</span> <span class="n">item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;fries&quot;</span><span class="p">:</span>
         <span class="n">F</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many fries do you wish to buy?&quot;</span><span class="p">))</span>
-        <span class="n">fries</span> <span class="o">+=</span><span class="n">F</span>
+        <span class="n">fries</span><span class="o">+=</span><span class="n">F</span>
+        <span class="n">counter</span><span class="o">+=</span><span class="n">F</span>
     <span class="k">elif</span> <span class="n">item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;drink&quot;</span><span class="p">:</span>
         <span class="n">D</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many drink do you wish to buy?&quot;</span><span class="p">))</span>
         <span class="n">drinks</span><span class="o">+=</span><span class="n">D</span>
+        <span class="n">counter</span><span class="o">+=</span><span class="n">D</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid Input&quot;</span><span class="p">)</span>
         <span class="n">num_of_items</span><span class="o">+=</span><span class="mi">1</span>
         <span class="k">continue</span>
     <span class="n">total</span> <span class="o">+=</span> <span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
-    <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="c1">#code should add the price of the menu items selected by the user </span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You bought </span><span class="si">{0}</span><span class="s2"> burgers, </span><span class="si">{1}</span><span class="s2"> fries, and </span><span class="si">{2}</span><span class="s2"> drinks for a total of </span><span class="si">{3}</span><span class="s2">$&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">burgers</span><span class="p">,</span><span class="n">fries</span><span class="p">,</span><span class="n">drinks</span><span class="p">,</span><span class="n">total</span><span class="p">))</span>
 </pre></div>
@@ -496,7 +498,7 @@ layout: notebook
 burger  $3.99
 fries  $1.99
 drink  $0.99
-You bought 1 burgers, 1 fries, and 1 drinks for a total of 6.970000000000001$
+You bought 3 burgers, 1 fries, and 1 drinks for a total of 6.970000000000001$
 </pre>
 </div>
 </div>
