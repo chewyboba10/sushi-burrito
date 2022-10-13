@@ -71,11 +71,14 @@ The design of a program incorporates investigation to determine its requirements
 
 Investigation in a development process is useful for understanding and identifying the program constraints, as well as the concerns and interests of the people who will use the program.
 
-# Quiz Results
+# Quiz Results Updated 10/13/22
 
-![]({{site.baseurl}}/images/apcsp-quiz.png)
+![]({{site.baseurl}}/images/APQuizResults.png)
 
 ## Problems that I thought were challenging
 
 ![]({{site.baseurl}}/images/unit1-question.png)
 ![]({{site.baseurl}}/images/unit1-answer.png)
+
+![]({{site.baseurl}}/images/1.4_wrong-answer.png)
+![]({{site.baseurl}}/images/1.4_wrong-answer2.png)
