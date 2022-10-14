@@ -79,6 +79,9 @@ Investigation in a development process is useful for understanding and identifyi
 
 ![]({{site.baseurl}}/images/unit1-question.png)
 ![]({{site.baseurl}}/images/unit1-answer.png)
+I just found this question to be hard to read and analyze. I need to review collegeboard psuedo code.
 
 ![]({{site.baseurl}}/images/1.4_wrong-answer.png)
+After thinking about and review on why I got this answer wrong, I realized that the packets are given specific flags so that the device doesn't need a specific order for the packets to be sent, rather the packets can be reassembled in any configuration due to the flags given to the packets, which tell the device on how to order the packets.
+
 ![]({{site.baseurl}}/images/1.4_wrong-answer2.png)
