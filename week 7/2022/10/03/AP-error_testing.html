@@ -571,19 +571,19 @@ window.onload = wrap_img;
 <span class="c1">#code should add the price of the menu items selected by the user </span>
 <span class="n">item_amount</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many items do you wish to buy? &quot;</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Which </span><span class="si">{0}</span><span class="s2"> items would you like to buy?&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">item_amount</span><span class="p">))</span>
+
 <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+
 <span class="n">chosen</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;burger&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;fries&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;drink&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">}</span>
+
 <span class="k">while</span> <span class="n">counter</span> <span class="o">&lt;</span> <span class="n">item_amount</span><span class="p">:</span>
     <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu&quot;</span><span class="p">)</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="n">total</span><span class="o">+=</span><span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
-        <span class="n">chosen</span><span class="p">[</span><span class="n">item</span><span class="p">]</span><span class="o">+=</span><span class="mi">1</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You have selected a </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">item</span><span class="p">))</span>
-        <span class="n">counter</span><span class="o">+=</span><span class="mi">1</span>
-    <span class="k">except</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Product </span><span class="se">\&quot;</span><span class="si">{0}</span><span class="se">\&quot;</span><span class="s2"> is not on our menu, please try again...&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">item</span><span class="p">))</span>
+    <span class="n">total</span><span class="o">+=</span><span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+    <span class="n">chosen</span><span class="p">[</span><span class="n">item</span><span class="p">]</span><span class="o">+=</span><span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You have selected a </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">item</span><span class="p">))</span>
+    <span class="n">counter</span><span class="o">+=</span><span class="mi">1</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You have chosen </span><span class="si">{0}</span><span class="s2"> burgers, </span><span class="si">{1}</span><span class="s2"> fries, and </span><span class="si">{2}</span><span class="s2"> drinks. Your total is </span><span class="si">{3}</span><span class="s2">$&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">chosen</span><span class="p">[</span><span class="s2">&quot;burger&quot;</span><span class="p">],</span><span class="n">chosen</span><span class="p">[</span><span class="s2">&quot;fries&quot;</span><span class="p">],</span><span class="n">chosen</span><span class="p">[</span><span class="s2">&quot;drink&quot;</span><span class="p">],</span><span class="nb">round</span><span class="p">(</span><span class="n">total</span><span class="p">,</span><span class="mi">2</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Your total is </span><span class="si">{0}</span><span class="s2">$&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">total</span><span class="p">,</span><span class="mi">2</span><span class="p">)))</span>
 </pre></div>
 
     </div>
@@ -600,15 +600,12 @@ window.onload = wrap_img;
 burger  $3.99
 fries  $1.99
 drink  $0.99
-Which 6 items would you like to buy?
-Product &#34;3&#34; is not on our menu, please try again...
+Which 4 items would you like to buy?
 You have selected a burger
 You have selected a burger
-You have selected a burger
-You have selected a drink
 You have selected a drink
 You have selected a fries
-You have chosen 3 burgers, 1 fries, and 2 drinks. Your total is 15.94$
+Your total is 10.96$
 </pre>
 </div>
 </div>
