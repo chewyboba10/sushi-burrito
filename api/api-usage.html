@@ -171,16 +171,14 @@ window.onload = wrap_img;
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
 
 <span class="c1">#print(response.text)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+<span class="c1">#print(response.json())</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 
-
-<span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"-----------Location------------------ "</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Song Name: "</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s2">"title"</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Song Length: "</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s2">"durationText"</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Genre: "</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s2">"genre"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Song Information: "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"	Song Name: "</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s2">"title"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"	Genre: "</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s2">"genre"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"	Song Length: "</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s2">"durationText"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"	Number of Times played: "</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s2">"playCount"</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -193,11 +191,11 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{'status': True, 'audio': [{'quality': 'sq', 'url': 'https://scd.dlod.link/?expire=1665543764240&amp;p=li__nXwG-uVEvu596qSzKi3tTkBYySKNPaAS8dA0earLClIuVC-amzjXUQ13OSaQxwn403whQwNs1KsbDEqlLBsR5aCOC_NY_AnOEOPrxEG6Ds0evXVNcrTFjmjR2BXsjImVsfOBH0iPcdc-jBkqGz2y_0CecZgyS2Er7UKCYPMDQ-1T4mmvoEXaIgDja-qK&amp;s=-UlbkXoRADrmf8ADZUnv6YCQkVcxBblyU8ebxioI1lk', 'durationMs': 256340, 'durationText': '04:16', 'mimeType': 'audio/mpeg', 'extension': 'mp3'}, {'quality': 'sq', 'url': 'https://scd.dlod.link/?expire=1665543764240&amp;p=li__nXwG-uVEvu596qSzKh9P3OG15fB0SVlmfikjWRutPP7ZjkH8lF0i8WjeA3b2opt6pTpHmsV81Yn66xM3RJ6GdgSAd7BIdxdaZ6eayexpY37LfMh_vmmGuotdqSdrXroMarB0cRS2YPwI5j01aRBYaw_wkms7LaSGMQwaH_733cfJ6J6K29sKtvnfELXkvn5cg04eWo9ZDEyLh1KQtA&amp;s=B2OLl9v79rKjrXiAfopKpjTJUbqlQXsNzt3V2hjDvUM', 'durationMs': 256300, 'durationText': '04:16', 'mimeType': 'audio/ogg; codecs="opus"', 'extension': 'opus'}], 'type': 'track', 'id': 213950659, 'permalink': 'https://soundcloud.com/edsheeran/photograph', 'createdAt': '2015-07-09T12:01:58Z', 'lastModified': '2022-08-31T09:53:52Z', 'title': 'Ed Sheeran - Photograph', 'caption': None, 'description': None, 'goPlus': False, 'durationMs': 256389, 'durationText': '04:16', 'artworkUrl': 'https://i1.sndcdn.com/artworks-JnFMHGjmBOfR-0-original.jpg', 'releaseDate': '2014-06-20T00:00:00Z', 'genre': 'Pop', 'labelName': 'Atlantic Records UK', 'license': 'all-rights-reserved', 'purchaseTitle': None, 'purchaseUrl': None, 'commentable': True, 'commentCount': 3984, 'likeCount': 360559, 'playCount': 32377538, 'repostCount': 18101, 'waveformUrl': 'https://wave.sndcdn.com/L50aarPT10pc_m.json', 'stationPermalink': 'https://soundcloud.com/discover/sets/track-stations:213950659', 'visuals': [], 'publisher': {'albumTitle': 'x', 'artist': 'Ed Sheeran', 'writerComposer': None, 'upcOrEan': '825646284535', 'isrc': 'GBAHS1400094', 'pLine': '℗ 2014 Asylum Records UK, a Warner Music UK Company', 'cLine': '© 2014 Asylum Records UK, a Warner Music UK Company'}, 'tags': [], 'user': {'type': 'user', 'id': 3685019, 'permalink': 'https://soundcloud.com/edsheeran', 'lastModified': '2022-10-07T18:58:55Z', 'name': 'Ed Sheeran', 'avatarUrl': 'https://i1.sndcdn.com/avatars-U1RInSLvwOIqXr2Q-ztgMAw-original.jpg', 'followerCount': 2429998, 'city': '', 'countryCode': None, 'verified': True, 'pro': False, 'proUnlimited': True, 'stationPermalink': 'https://soundcloud.com/discover/sets/artist-stations:3685019'}}
------------Location------------------ 
-Song Name:  Ed Sheeran - Photograph
-Song Length:  04:16
-Genre:  Pop
+<pre>Song Information: 
+	Song Name:  Ed Sheeran - Photograph
+	Genre:  Pop
+	Song Length:  04:16
+	Number of Times played:  32393871
 </pre>
 </div>
 </div>
