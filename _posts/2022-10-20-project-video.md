@@ -35,8 +35,6 @@ comments: true
   background-color: #f1f1f1;
 }
 </style>
-</head>
-<body>
 
 <h2>Collapsibles</h2>
 
@@ -51,53 +49,53 @@ comments: true
 </div>
 
 <style>
-body {
-	background: #bdc3c7;
-	font-family: 'Arial', sans-serif;
-	font-size: 14px;
-	letter-spacing: 0.25px;
+    body {
+  padding: 20px;
+  font-family: open sans, arial, helvetica;
+  color: #333;
+  background-color: lightblue;
 }
-
-.mensagem {
-	margin-bottom: 10px;
+.plus-minus:after,
+.plus-minus.collapsed:after {
+  display: inline-block;
+  width: 1em;
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
 }
-
-.dropdown {
-	background: #ECF0F1;
-	padding: 20px;
-	width: 500px;
-	margin: 50px auto;
-	box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+.plus-minus:after {
+  content:"-";
+  top: -1px;
 }
-
-.dropdown a + .dropdown-menu {
-	display: none;
-	padding: 20px;
-	background: #bdc3c7;
-	margin: 10px 0;
-	border-radius: 4px;
-}
-
-.dropdown a:focus + .dropdown-menu,
-.dropdown a + .dropdown-menu:hover {
-	display: block;
-}
-
-.dropdown-menu > a {
-	display: block;
-	margin: 10px 0;
+.plus-minus.collapsed:after {
+  content:"+";
+  top: 0;
 }
 </style>
 
+<div>
+<a class="btn btn-primary plus-minus" data-toggle="collapse" href="#collapseExample1" aria-expanded="true" aria-controls="collapseExample1">
+  Link with href
+</a> 
 
-<div class="dropdown">
-	<div class="mensagem">
-		Collapse example using HTML and CSS !
-	</div>
-	<a href="javascript:void(0);">Open Collapse</a>
-	<div class="dropdown-menu">
-		Div " Collapsed " with success, the rest is up to you !
-		
-		<a href="http://www.example.com">Example link</a>
-	</div>
+<div class="collapse in" id="collapseExample1">
+me
+</div>
+<br/>
+<button class="btn btn-primary plus-minus collapsed" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+  Button with data-target
+</button>
+<div class="collapse" id="collapseExample2">
+  me2
+</div>
+
+
+<br/>
+<span class="btn btn-primary plus-minus collapsed" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+  Button with data-target
+</span>
+<div class="collapse" id="collapseExample3">
+  me3
+</div>
 </div>
