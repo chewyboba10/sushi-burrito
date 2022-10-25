@@ -107,8 +107,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#collapsibles">Collapsibles</a></li>
 </ul>
 </li>
-</ul><body>
-<h1 id="project-video">
+</ul><h1 id="project-video">
 <a class="anchor" href="#project-video" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Video</h1>
 
 <style>
@@ -136,14 +135,11 @@ window.onload = wrap_img;
 }
 </style>
 
-<p>&lt;/head&gt;</p>
-
-
 <h2>
 <a class="anchor" href="#collapsibles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Collapsibles</h2>
 
 <p>A Collapsible:</p>
-<button type="button">Open Collapsible</button>
+<p><button type="button">Open Collapsible</button></p>
 <div>
   <p>
   Hi my name is Evan Aparri and I am the DevOps of Frost. This week I changed the nginx configuration file to add PUT in places specified by Mr. Mortenson on Slack. (SWITCH TO NGINX FILE) PUT requests allow us to create resources in our project. For example, our Backend Developer, Alex, can make it so we could use PUT to create new accounts in order to keep track of our game's attempts done by different people. Alex has found a different way to do create users, and their info can be viewed using GET in our website(SWITCH TO API), but this user creation is not without its problems, which will be shown by our Frontend Developer, Haseeb. (SWITCH TO VSCODE)But as you can see, he has been making much progress in the creation of the API for users and score tracking in our flask repository. Alex will be going into more detail in the API later in the video. Our Scrum Master will now show us what our project is and its purpose.
@@ -153,58 +149,57 @@ window.onload = wrap_img;
 </div>
 
 <style>
-body {
-	background: #bdc3c7;
-	font-family: 'Arial', sans-serif;
-	font-size: 14px;
-	letter-spacing: 0.25px;
+    body {
+  padding: 20px;
+  font-family: open sans, arial, helvetica;
+  color: #333;
+  background-color: lightblue;
 }
-
-.mensagem {
-	margin-bottom: 10px;
+.plus-minus:after,
+.plus-minus.collapsed:after {
+  display: inline-block;
+  width: 1em;
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
 }
-
-.dropdown {
-	background: #ECF0F1;
-	padding: 20px;
-	width: 500px;
-	margin: 50px auto;
-	box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+.plus-minus:after {
+  content:"-";
+  top: -1px;
 }
-
-.dropdown a + .dropdown-menu {
-	display: none;
-	padding: 20px;
-	background: #bdc3c7;
-	margin: 10px 0;
-	border-radius: 4px;
-}
-
-.dropdown a:focus + .dropdown-menu,
-.dropdown a + .dropdown-menu:hover {
-	display: block;
-}
-
-.dropdown-menu > a {
-	display: block;
-	margin: 10px 0;
+.plus-minus.collapsed:after {
+  content:"+";
+  top: 0;
 }
 </style>
 
+<div>
+<a class="btn btn-primary plus-minus" data-toggle="collapse" href="#collapseExample1" aria-expanded="true" aria-controls="collapseExample1">
+  Link with href
+</a> 
 
-<div class="dropdown">
-	<div class="mensagem">
-		Collapse example using HTML and CSS !
-	</div>
-	<a href="javascript:void(0);">Open Collapse</a>
-	<div class="dropdown-menu">
-		Div " Collapsed " with success, the rest is up to you !
-		
-		<a href="http://www.example.com">Example link</a>
-	</div>
+<div class="collapse in" id="collapseExample1">
+me
+</div>
+<br>
+<button class="btn btn-primary plus-minus collapsed" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+  Button with data-target
+</button>
+<div class="collapse" id="collapseExample2">
+  me2
 </div>
 
-</body>
+
+<br>
+<span class="btn btn-primary plus-minus collapsed" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+  Button with data-target
+</span>
+<div class="collapse" id="collapseExample3">
+  me3
+</div>
+</div>
+
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
         repo="chewyboba10/sushi-burrito"
