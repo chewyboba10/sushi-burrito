@@ -48,3 +48,54 @@ comments: true
   </p>
 </div>
 
+
+<style>
+    body {
+  padding: 20px;
+  color: #333;
+  background-color: lightblue;
+}
+.plus-minus:after,
+.plus-minus.collapsed:after {
+  display: inline-block;
+  width: 1em;
+  text-align: center;
+  position: relative;
+}
+.plus-minus:after {
+  content:"-";
+  top: -1px;
+}
+.plus-minus.collapsed:after {
+  content:"+";
+  top: 0;
+}
+</style>
+
+<body>
+<div>
+<a class="btn btn-primary plus-minus" data-toggle="collapse" href="#collapseExample1" aria-expanded="true" aria-controls="collapseExample1">
+  Link with href
+</a> 
+
+<div class="collapse in" id="collapseExample1">
+me
+</div>
+<br/>
+<button class="btn btn-primary plus-minus collapsed" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+  Button with data-target
+</button>
+<div class="collapse" id="collapseExample2">
+  me2
+</div>
+
+
+<br/>
+<span class="btn btn-primary plus-minus collapsed" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+  Button with data-target
+</span>
+<div class="collapse" id="collapseExample3">
+  me3
+</div>
+</div>
+</body>
