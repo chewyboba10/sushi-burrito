@@ -1,9 +1,9 @@
 ---
 toc: true
 layout: post
-description: Notes taken on Big Idea 1 videos in AP Classroom
+description: Notes taken from AP Classroom videos and Quiz/Test Results/Reflections
 categories: [T1, Notes, Week 3, markdown, post]
-title: Big Idea 1 Notes
+title: Collegeboard Notes and Assignment Reflections
 author: Evan Aparri
 show_tags: true
 comments: true
