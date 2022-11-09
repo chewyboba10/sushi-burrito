@@ -293,4 +293,28 @@ After thinking about and review on why I got this answer wrong, I realized that 
 
 ![]({{site.baseurl}}/images/1.4_wrong-answer2.png)
 
-##
+## Tri 1 Final Test 11/9/22
+> Score: 45/50
+
+Problems I got incorrect:
+
+8. Documentation for procedure with lists
+![]({{site.baseurl}}/images/q8-tri1-final.png)
+![]({{site.baseurl}}/images/q8-tri1-final1.png)
+
+19. Adding numbers in 4-bit representation
+![]({{site.baseurl}}/images/q13-tri1-final1.png)
+![]({{site.baseurl}}/images/q13-tri1-final1.png)
+
+41. Value of r after sequence of assignments
+![]({{site.baseurl}}/images/q41-tri1-final.png)
+
+43. Value of x after REPEAT UNTIL block
+![]({{site.baseurl}}/images/q43-tri1-final.png)
+
+44. Value of y in x MOD y
+![]({{site.baseurl}}/images/q44-tri1-final.png)
+
+Things I had to research to gain more information
+- What is Boolean?
+- What is MOD?
