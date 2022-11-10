@@ -313,13 +313,17 @@ I forgot that the square brackets referred to the indices of the list, which led
 **Q41: Value of r after sequence of assignments**
 ![]({{site.baseurl}}/images/q41-tri1-final.png)
 
-
+I got slightly confused with the amount of data that I was given, which led me to assigning the wrong values to the variables. the value of q was 20, then q was assigned to p, so the value of p was 20. Then p was assigned to r, so the value of r was 20.
 
 **Q43: Value of x after REPEAT UNTIL block**
 ![]({{site.baseurl}}/images/q43-tri1-final.png)
 
+I accidentally thought that the iteration would stop when `result > 5`.
+
 **Q44: Value of y in x MOD y**
 ![]({{site.baseurl}}/images/q44-tri1-final.png)
+
+I was unsure was MOD did. After researching a little into it, I learned that MOD stood for Modulus, which shows the remainder after number is divided by another. In this situation, it is x being divided by y and any remainder would be the value of z.
 
 Things I had to research to gain more information
 - What are 4-bit binary sequences? How do you count them?
