@@ -298,27 +298,30 @@ After thinking about and review on why I got this answer wrong, I realized that 
 
 Problems I got incorrect:
 
-8. Q8: Documentation for procedure with lists
+**Q8: Documentation for procedure with lists**
 ![]({{site.baseurl}}/images/q8-tri1-final.png)
 ![]({{site.baseurl}}/images/q8-tri1-final1.png)
 
 I forgot that the square brackets referred to the indices of the list, which led to me debating between b and d, which I ended up choosing b. 
 
-19. Q19: Adding numbers in 4-bit representation
-![]({{site.baseurl}}/images/q13-tri1-final.png)
+**Q19: Adding numbers in 4-bit representation**
+![]({{site.baseurl}}/images/q19-tri1-final.png)
 ![]({{site.baseurl}}/images/q13-tri1-final1.png)
 
+4-bit binary sequences can only hold up to 16 different values, the decimal values can only be up to 16, and since 29 is greater than 16, you won't be able to represent it in 4-bit binary sequences.
 
-
-41. Q41: Value of r after sequence of assignments
+**Q41: Value of r after sequence of assignments**
 ![]({{site.baseurl}}/images/q41-tri1-final.png)
 
-43. Q43: Value of x after REPEAT UNTIL block
+
+
+**Q43: Value of x after REPEAT UNTIL block**
 ![]({{site.baseurl}}/images/q43-tri1-final.png)
 
-44. Q44: Value of y in x MOD y
+**Q44: Value of y in x MOD y**
 ![]({{site.baseurl}}/images/q44-tri1-final.png)
 
 Things I had to research to gain more information
+- What are 4-bit binary sequences? How do you count them?
 - What is Boolean?
 - What is MOD?
