@@ -360,6 +360,33 @@ Sunny Naidu
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>While loop output
+
+Evan Aparri
+	 Residence: San Diego
+	 Birth Day: November 10, 2005
+	 Cars:  none
+	 Hobbies: sleeping
+
+Sunny Naidu
+	 Residence: Temecula
+	 Birth Day: August 2
+	 Cars:  4Runner
+	 Hobbies: eating
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 
@@ -394,6 +421,33 @@ Sunny Naidu
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Recursive loop output
+
+Evan Aparri
+	 Residence: San Diego
+	 Birth Day: November 10, 2005
+	 Cars:  none
+	 Hobbies: sleeping
+
+Sunny Naidu
+	 Residence: Temecula
+	 Birth Day: August 2
+	 Cars:  4Runner
+	 Hobbies: eating
+
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
