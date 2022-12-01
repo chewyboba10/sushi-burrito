@@ -4,22 +4,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Lecture Notes - Bash and Cloud | Evan Aparri</title>
+<title>3.1-3.2 Notes | Evan Aparri</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Lecture Notes - Bash and Cloud" />
+<meta property="og:title" content="3.1-3.2 Notes" />
 <meta name="author" content="Evan Aparri" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Lecture Notes for August 25, 2022" />
-<meta property="og:description" content="Lecture Notes for August 25, 2022" />
-<link rel="canonical" href="https://chewyboba10.github.io/sushi-burrito/markdown/2022/08/25/Lecture-Notes.html" />
-<meta property="og:url" content="https://chewyboba10.github.io/sushi-burrito/markdown/2022/08/25/Lecture-Notes.html" />
+<meta name="description" content="Variables, Assignments, and Data Abstraction" />
+<meta property="og:description" content="Variables, Assignments, and Data Abstraction" />
+<link rel="canonical" href="https://chewyboba10.github.io/sushi-burrito/t2/post/2022/11/28/3.1.html" />
+<meta property="og:url" content="https://chewyboba10.github.io/sushi-burrito/t2/post/2022/11/28/3.1.html" />
 <meta property="og:site_name" content="Evan Aparri" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-08-25T00:00:00-05:00" />
+<meta property="article:published_time" content="2022-11-28T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Lecture Notes - Bash and Cloud" />
+<meta property="twitter:title" content="3.1-3.2 Notes" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Evan Aparri"},"dateModified":"2022-08-25T00:00:00-05:00","datePublished":"2022-08-25T00:00:00-05:00","description":"Lecture Notes for August 25, 2022","headline":"Lecture Notes - Bash and Cloud","mainEntityOfPage":{"@type":"WebPage","@id":"https://chewyboba10.github.io/sushi-burrito/markdown/2022/08/25/Lecture-Notes.html"},"url":"https://chewyboba10.github.io/sushi-burrito/markdown/2022/08/25/Lecture-Notes.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Evan Aparri"},"dateModified":"2022-11-28T00:00:00-06:00","datePublished":"2022-11-28T00:00:00-06:00","description":"Variables, Assignments, and Data Abstraction","headline":"3.1-3.2 Notes","mainEntityOfPage":{"@type":"WebPage","@id":"https://chewyboba10.github.io/sushi-burrito/t2/post/2022/11/28/3.1.html"},"url":"https://chewyboba10.github.io/sushi-burrito/t2/post/2022/11/28/3.1.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/sushi-burrito/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://chewyboba10.github.io/sushi-burrito/feed.xml" title="Evan Aparri" /><link rel="shortcut icon" type="image/x-icon" href="/sushi-burrito/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -74,8 +74,8 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Lecture Notes - Bash and Cloud</h1><p class="page-description">Lecture Notes for August 25, 2022</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-25T00:00:00-05:00" itemprop="datePublished">
-        Aug 25, 2022
+    <h1 class="post-title p-name" itemprop="name headline">3.1-3.2 Notes</h1><p class="page-description">Variables, Assignments, and Data Abstraction</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-11-28T00:00:00-06:00" itemprop="datePublished">
+        Nov 28, 2022
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
             <span class="p-author h-card" itemprop="name">Evan Aparri</span></span>
@@ -89,7 +89,10 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/sushi-burrito/categories/#markdown">markdown</a>
+        <a class="category-tags-link" href="/sushi-burrito/categories/#T2">T2</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/sushi-burrito/categories/#post">post</a>
         
       
       </p>
@@ -99,17 +102,60 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h1"><a href="#notes">Notes</a></li>
-</ul><h1 id="notes">
-<a class="anchor" href="#notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes</h1>
+<li class="toc-entry toc-h1"><a href="#variables">Variables</a></li>
+<li class="toc-entry toc-h1"><a href="#assignments">Assignments</a></li>
+<li class="toc-entry toc-h1"><a href="#data-abstraction">Data Abstraction</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#lists-in-data-abstractions">Lists in Data Abstractions</a></li>
+</ul>
+</li>
+</ul><h1 id="variables">
+<a class="anchor" href="#variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variables</h1>
+<blockquote>
+  <p>An abstraction inside a program that can hold a value</p>
+</blockquote>
 
-<p>The cloud has all git repositories. Individual computers can clone repositories from the cloud takes it to their SSD</p>
+<ul>
+  <li>Variables should be something simple; not very complicated and not to vague</li>
+  <li>Use meaningful variables to help the program be easier to read
+Three parts of a variable:</li>
+  <li>name</li>
+  <li>value</li>
+  <li>type</li>
+</ul>
 
-<p>A <strong>pull action</strong> will pull any new updates made at the repository down to our local repository and update it with the latest changes.</p>
+<p>Types of data</p>
+<ul>
+  <li>integer (number)</li>
+  <li>Text/string: word
+Boolean: Data that determines if something is true or false</li>
+</ul>
 
-<p>A <strong>push action</strong> will push any new updates made at the local repository to our remote repository in the cloud and contribute to the git repository.</p>
+<p>lists can be stored as variables</p>
+<blockquote>
+  <p>specific values in the list can be retrieved from the list without creating multiple variables and data can be easily changed</p>
+</blockquote>
 
-<p>A sequence is two or more lines of code</p>
+<h1 id="assignments">
+<a class="anchor" href="#assignments" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assignments</h1>
+<blockquote>
+  <p>assigns values to variables</p>
+</blockquote>
+
+<p>Allows the program to change the value represented by a variable</p>
+
+<h1 id="data-abstraction">
+<a class="anchor" href="#data-abstraction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Abstraction</h1>
+<ul>
+  <li>represents data in a useful form, takes away aspects of data that are unused in the situation</li>
+  <li>variables and lists and main tools for data abstraction</li>
+  <li>separates abstract properties of data type and concrete details of its representations</li>
+</ul>
+
+<h2 id="lists-in-data-abstractions">
+<a class="anchor" href="#lists-in-data-abstractions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lists in Data Abstractions</h2>
+
+<p>Multiple elements can be stored together and treated as a single value.</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
@@ -119,7 +165,7 @@ window.onload = wrap_img;
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/sushi-burrito/markdown/2022/08/25/Lecture-Notes.html" hidden></a>
+</script><a class="u-url" href="/sushi-burrito/t2/post/2022/11/28/3.1.html" hidden></a>
 </article>
 
       </div>
