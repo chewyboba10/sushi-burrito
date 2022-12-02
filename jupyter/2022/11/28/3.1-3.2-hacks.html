@@ -198,15 +198,15 @@ window.onload = wrap_img;
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">quesAmount</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">quesList</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-    <span class="n">guess</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="n">guess</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Type 'skip' if you wish to skip the question"</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">guess</span> <span class="o">==</span> <span class="n">soluList</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
         <span class="n">score</span><span class="o">+=</span><span class="mi">1</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct! Score: "</span><span class="p">,</span> <span class="n">score</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Your answer"</span><span class="p">,</span> <span class="n">guess</span><span class="p">,</span> <span class="s2">"is correct! Score: "</span><span class="p">,</span> <span class="n">score</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">guess</span> <span class="o">==</span> <span class="s2">"skip"</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"You have skipped the question. The correct answer was "</span> <span class="o">+</span> <span class="n">soluList</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
         <span class="n">quesSkip</span><span class="o">+=</span><span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span> 
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Incorrect! The correct answer was "</span> <span class="o">+</span> <span class="n">soluList</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Your answer"</span><span class="p">,</span> <span class="n">guess</span><span class="p">,</span> <span class="s2">"is incorrect! The correct answer was "</span> <span class="o">+</span> <span class="n">soluList</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
     <span class="n">quesCount</span> <span class="o">+=</span> <span class="mi">1</span>
 
 <span class="k">def</span> <span class="nf">percentage</span><span class="p">(</span><span class="n">right</span><span class="p">,</span> <span class="n">wrong</span><span class="p">):</span>
@@ -216,7 +216,7 @@ window.onload = wrap_img;
 
 
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"You got"</span><span class="p">,</span> <span class="n">score</span><span class="p">,</span> <span class="s2">"questions correct, a "</span><span class="p">,</span> <span class="n">percentage</span><span class="p">(</span><span class="n">score</span><span class="p">,</span> <span class="n">quesCount</span><span class="p">),</span> <span class="s2">"and skipped "</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">quesSkip</span><span class="p">),</span> <span class="s2">"questions"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You got"</span><span class="p">,</span> <span class="n">score</span><span class="p">,</span> <span class="s2">"questions correct, a"</span><span class="p">,</span> <span class="n">percentage</span><span class="p">(</span><span class="n">score</span><span class="p">,</span> <span class="n">quesCount</span><span class="p">),</span> <span class="s2">"and skipped "</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">quesSkip</span><span class="p">),</span> <span class="s2">"questions"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -230,18 +230,18 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>What is 1+1 equal to?
-Correct! Score:  1 
+Your answer 2 is correct! Score:  1 
 
 What is 2*2 equal to?
-The correct answer was 4
+You have skipped the question. The correct answer was 4
 
 What is 3/3 equal to?
-Correct! Score:  2 
+Your answer 1 is correct! Score:  2 
 
 What is 4^4 equal to?
-Incorrect! The correct answer was 256
+Your answer 2 is incorrect! The correct answer was 256
 
-You got 2 questions correct, a  50.0% and skipped  1 questions
+You got 2 questions correct, a 50.0% and skipped  1 questions
 </pre>
 </div>
 </div>
