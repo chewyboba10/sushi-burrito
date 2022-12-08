@@ -1,9 +1,7 @@
 ---
 title: Vocab
-toc: true
-badges: true
+layout: default
 permalink: /vocab/home
-categories: [lessons]
 ---
 
 # Vocabulary Page
