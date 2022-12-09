@@ -470,7 +470,7 @@
   
       ,"page10": {
           "title": "Vocab",
-          "content": "Vocabulary Page . This vocab page will consist of vocab from all of the College Board units and other miscellaneous vocab. . {% include nav_vocab.html %} . Vocab Definition Example . Input | Data that is taken in by the computer from the user | print(“hello world!”) | . Output | Data that is returned by the computer to the user | input(“What are your hobbies?”) | .",
+          "content": "Vocabulary Page . This vocab page will consist of vocab from all of the College Board units and other miscellaneous vocab. . {% include nav_vocab.html %} . Vocab Definition . Algorithms | a process or set of rules to be followed in calculations or other problem-solving operations | .",
           "url": "https://chewyboba10.github.io/sushi-burrito/vocab",
           "relUrl": "/vocab",
           "date": ""
