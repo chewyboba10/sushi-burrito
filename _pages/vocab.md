@@ -11,4 +11,4 @@ permalink: /vocab
 
 | Vocab | Definition |
 |--|--|--|
-| Algorithms | a process or set of rules to be followed in calculations or other problem-solving operations |
+| [Algorithms](https://chewyboba10.github.io/sushi-burrito/vocab/unit3#Algorithms) | a process or set of rules to be followed in calculations or other problem-solving operations |
