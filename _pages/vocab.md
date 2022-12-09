@@ -9,7 +9,6 @@ permalink: /vocab
 
 {% include nav_vocab.html %}
 
-| Vocab | Definition | Example |
+| Vocab | Definition |
 |--|--|--|
-| Input | Data that is taken in by the computer from the user | print("hello world!") |
-| Output | Data that is returned by the computer to the user | input("What are your hobbies?") |
+| Algorithms | a process or set of rules to be followed in calculations or other problem-solving operations |
