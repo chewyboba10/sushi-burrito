@@ -1,7 +1,7 @@
 ---
 title: Vocab
 layout: default
-permalink: /vocab/home
+permalink: /vocab
 ---
 
 # Vocabulary Page
