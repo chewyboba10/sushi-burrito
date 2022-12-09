@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Unit 2 Vocabulary",
-            "content": "Big Idea 1 | Big Idea 2 | Big Idea 3 | Big Idea 4 | Big Idea 5 | Miscellaneous | . . Bits . Bytes . Hexadecimal / Nibbles . Binary Numbers . Unsigned Integer . Signed Integer . Floating Point . Binary Data Abstractions . Boolean . ASCII . Unicode . RGB . Data Compression . Lossy . Lossless (note discussed yet) .",
+            "content": "Big Idea 1 | Big Idea 2 | Big Idea 3 | Big Idea 4 | Big Idea 5 | Miscellaneous | . . Examples coming in the future! . Bits . the single unit of information in a computer, typically represented as a 0 or 1 . Bytes . a unit of data that is eight binary digits long . Hexadecimal . Hexadecimal is the name of the numbering system that is base 16 . Nibbles . Four consecutive binary digits or half of an 8-bit byte . Binary Numbers . Unsigned Integer . Signed Integer . Floating Point . Binary Data Abstractions . Boolean . ASCII . Unicode . RGB . Data Compression . Lossy . Lossless (note discussed yet) .",
             "url": "https://chewyboba10.github.io/sushi-burrito/vocab/unit2",
             "relUrl": "/vocab/unit2",
             "date": " • Dec 7, 2022"
