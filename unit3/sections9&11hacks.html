@@ -151,35 +151,27 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">gcd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-    <span class="c1"># Check if a is greater than b</span>
-    <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
-        <span class="c1"># Swap the values of a and b</span>
-        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span>
-    
-    <span class="c1"># Check if b is equal to 0</span>
-    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="c1"># Return a as the result</span>
-        <span class="k">return</span> <span class="n">a</span>
-    
-    <span class="c1"># Initialize the remainder</span>
-    <span class="n">remainder</span> <span class="o">=</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span>
-    
-    <span class="c1"># Use a while loop to repeatedly apply the Euclidean algorithm</span>
-    <span class="k">while</span> <span class="n">b</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="c1"># Set a equal to b</span>
-        <span class="n">a</span> <span class="o">=</span> <span class="n">b</span>
-        
-        <span class="c1"># Set b equal to the remainder</span>
-        <span class="n">b</span> <span class="o">=</span> <span class="n">remainder</span>
-        
-        <span class="c1"># Update the remainder</span>
-        <span class="n">remainder</span> <span class="o">=</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span>
-    
-    <span class="c1"># Return a as the result</span>
-    <span class="k">return</span> <span class="n">a</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 
-<span class="n">gcd</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">gcd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="c1"># base case</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">b</span>
+    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">a</span>
+
+    <span class="c1"># recursive step</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="n">b</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">gcd</span><span class="p">(</span><span class="n">a</span> <span class="o">%</span> <span class="n">b</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">gcd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">%</span> <span class="n">a</span><span class="p">)</span>
+
+<span class="n">num1</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Numbers being compared:"</span><span class="p">,</span> <span class="n">num1</span><span class="p">,</span> <span class="s2">"&amp;"</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The greatest common divisor between"</span><span class="p">,</span> <span class="n">num1</span><span class="p">,</span> <span class="s2">"&amp;"</span><span class="p">,</span> <span class="n">num2</span><span class="p">,</span> <span class="s2">"is:"</span><span class="p">)</span>
+<span class="n">gcd</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -191,24 +183,21 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ZeroDivisionError</span>                         Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/chewyboba10/vscode/sushi-burrito/_notebooks/2022-12-07-3.9-3.11-hacks.ipynb Cell 3</span> in <span class="ansi-cyan-fg">&lt;cell line: 29&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/chewyboba10/vscode/sushi-burrito/_notebooks/2022-12-07-3.9-3.11-hacks.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=25'&gt;26&lt;/a&gt;</span>     # Return a as the result
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/chewyboba10/vscode/sushi-burrito/_notebooks/2022-12-07-3.9-3.11-hacks.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=26'&gt;27&lt;/a&gt;</span>     return a
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/chewyboba10/vscode/sushi-burrito/_notebooks/2022-12-07-3.9-3.11-hacks.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=28'&gt;29&lt;/a&gt;</span> gcd(15, 10)
-
-<span class="ansi-green-intense-fg ansi-bold">/home/chewyboba10/vscode/sushi-burrito/_notebooks/2022-12-07-3.9-3.11-hacks.ipynb Cell 3</span> in <span class="ansi-cyan-fg">gcd</span><span class="ansi-blue-fg">(a, b)</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/chewyboba10/vscode/sushi-burrito/_notebooks/2022-12-07-3.9-3.11-hacks.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=20'&gt;21&lt;/a&gt;</span>     b = remainder
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/chewyboba10/vscode/sushi-burrito/_notebooks/2022-12-07-3.9-3.11-hacks.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=22'&gt;23&lt;/a&gt;</span>     # Update the remainder
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/chewyboba10/vscode/sushi-burrito/_notebooks/2022-12-07-3.9-3.11-hacks.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=23'&gt;24&lt;/a&gt;</span>     remainder = a % b
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/chewyboba10/vscode/sushi-burrito/_notebooks/2022-12-07-3.9-3.11-hacks.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=25'&gt;26&lt;/a&gt;</span> # Return a as the result
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/chewyboba10/vscode/sushi-burrito/_notebooks/2022-12-07-3.9-3.11-hacks.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=26'&gt;27&lt;/a&gt;</span> return a
-
-<span class="ansi-red-fg">ZeroDivisionError</span>: integer division or modulo by zero</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Numbers being compared: 744 &amp; 810
+The greatest common divisor between 744 &amp; 810 is:
+</pre>
 </div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>6</pre>
+</div>
+
 </div>
 
 </div>
@@ -217,6 +206,18 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>The function starts by defining a base case where <code>gcd(a, b)</code> is equal to <code>a</code> if <code>b</code> is 0, and <code>b</code> if <code>a</code> is 0. This is because the GCD of a number and 0 is always the number itself.</li>
+<li>The next step is the recursive step, where the function calls itself with the arguments <code>(a % b, b)</code> if <code>a</code> is greater than or equal to <code>b</code>, or <code>(a, b % a)</code> if <code>b</code> is greater than <code>a</code>. This step is based on the Euclidean algorithm, which states that the GCD of two numbers <code>a</code> and <code>b</code> is the same as the GCD of <code>b</code> and the remainder of <code>a</code> divided by <code>b</code> (i.e. <code>a % b</code>).</li>
+<li>This recursive step continues until the base case is reached, at which point the function returns the GCD of <code>a</code> and <code>b</code>.</li>
+</ol>
+
+</div>
+</div>
+</div>
 </div>
 
 
