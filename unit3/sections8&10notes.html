@@ -4,22 +4,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>3.8 &amp; 3.10 Notes | Evan Aparri</title>
+<title>3.17 &amp; 3.18 Notes | Evan Aparri</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="3.8 &amp; 3.10 Notes" />
+<meta property="og:title" content="3.17 &amp; 3.18 Notes" />
 <meta name="author" content="Evan Aparri" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Lists and Iteration" />
-<meta property="og:description" content="Lists and Iteration" />
+<meta name="description" content="Algorithmic Efficiency and Undecidable Problems" />
+<meta property="og:description" content="Algorithmic Efficiency and Undecidable Problems" />
 <link rel="canonical" href="https://chewyboba10.github.io/sushi-burrito/unit3/sections8&10notes" />
 <meta property="og:url" content="https://chewyboba10.github.io/sushi-burrito/unit3/sections8&10notes" />
 <meta property="og:site_name" content="Evan Aparri" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-12-05T00:00:00-06:00" />
+<meta property="article:published_time" content="2022-12-14T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="3.8 &amp; 3.10 Notes" />
+<meta property="twitter:title" content="3.17 &amp; 3.18 Notes" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Evan Aparri"},"dateModified":"2022-12-05T00:00:00-06:00","datePublished":"2022-12-05T00:00:00-06:00","description":"Lists and Iteration","headline":"3.8 &amp; 3.10 Notes","mainEntityOfPage":{"@type":"WebPage","@id":"https://chewyboba10.github.io/sushi-burrito/unit3/sections8&10notes"},"url":"https://chewyboba10.github.io/sushi-burrito/unit3/sections8&10notes"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Evan Aparri"},"dateModified":"2022-12-14T00:00:00-06:00","datePublished":"2022-12-14T00:00:00-06:00","description":"Algorithmic Efficiency and Undecidable Problems","headline":"3.17 &amp; 3.18 Notes","mainEntityOfPage":{"@type":"WebPage","@id":"https://chewyboba10.github.io/sushi-burrito/unit3/sections8&10notes"},"url":"https://chewyboba10.github.io/sushi-burrito/unit3/sections8&10notes"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/sushi-burrito/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://chewyboba10.github.io/sushi-burrito/feed.xml" title="Evan Aparri" /><link rel="shortcut icon" type="image/x-icon" href="/sushi-burrito/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -74,15 +74,15 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">3.8 &amp; 3.10 Notes</h1><p class="page-description">Lists and Iteration</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-05T00:00:00-06:00" itemprop="datePublished">
-        Dec 5, 2022
+    <h1 class="post-title p-name" itemprop="name headline">3.17 &amp; 3.18 Notes</h1><p class="page-description">Algorithmic Efficiency and Undecidable Problems</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-14T00:00:00-06:00" itemprop="datePublished">
+        Dec 14, 2022
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
             <span class="p-author h-card" itemprop="name">Evan Aparri</span></span>
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      3 min read
     
 </span></p>
 
@@ -102,49 +102,91 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h1"><a href="#lists">Lists</a>
+<li class="toc-entry toc-h1"><a href="#317-algorithmic-efficiency">3.17: Algorithmic Efficiency</a></li>
+<li class="toc-entry toc-h1"><a href="#318-undecidable-problems">3.18: Undecidable Problems</a></li>
+</ul><h1 id="317-algorithmic-efficiency">
+<a class="anchor" href="#317-algorithmic-efficiency" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.17: Algorithmic Efficiency</h1>
+
+<p>ENDURING UNDERSTANDING
+AAP-4
+There exist problems that computers cannot solve, and even when a computer can solve a problem, it may not be able to do so in a reasonable amount of time.</p>
+
+<p>LEARNING OBJECTIVE
+AAP-4.A
+For determining the
+efficiency of an algorithm:
+a. Explain the difference between algorithms that run in reasonable time and those that do not.
+b. Identify situations where a heuristic solution may be more appropriate</p>
+
+<p>ESSENTIAL KNOWLEDGE
+AAP-4.A.1
+A problem is a general description of a task that can (or cannot) be solved algorithmically. An instance of a problem also includes specific input. For example, sorting is a problem; sorting the list (2,3,1,7) is an instance of the problem.</p>
+
+<p>AAP-4.A.2
+A decision problem is a problem with a yes/no answer (e.g., is there a path from A to B?). An optimization problem is a problem with the goal of finding the “best” solution among many (e.g., what is the shortest path from A to B?).</p>
+
+<p>AAP-4.A.3
+Efficiency is an estimation of the amount of computational resources used by an algorithm. Efficiency is typically expressed as a function of the size of the input.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Exclusion Statement (EK AAP-4.A.3):
+Formal analysis of algorithms (Big-O) and formal reasoning using mathematical formulas are outside the scope of this course and the AP Exam.
+</code></pre></div></div>
+
+<p>AAP-4.A.4
+An algorithm’s efficiency is determined through formal or mathematical reasoning.</p>
+
+<p>ESSENTIAL KNOWLEDGE</p>
+
+<p>AAP-4.A.5
+An algorithm’s efficiency can be informally measured by determining the number of times a statement or group of statements executes.</p>
+
+<p>AAP-4.A.6
+Different correct algorithms for the same problem can have different efficiencies.</p>
+
+<p>AAP-4.A.7
+Algorithms with a polynomial efficiency or slower (constant, linear, square, cube, etc.) are said to run in a reasonable amount of time. Algorithms with exponential or factorial efficiencies are examples of algorithms that run in an unreasonable amount of time.</p>
+
+<p>AAP-4.A.8
+Some problems cannot be solved in a reasonable amount of time because there is no efficient algorithm for solving them. In these cases, approximate solutions are sought.</p>
+
+<p>AAP-4.A.9
+A heuristic is an approach to a problem that produces a solution that is not guaranteed to be optimal but may be used when techniques that are guaranteed to always find an optimal solution are impractical.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Exclusion Statement (AAP-4.A.9):
+Specific heuristic solutions are outside the scope of the this course and the AP Exam.
+</code></pre></div></div>
+
+<h1 id="318-undecidable-problems">
+<a class="anchor" href="#318-undecidable-problems" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.18: Undecidable Problems</h1>
+
+<p>ENDURING UNDERSTANDING
+AAP-4
+There exist problems that computers cannot solve, and even when a computer can solve a problem, it may not be able to do so in a reasonable amount of time.</p>
+
+<p>LEARNING OBJECTIVE
+AAP-4.B
+Explain the existence of undecidable problems in computer science.  1.A</p>
+
+<p>ESSENTIAL KNOWLEDGE
+AAP-4.B.1
+A decidable problem is a decision problem for which an algorithm can be written to produce a correct output for all inputs (e.g., “Is the number even?”).</p>
+
+<p>AAP-4.B.2
+An undecidable problem is one for which no algorithm can be constructed that is always capable of providing a correct yes-or-no answer.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Exclusion Statement (EK AAP-4.B.2):
+Determining whether a given problem is undecidable is outside the scope of this course and the AP Exam.
+</code></pre></div></div>
+
+<p>AAP-4.B.3
+An undecidable problem may have some instances that have an algorithmic solution, but there is no algorithmic solution that could solve all instances of the problem.</p>
+
+<p>Sources used</p>
 <ul>
-<li class="toc-entry toc-h2"><a href="#other-collection-data-types-in-python">Other collection data types in Python</a></li>
-<li class="toc-entry toc-h2"><a href="#terms">Terms</a></li>
-</ul>
+  <li>Collegeboard Videos and the <a href="https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-course-and-exam-description.pdf">Course Description</a>
 </li>
-<li class="toc-entry toc-h1"><a href="#iteration">Iteration</a></li>
-</ul><h1 id="lists">
-<a class="anchor" href="#lists" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lists</h1>
-<blockquote>
-  <p>a sequence of variables</p>
-  <ul>
-    <li>can be used to store multiple items into one variable</li>
-    <li>used to store collections of data</li>
-    <li>changeable, ordered, allowed duplicates</li>
-  </ul>
-</blockquote>
-
-<h2 id="other-collection-data-types-in-python">
-<a class="anchor" href="#other-collection-data-types-in-python" aria-hidden="true"><span class="octicon octicon-link"></span></a>Other collection data types in Python</h2>
-<ul>
-  <li>Tuple: collection that is ordered, unchangeable, allows duplicates</li>
-  <li>Set: collection that is unordered, unchangeable, doesn’t allow duplicate</li>
-  <li>Dictionary: collection that is ordered, changeable, doesn’t allow duplicates</li>
+  <li><a href="https://www.khanacademy.org/computing/ap-computer-science-principles/algorithms-101/solving-hard-problems/a/undecidable-problems">Undecidable Problems Article by Khan Academy</a></li>
 </ul>
-
-<h2 id="terms">
-<a class="anchor" href="#terms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Terms</h2>
-<ul>
-  <li>Index: a term used to sort data in order to reference to element in a list (allows for duplicates)</li>
-  <li>Elements: the values in the list assigned to an index</li>
-</ul>
-
-<h1 id="iteration">
-<a class="anchor" href="#iteration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Iteration</h1>
-<blockquote>
-  <p>The repetition of a process or utterance applied to the result or taken from a previous statement
-Types of iteration: definite and indefinite</p>
-  <ul>
-    <li>Definite defines how many times the loop is going to run</li>
-    <li>Indefinite specifies a condition that must be met</li>
-  </ul>
-</blockquote>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
