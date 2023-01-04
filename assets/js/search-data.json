@@ -58,7 +58,7 @@
     
         ,"post5": {
             "title": "Unit 3 Vocabulary",
-            "content": "Big Idea 1 | Big Idea 2 | Big Idea 3 | Big Idea 4 | Big Idea 5 | Miscellaneous | . . Variables . Data Types . Assignment Operators . Managing Complexity with Variables . Lists . 2D Lists . Dictionaries . Class . Algorithms . An algorithm in computer science is a sequence of instructions that are followed in a specific order to perform a specific task or solve a particular problem. An algorithm is a set of well-defined steps that can be followed by a computer or other computational device to achieve a desired result. Algorithms are an essential part of computer science because they allow computers to perform complex tasks and make decisions based on the data they are given. An algorithm can be as simple as a set of instructions for carrying out a basic mathematical operation, such as adding two numbers together, or it can be more complex, such as a set of steps for sorting a large dataset. . Sequence . Selection . Iteration . Expressions . Comparison Operators . Booleans Expressions and Selection . Booleans Expressions and Iteration . Truth Tables . Characters . Strings . Length . Concatenation . Upper . Lower . Traversing Strings . Python If, Elif, Else conditionals . Nested Selection Statements . Python For . While loops . with Range . with List . Combining loops with conditionals to Break, Continue . Procedural Abstraction . Python Def procedures . Parameters . Return Values .",
+            "content": "Big Idea 1 | Big Idea 2 | Big Idea 3 | Big Idea 4 | Big Idea 5 | Miscellaneous | . . Variables . Data Types . Assignment Operators . Managing Complexity with Variables . Lists . 2D Lists . Dictionaries . Class . Algorithms . An algorithm in computer science is a sequence of instructions that are followed in a specific order to perform a specific task or solve a particular problem. An algorithm is a set of well-defined steps that can be followed by a computer or other computational device to achieve a desired result. Algorithms are an essential part of computer science because they allow computers to perform complex tasks and make decisions based on the data they are given. An algorithm can be as simple as a set of instructions for carrying out a basic mathematical operation, such as adding two numbers together, or it can be more complex, such as a set of steps for sorting a large dataset. . Example . def find_largest_number(numbers): # Set a variable to store the largest number largest_number = numbers[0] # Iterate through the list of numbers for number in numbers: # If the current number is larger than the largest number, # update the largest number if number &gt; largest_number: largest_number = number # Return the largest number return largest_number # Test the function with a list of numbers print(find_largest_number([1, 3, 2, 5, 4])) # should print 5 . This algorithm finds the . Sequence . Selection . Iteration . Expressions . Comparison Operators . Booleans Expressions and Selection . Booleans Expressions and Iteration . Truth Tables . Characters . Strings . Length . Concatenation . Upper . Lower . Traversing Strings . Python If, Elif, Else conditionals . Nested Selection Statements . Python For . While loops . with Range . with List . Combining loops with conditionals to Break, Continue . Procedural Abstraction . Python Def procedures . Parameters . Return Values .",
             "url": "https://chewyboba10.github.io/sushi-burrito/vocab/unit3",
             "relUrl": "/vocab/unit3",
             "date": " • Dec 7, 2022"
@@ -500,20 +500,9 @@
   
 
   
-      ,"page3": {
-          "title": "Frontend",
-          "content": "Frontend table . This is just me trying to organize my posts and notebooks . JavaScript Usage | Table Using JavaScript and HTML Fragments | . Unit 3 . Notes | Hacks | Grade | . 3.1-3.2 Notes | 3.1-3.2 Hacks | 0.95/1 | . 3.3-3.4 Notes | 3.3-3.4 Hacks | 0.9/1 | . 3.5-3.7 Notes | 3.5-3.7 Hacks | 0.95/1 | . 3.8 &amp; 3.10 Notes | 3.8 &amp; 3.10 Hacks | 0.9/1 | . 3.9 &amp; 3.11 Notes | 3.9 &amp; 3.11 Hacks | 0.8/1 | . 3.12 &amp; 3.13 Notes | 3.12 &amp; 3.13 Hacks | 0.95/1 | . 3.14 &amp; 3.15 Notes | 3.14 &amp; 3.15 Hacks | 0.9/1 | . 3.16 Notes | 3.16 Hacks | TBD | .",
-          "url": "https://chewyboba10.github.io/sushi-burrito/frontend/overview",
-          "relUrl": "/frontend/overview",
-          "date": ""
-      }
-      
-  
 
   
-
-  
-      ,"page5": {
+      ,"page4": {
           "title": "Lecture Notes",
           "content": "This page contains the notes I have taken during Mr. Mortenson’s lecture . Table of Contents . Week 0 . Date Subject . Blank | Blank | . Week 1 . Date Subject . 8/24/22 | Blog Posting and Configuration | . 8/25/22 | Bash and Cloud | . Week 2 . Date Subject . 8/29/22 | Data Abstraction | . 8/30/22 | List, Dictionaries, Iteration | . 9/1/22 | HTML Fragments | .",
           "url": "https://chewyboba10.github.io/sushi-burrito/_pages/lecture-notes.html",
@@ -529,6 +518,17 @@
   
 
   
+  
+
+  
+      ,"page8": {
+          "title": "Submenu",
+          "content": "{% include nav_frontend.html %} .",
+          "url": "https://chewyboba10.github.io/sushi-burrito/submenu",
+          "relUrl": "/submenu",
+          "date": ""
+      }
+      
   
 
   

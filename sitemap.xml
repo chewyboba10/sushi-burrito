@@ -179,9 +179,6 @@
 <loc>https://chewyboba10.github.io/sushi-burrito/api/overview</loc>
 </url>
 <url>
-<loc>https://chewyboba10.github.io/sushi-burrito/frontend/overview</loc>
-</url>
-<url>
 <loc>https://chewyboba10.github.io/sushi-burrito/</loc>
 </url>
 <url>
@@ -189,6 +186,9 @@
 </url>
 <url>
 <loc>https://chewyboba10.github.io/sushi-burrito/search/</loc>
+</url>
+<url>
+<loc>https://chewyboba10.github.io/sushi-burrito/submenu</loc>
 </url>
 <url>
 <loc>https://chewyboba10.github.io/sushi-burrito/categories/</loc>

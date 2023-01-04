@@ -66,7 +66,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/sushi-burrito/about/">About</a><a class="page-link" href="/sushi-burrito/api/overview">API</a><a class="page-link" href="/sushi-burrito/frontend/overview">Frontend</a><a class="page-link" href="/sushi-burrito/_pages/lecture-notes.html">Lecture Notes</a><a class="page-link" href="/sushi-burrito/search/">Search</a><a class="page-link" href="/sushi-burrito/categories/">Tags</a><a class="page-link" href="/sushi-burrito/vocab">Vocab</a></div>
+        <div class="trigger"><a class="page-link" href="/sushi-burrito/about/">About</a><a class="page-link" href="/sushi-burrito/api/overview">API</a><a class="page-link" href="/sushi-burrito/_pages/lecture-notes.html">Lecture Notes</a><a class="page-link" href="/sushi-burrito/search/">Search</a><a class="page-link" href="/sushi-burrito/submenu">Submenu</a><a class="page-link" href="/sushi-burrito/categories/">Tags</a><a class="page-link" href="/sushi-burrito/vocab">Vocab</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -231,6 +231,54 @@ window.onload = wrap_img;
 <blockquote>
 <p>An algorithm in computer science is a sequence of instructions that are followed in a specific order to perform a specific task or solve a particular problem. An algorithm is a set of well-defined steps that can be followed by a computer or other computational device to achieve a desired result. Algorithms are an essential part of computer science because they allow computers to perform complex tasks and make decisions based on the data they are given. An algorithm can be as simple as a set of instructions for carrying out a basic mathematical operation, such as adding two numbers together, or it can be more complex, such as a set of steps for sorting a large dataset.</p>
 </blockquote>
+<p><strong>Example</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">find_largest_number</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+  <span class="c1"># Set a variable to store the largest number</span>
+  <span class="n">largest_number</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+  
+  <span class="c1"># Iterate through the list of numbers</span>
+  <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+    <span class="c1"># If the current number is larger than the largest number,</span>
+    <span class="c1"># update the largest number</span>
+    <span class="k">if</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="n">largest_number</span><span class="p">:</span>
+      <span class="n">largest_number</span> <span class="o">=</span> <span class="n">number</span>
+      
+  <span class="c1"># Return the largest number</span>
+  <span class="k">return</span> <span class="n">largest_number</span>
+
+<span class="c1"># Test the function with a list of numbers</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">find_largest_number</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">]))</span> <span class="c1"># should print 5</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This algorithm finds the</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Sequence">
 <a class="anchor" href="#Sequence" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sequence<a class="anchor-link" href="#Sequence"> </a>
 </h2>
@@ -336,7 +384,7 @@ window.onload = wrap_img;
     <div class="footer-col-wrapper">
       <div class="footer-col">
         <p class="feed-subscribe">
-          <a href="/sushi-burrito/feed.xml">
+          <a href="https://chewyboba10.github.io/sushi-burrito/feed.xml">
             <svg class="svg-icon orange">
               <use xlink:href="/sushi-burrito/assets/minima-social-icons.svg#rss"></use>
             </svg><span>Subscribe</span>
