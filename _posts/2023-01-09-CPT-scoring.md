@@ -10,3 +10,4 @@ comments: true
 ---
 | # | Week | Link |
 | 1 | 17 | [CPT Scoring 1](https://github.com/chewyboba10/sushi-burrito/issues/13) |
+| 2 | 18 | [CPT Scoring 2](https://github.com/chewyboba10/sushi-burrito/issues/15) |
