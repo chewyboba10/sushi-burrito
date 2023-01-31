@@ -60,6 +60,6 @@ Possible plans/considerations included:
 - Login
 
 # Reflection
-Mr. Mortenson helped us realize that our 5 "features" that we described in our presentation were really our 2, which was the snake game and the leaderboard. The rest were parts of the features mentioned. Two features that will be added will be another game and changing the user history so that you can search up a user's past games and possible compare then to another user.
+Mr. Mortenson helped us realize that our 5 "features" that we described in our presentation were really our 1, which was the leaderboard. The rest were parts of the features mentioned. One feature that will be user history so that you can search up a user's past games and possible compare then to another user. We are still brainstorming the other two features. We are thinking about a login but that will slightly damage the theme of a retro style arcade. 
 
 I also think there wasn't enough communication between group members because sometimes what our groups members said in the presentation when describing the features did match what I had in my mind. So we need a bit more communication between group members to make it super clear what our idea and goals are.
