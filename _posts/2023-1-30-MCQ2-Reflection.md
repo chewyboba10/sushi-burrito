@@ -1,9 +1,9 @@
 ---
 toc: true
 layout: post
-description: Reflection from Collegeboard MCQ #2
+description: Reflection from Collegeboard MCQ \#2
 categories: [T1, Notes, Week 3, markdown, post]
-title: Collegeboard MCQ #2 Reflections
+title: Collegeboard MCQ \#2 Reflections
 author: Evan Aparri
 show_tags: true
 comments: true
