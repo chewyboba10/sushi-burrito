@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "5.5, 5.6 Blog & Hacks",
-            "content": "When computer connects to Wifi DHCP Dynamic Host Configuration Protocol When url is typed the url package sends a domain name through ip address . When you type in your browser with your domain name, it will do a dns (Domain Name System) look up. Each domain name has a corresponding IP address and if it shows up in the dns lookup, it will take you to the website you typed in Key feature is frontend to backend. fetch has uses a url it connects with others servers then returns json. .",
+            "content": "Notes . When computer connects to Wifi DHCP Dynamic Host Configuration Protocol When url is typed the url package sends a domain name through ip address . When you type in your browser with your domain name, it will do a dns (Domain Name System) look up. Each domain name has a corresponding IP address and if it shows up in the dns lookup, it will take you to the website you typed in Key feature is frontend to backend. fetch has uses a url it connects with others servers then returns json. .",
             "url": "https://chewyboba10.github.io/sushi-burrito/t2/post/2023/02/16/notes.html",
             "relUrl": "/t2/post/2023/02/16/notes.html",
             "date": " • Feb 16, 2023"
