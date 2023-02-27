@@ -1,7 +1,6 @@
 ---
 toc: true
 title: Flask/Python Deployment Guide
-author: Ethan Tran
 description: A quick guide on how to deploy your flask server on AWS!
 permalink:
 layout: post
