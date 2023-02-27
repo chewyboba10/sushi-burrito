@@ -3,10 +3,7 @@ toc: true
 title: Flask/Python Deployment Guide
 author: Ethan Tran
 description: A quick guide on how to deploy your flask server on AWS!
-permalink: /deploy
-categories: [6.B, C7.0, C7.1, C7.2]
-tags: [aws, ec2. docker, nginx, certbot, dns]
-type: pbl
+permalink:
 layout: post
 ---
 
