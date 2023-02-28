@@ -1,6 +1,6 @@
 ---
 title: Vocab
-layout: default
+layout: base
 permalink: /vocab
 ---
 
