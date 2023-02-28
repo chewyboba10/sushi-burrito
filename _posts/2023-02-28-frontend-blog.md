@@ -1,4 +1,5 @@
 ---
+layout: post
 toc: true
 description: What has been done in the frontend
 categories: [T2, post]
