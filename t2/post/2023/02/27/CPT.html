@@ -43,20 +43,35 @@ The function of the program is to to all the past pong games from most recent to
 <p>3.a.iii.
 The input will be the usernames of the two players, the score each player earned, the result of each player, and the date the game was played. The output will be the json data that can later be used to create a table sorted from most recent to oldest.</p>
 
-<p>3.b.i.
-(Will likely show code where the different users and there scores are being stored)</p>
+<p>3.b.i.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>game1 = Pong('AAA', 'BBB', '1', '5', 'Loss', 'Win', date(2023, 1, 22))
+game2 = Pong('AAB', 'ABC', '2', '5', 'Loss', 'Win', date(2023, 1, 21))
+game3 = Pong('AAC', 'GHI', '5', '4', 'Win', 'Loss', date(2023, 1, 20))
+game4 = Pong('AAD', 'FGH', '5', '1', 'Win', 'Loss', date(2023, 1, 19))
+game5 = Pong('AAE', 'TYU', '3','5', 'Loss', 'Win', date(2023, 1, 22))
 
-<p>3.b.ii.
-(Will likely show our api accessing the code sorting it based on rank)</p>
+games = [game1, game2, game3, game4, game5]
+</code></pre></div></div>
+
+<p>3.b.ii.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"""Builds sample user/note(s) data"""
+for game in games:
+    try:
+        user.create()
+    except IntegrityError:
+        '''fails with bad or duplicate data'''
+        db.session.remove()
+        print(f"Records exist, duplicate email, or error in {game.user1} and/or {game.user2}")
+</code></pre></div></div>
 
 <p>3.b.iii.
-(TBD)</p>
+THe variable being used to store the dictionary is <code class="language-plaintext highlighter-rouge">body</code></p>
 
 <p>3.b.iv.
-The data that my list contains is important to my program because it holds the individuals scores of the users needed to fill up the leaderboard.</p>
+The data that my list contains represents a game that was played in pong.</p>
 
 <p>3.b.v.
-If the program were to run without the <em>__</em> list, it would make everything very inefficient because I would have to make a new variable every time a user completed a game to store their score.</p>
+The dictionary in the variable body helps to create separate, distinct packets of information specifically for each game played. Without the use of this dictionary, the database would not be able to distinguish which game users participate in. This can make the program code harder to create as there would have to be a separate, more complex algorithm which manually sorts the data already present in the database.</p>
 
 <p>3.c.i.
 (Will likely show the update function that updates the player’s highscore) This code will likely change because our group is still deciding whether a user can have multiple scores on the leaderboard</p>
