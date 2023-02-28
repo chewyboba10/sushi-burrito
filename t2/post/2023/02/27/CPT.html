@@ -1,37 +1,4 @@
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">CPT</h1><p class="page-description">College Board Performance Task</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-02-27T00:00:00-06:00" itemprop="datePublished">
-        Feb 27, 2023
-      </time>• 
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">Evan Aparri</span></span>
-       • <span class="read-time" title="Estimated read time">
-    
-    
-      2 min read
-    
-</span></p>
-
-    
-      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
-      
-        <a class="category-tags-link" href="/sushi-burrito/categories/#T2">T2</a>
-        &nbsp;
-      
-        <a class="category-tags-link" href="/sushi-burrito/categories/#post">post</a>
-        
-      
-      </p>
-    
-
-    </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2"><a href="#outline-of-cpt-written-response">Outline of CPT Written response</a></li>
-</ul><h2 id="outline-of-cpt-written-response">
-<a class="anchor" href="#outline-of-cpt-written-response" aria-hidden="true"><span class="octicon octicon-link"></span></a>Outline of CPT Written response</h2>
+<h2 id="outline-of-cpt-written-response">Outline of CPT Written response</h2>
 
 <p>3 a.
 3.a.i.
@@ -65,7 +32,7 @@ for game in games:
 </code></pre></div></div>
 
 <p>3.b.iii.
-THe variable being used to store the dictionary is <code class="language-plaintext highlighter-rouge">body</code></p>
+The variable being used to store the list is <code class="language-plaintext highlighter-rouge">games</code></p>
 
 <p>3.b.iv.
 The data that my list contains represents a game that was played in pong.</p>
@@ -73,47 +40,161 @@ The data that my list contains represents a game that was played in pong.</p>
 <p>3.b.v.
 The dictionary in the variable body helps to create separate, distinct packets of information specifically for each game played. Without the use of this dictionary, the database would not be able to distinguish which game users participate in. This can make the program code harder to create as there would have to be a separate, more complex algorithm which manually sorts the data already present in the database.</p>
 
-<p>3.c.i.
-(Will likely show the update function that updates the player’s highscore) This code will likely change because our group is still deciding whether a user can have multiple scores on the leaderboard</p>
+<p>3.c.i.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class PongAPI:
+    class PongCreate(Resource):    
+        def post(self):
+            data = request.get_json()
 
-<p>3.c.ii.
-(Will show above function being called)</p>
+            user1 = data.get('user1')
+            if user1 is None or len(user1) != 3:
+                return {'message': f'username 1 is missing or longer than 3 characters'}, 210
+                
+            user2 = data.get('user2')
+            if user2 is None or len(user2) != 3:
+                return {'message': f'username 2 is missing or longer than 3 characters'}, 210
+            
+            # Change later to exclude negative scores
+            score1 = data.get('score1')
+            if score1 is None or len(score1) &lt;= 0:
+                return {'message': f'Score 1 does not exist, is missing, or is invalid'}, 210 
+
+            score2 = data.get('score2')
+            if score2 is None or len(score2) &lt;= 0:
+                return {'message': f'Score 2 does not exist, is missing, or is invalid'}, 210 
+                
+            result1 = data.get('result1')
+            if result1 is None:
+                return {'message': f'Game result does not exist or is missing'}, 210 
+            
+            result2 = data.get('result2')
+            if result2 is None:
+                return {'message': f'Game result does not exist or is missing'}, 210 
+            
+            scoreDate = data.get('scoreDate')
+
+            pongProfile = Pong(user1=user1, user2=user2, score1=score1, score2=score2, result1=result1, result2=result2)
+
+            if scoreDate is not None:
+                try:
+                    pongProfile.scoreDate = datetime.strptime(scoreDate, '%m-%d-%Y').date()
+                except:
+                    return {'message': f'Date obtained score format error {scoreDate}, must be mm-dd-yyyy'}, 210
+            
+            user = pongProfile.create()
+            if user:
+                return jsonify(user.make_dict())
+            return {'message': f'Processed {user1} and/or {user2}, either a format error or Usernames {user1} and/or {user2} is duplicate'}, 210
+</code></pre></div></div>
+
+<p>3.c.ii.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  function read_users() {
+    // prepare fetch options
+    const read_options = {
+      method: 'GET', // *GET, POST, PUT, DELETE, etc.
+      mode: 'cors', // no-cors, *cors, same-origin
+      cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: 'omit', // include, *same-origin, omit
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    };
+
+    // fetch the data from API
+    fetch(read_fetch, read_options)
+      // response is a RESTful "promise" on any successful fetch
+      .then(response =&gt; {
+        // check for response errors
+        if (response.status !== 200) {
+          const errorMsg = 'Database read error: ' + response.status;
+          console.log(errorMsg);
+          const tr = document.createElement("tr");
+          const td = document.createElement("td");
+          td.innerHTML = errorMsg;
+          tr.appendChild(td);
+          resultContainer.appendChild(tr);
+          return;
+        }
+        // valid response will have json data
+        response.json().then(data =&gt; {
+          console.log(data);
+          data.sort(function(a, b) {
+            return new Date(b.scoreDate) - new Date(a.scoreDate);
+          });
+          for (let i = 0; i &lt; data.length; i++) {
+            const row = data[i];
+            console.log(row);
+            add_row(row);
+          }
+        })
+      })
+      // catch fetch errors (ie ACCESS to server blocked)
+      .catch(err =&gt; {
+        console.error(err);
+        const tr = document.createElement("tr");
+        const td = document.createElement("td");
+        td.innerHTML = err;
+        tr.appendChild(td);
+        resultContainer.appendChild(tr);
+      });
+  }
+
+
+  function add_row(data) {
+    const tr = document.createElement("tr");
+    const user1 = document.createElement("td");
+    const user2 = document.createElement("td");
+    const score1 = document.createElement("td");
+    const score2 = document.createElement("td");
+    const result1 = document.createElement("td");
+    const result2 = document.createElement("td");
+    const scoreDate = document.createElement("td");
+
+  
+    // obtain data that is specific to the API
+    user1.innerHTML = data.user1; 
+    user2.innerHTML = data.user2; 
+    score1.innerHTML = data.score1;
+    score2.innerHTML = data.score2;
+    result1.innerHTML = data.result1;
+    result2.innerHTML = data.result2;
+    scoreDate.innerHTML = data.scoreDate;
+
+    // add HTML to container
+    tr.appendChild(user1);
+    tr.appendChild(user2);
+    tr.appendChild(score1);
+    tr.appendChild(score2);
+    tr.appendChild(result1);
+    tr.appendChild(result2);
+    tr.appendChild(scoreDate);
+
+    resultContainer.appendChild(tr);
+  }
+</code></pre></div></div>
 
 <p>3.c.iii.
-The function takes the new score obtained by a user from their game and compares it to see if their score is greater their high score. If it is, then it replaces it if it does then it replaces the high score. If it isn’t, then it doesn’t replace the high score.</p>
+The procedure add_row() adds a row on the table of the game history, and displays the user1, user2, score1, score2, result1, result2, and date based on the user’s inputs and the data from the API or the pong game. This helps to display the data from user inputs and other inputs onto the game history so that other users are able to see the past games.</p>
 
 <p>3.c.iv.
-(TBD)</p>
-
-<p>3.c.v.
-(TBD)</p>
+The algorithm fetches the API using its URL to execute the GET method. It then checks that a successful fetch will be guaranteed, and if it is, then a response is carried out. An if statement is used to check if the response has an error with reading the database. If there is an error, an error message is displayed on the table of the game history, and the entire function fetching the API is stopped. However, if there is no error, the algorithm proceeds to check that the response contains JSON data. If it does contain JSON data, the algorithm proceeds to sort the users, where the most recent game is displayed first and the oldest game is displayed last. Finally, the algorithm checks for any fetch errors, and if there is a fetch error, an error message is displayed onto the table of the game history.</p>
 
 <p>3.d.i.
 First example will be when the users inputs a score that is not part of the top 5.</p>
 
 <p>Second example will be when the user reaches a score in the top 5 and replaces the previous holder and pushes the rest down.</p>
 
-<p>3.d.ii.
-Condition 1:
-(Will show score #1 being passed through an if statement deciding whether a score is higher than another)</p>
+<p>3.d.i.
+First Call: The first call is when the user clicks on the game history website, which calls the function that fetches the API with a functional URL.</p>
 
-<p>Condition 2:
-(Will show score #2 being passed through an if statement deciding whether a score is higher than another)</p>
+<p>Second Call: The second call is when the user clicks on the game history website, which calls the function that fetches the API while the URL is down.’</p>
 
-<p>3.d.iii.
-Results #1:
-The result of the first call will display the rank of the user’s score without it being displayed on the top 5 leaderboard.</p>
+<p>3.d.ii
+Condition(s) tested by first call: The first call checks the errors and successfully determines that there are no errors with fetching the data. As a result, the data from the user input is sorted based on the date the game was played using the response.json().then() command.</p>
 
-<p>Result #2:
-The result of the second call will display the rank of the user’s score while also being displayed on the top 5 leaderboard.</p>
+<p>Condition(s) tested by second call: The second call checks fetch errors using the .catch() command. Since the URL to the API is down, a fetch error will prompt the .catch() command to function.</p>
 
-  </div><!-- from https://github.com/utterance/utterances -->
-<script src="https://utteranc.es/client.js"
-        repo="chewyboba10/sushi-burrito"
-        issue-term="title"
-        label="blogpost-comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script><a class="u-url" href="/sushi-burrito/t2/post/2023/02/27/CPT.html" hidden></a>
-</article>
+<p>3.d.iii
+Results of first call: The first call displays the games onto the game history given from newest to oldest.</p>
+
+<p>Results of the second call: An error message is displayed on the game history and no user data is displayed.</p>
