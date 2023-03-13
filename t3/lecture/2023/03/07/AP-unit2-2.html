@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      11 min read
+      13 min read
     
 </span></p>
 
@@ -229,16 +229,45 @@ window.onload = wrap_img;
 <blockquote>
 <p>File paths are different on Windows versus Mac and Linux.  This can cause problems in a project as you work and deploy on different Operating Systems (OS's), pathlib is a solution to this problem.</p>
 <ul>
-<li>What are commands you use in terminal to access files?</li>
-<li>What are the command you use in Windows terminal to access files?</li>
-<li>What are some of the major differences?</li>
+<li>What are commands you use in terminal to access files?
+In terminal or command line, you can use the following commands to access files:- <code>cd</code> (change directory) - to navigate to a different directory/folder  - <code>ls</code> (list) - to list the contents of a directory/folder<ul>
+<li>
+<code>pwd</code> (print working directory) - to display the current directory/folder</li>
+</ul>
+</li>
 </ul>
 </blockquote>
+<ul>
+<li>
+<p>What are the command you use in Windows terminal to access files?
+In Windows terminal, the commands to access files are similar, but with some differences:</p>
+<ul>
+<li>
+<code>cd</code> - works the same as in other terminals, but Windows uses backslashes <code>\</code> instead of forward slashes <code>/</code> to separate directories in file paths</li>
+<li>
+<code>dir</code> - similar to ls, but displays file and directory information in a different format</li>
+<li>
+<code>chdir</code> - an alternative to cd in Windows</li>
+</ul>
+</li>
+<li>
+<p>What are some of the major differences?
+One of the major differences between file paths in Windows versus Linux is the use of forward slashes versus backslashes. In Linux, file paths use forward slashes <code>/</code> to separate directories, while Windows uses backslashes <code>\</code>. Another difference is that Windows has a different file system than Linux, which can affect how files are accessed and managed. This can cause problems when developing a project that needs to work across different OS's.</p>
+</li>
+</ul>
 <p>Provide what you observed, struggled with, or leaned while playing with this code.</p>
 <ul>
-<li>Why is path a big deal when working with images?</li>
-<li>How does the meta data source and label relate to Unit 5 topics?</li>
-<li>Look up IPython, describe why this is interesting in Jupyter Notebooks for both Pandas and Images?</li>
+<li>
+<p>Why is path a big deal when working with images?
+When working with images, the path is important because it tells the program where to find the images on the computer's file system. The path specifies the location of the image file and the program uses this path to load and display the image. It's important to ensure that the path is correct, otherwise, the program will not be able to find the image.</p>
+</li>
+<li>
+<p>How does the meta data source and label relate to Unit 5 topics?</p>
+</li>
+</ul>
+<ul>
+<li>Look up IPython, describe why this is interesting in Jupyter Notebooks for both Pandas and Images?
+IPython is an interactive command-line shell for Python. For Jupyter Notebooks, IPython provides a more interactive and user-friendly environment for running Python code. IPython allows for features such as syntax highlighting, tab completion, and history tracking, making it easier to write and debug code. For Pandas, IPython allows for better visualization and exploration of data frames, making it easier to work with large datasets. IPython also provides features such as inline plotting, which can be useful for visualizing data. For images, IPython provides a way to display images inline in Jupyter Notebooks, which can be useful for visualizing and exploring images. This code uses the IPython.display module to display images inline in the notebook.</li>
 </ul>
 
 </div>
