@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      9 min read
     
 </span></p>
 
@@ -439,6 +439,101 @@ memory usage: 140.6+ KB
 </div>
 </div>
 
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">max_profit</span> <span class="o">=</span> <span class="n">f1000</span><span class="p">[</span><span class="s1">'profit'</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">row_with_max_profit</span> <span class="o">=</span> <span class="n">f1000</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">f1000</span><span class="p">[</span><span class="s1">'profit'</span><span class="p">]</span> <span class="o">==</span> <span class="n">max_profit</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">row_with_max_profit</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>              company  rank  rank_change   revenue   profit  \
+5  Berkshire Hathaway     6         -2.0  254616.0  81417.0   
+
+   num. of employees      sector   city state newcomer ceo_founder ceo_woman  \
+5             391500  Financials  Omaha    NE       no          no        no   
+
+  profitable prev_rank                CEO                            Website  \
+5        yes       4.0  Warren E. Buffett  https://www.berkshirehathaway.com   
+
+  Ticker Market Cap  
+5   BRKA     550878  
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">first_50</span> <span class="o">=</span> <span class="n">f1000</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+
+<span class="c1"># Replace "Yes" and "No" with 1's and 0's respectively in the "ceo_woman" column of the first 50 rows</span>
+<span class="n">first_50</span><span class="p">[</span><span class="s1">'ceo_woman'</span><span class="p">]</span> <span class="o">=</span> <span class="n">first_50</span><span class="p">[</span><span class="s1">'ceo_woman'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">'Yes'</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Calculate the average value of "ceo_woman" in the first 50 rows</span>
+<span class="n">avg_ceo_woman</span> <span class="o">=</span> <span class="n">first_50</span><span class="p">[</span><span class="s1">'ceo_woman'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">avg_ceo_woman</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0.0
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/tmp/ipykernel_1590/1417804964.py:5: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  first_50['ceo_woman'] = first_50['ceo_woman'].apply(lambda x: 1 if x == 'Yes' else 0)
+</pre>
+</div>
 </div>
 
 </div>
