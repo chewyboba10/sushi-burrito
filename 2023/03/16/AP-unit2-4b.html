@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      9 min read
     
 </span></p>
 
@@ -166,14 +166,15 @@ window.onload = wrap_img;
 <p>Uses PRAGMA statement to read schema.</p>
 </blockquote>
 <p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?
-How the data is sorted and what columns the database contains.</p>
-<ul>
-<li>What is the purpose of identity Column in SQL database?</li>
-</ul>
+A database schema is the outline and the blueprint of all tables and associated attributes within the database.</p>
 <ul>
 <li>
+<p>What is the purpose of identity Column in SQL database?
+The identity column in SQL database is a numeric column that can be automatically populated with numeric values.</p>
+</li>
+<li>
 <p>What is the purpose of a primary key in SQL database?
-It is to make the SQL database unique.</p>
+The primary key in a SQL database serves to act as an identifier for a particular database entry. The values in this column must be unique and non-NULL. Similar to the identity column, each table in a database can only have 1 primary key.</p>
 </li>
 <li>
 <p>What are the Data Types in SQL table?
@@ -251,10 +252,22 @@ The data types in SQL table could be integers, string, boolean, float.</p>
 <p>Uses SQL SELECT statement to read data</p>
 </blockquote>
 <ul>
-<li>What is a connection object?  After you google it, what do you think it does?</li>
-<li>Same for cursor object?</li>
-<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
-<li>Is "results" an object?  How do you know?</li>
+<li>
+<p>What is a connection object?  After you google it, what do you think it does?
+A connection object represents the connection to an open SQLite database. It contains all the attributes and methods that we may use to alter and manipulate the database.</p>
+</li>
+<li>
+<p>Same for cursor object?
+A cursor object represents and invokes methods to execute SQL queries on a database. Using it we can fetch and alter database entries in our DB.</p>
+</li>
+<li>
+<p>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?
+Looking at the VSCode debugger, we can see that these objects contain certain special variables function variables and class variables for the Connection object. We can also see that it represents many of the methods we use to modifiy the database, such as <code>execute()</code> and accessing data <code>fetchall()</code></p>
+</li>
+<li>
+<p>Is "results" an object?  How do you know?
+"results" is an object because we can see that it contains many attributes and methods of it's own in the debug menu</p>
+</li>
 </ul>
 
 </div>
@@ -309,6 +322,9 @@ The data types in SQL table could be integers, string, boolean, float.</p>
 (4, 'Eli Whitney', 'whit', 'sha256$1bXusK6IGK4TcRPp$50a55eab98cc92004977fa4acd40afc94a0555294d64d2e14858d6543678b449', '2023-03-15')
 (5, 'Indiana Jones', 'indi', 'sha256$rgi79Y7WtIa0Ilzh$6ba6b378f7559096ea9bb98690c326adacdbe0bde3db08a5145bc661078c9446', '1920-10-21')
 (6, 'Marion Ravenwood', 'raven', 'sha256$sR3QVChBXzq8nuDG$157b6d06e1ed7b2d9555d2ef99a1eccac717eb79503b6d97b233703b9ae77d0b', '1921-10-21')
+(7, 'Peter Parker', 'spiderman', 'MJ', '2001-08-10')
+(8, 'test', '123', 'abc', '1111-11-11')
+(9, 'hi', 'hello', 'sha256$4hjD98bjRcUKLETw$d408da18f8031efa8178ce1e4acecd1d542ce122b0a98fbcbd8244ece59032df', '9999-12-31')
 </pre>
 </div>
 </div>
@@ -328,10 +344,14 @@ The data types in SQL table could be integers, string, boolean, float.</p>
 <blockquote>
 <p>Uses SQL INSERT to add row</p>
 <ul>
-<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+<li>Compare create() in both SQL lessons.  What is better or worse in the two implementations?
+In the OOP lesson, the create() object relies on the instantiated object to extract data to upload to the database. However, in the Imperative approach, we directly edit the Database with SQL queries. From a logistic point of view, the OOP method should be better than imperative approach since it could share attributes and arguments with the other CRUD elements as well.</li>
 </ul>
 </blockquote>
+<ul>
+<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?
+SQL INSERT serves to create a new database entry within the table. On the other hand, User.<strong>init</strong>() in the OOP approach serves to instantiate an object to be added to the database. They are not the same things</li>
+</ul>
 
 </div>
 </div>
@@ -406,11 +426,20 @@ The data types in SQL table could be integers, string, boolean, float.</p>
 <blockquote>
 <p>Uses SQL UPDATE to modify password</p>
 <ul>
-<li>What does the hacked part do?</li>
-<li>Explain try/except, when would except occur?</li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
+<li>What does the hacked part do?
+The hacked part essentially serves a joke warning against the user when they create an insecure password lesser than 2 characters. Additionally, it also sets a new password for the user</li>
 </ul>
 </blockquote>
+<ul>
+<li>
+<p>Explain try/except, when would except occur?
+An except would occur if our UPDATE query were to fail to execute. While completing the hacks, I have encountered such a case where my database was locked, thus preventing me from updating and invoking the except block.</p>
+</li>
+<li>
+<p>What code seems to be repeated in each of these examples to point, why is it repeated?
+Within every code block, we are repeating the initializaion of the connection and cursor objects. This is repeated because of a programming idea called "scope". Each time we define these objects, they only exist within the function, and not elsewhere, so we must redefine them if we wish to use them again.</p>
+</li>
+</ul>
 
 </div>
 </div>
@@ -456,10 +485,24 @@ The data types in SQL table could be integers, string, boolean, float.</p>
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#update()</span>
+<span class="n">update</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The row with user id hello the password has been successfully updated
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -475,10 +518,14 @@ The data types in SQL table could be integers, string, boolean, float.</p>
 <blockquote>
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
-<li>Is DELETE a dangerous operation?  Why?</li>
-<li>In the print statemements, what is the "f" and what does {uid} do?</li>
+<li>Is DELETE a dangerous operation?  Why?
+DELETE could be a dangerous function. This is because it contains the ability to drop entire database entries with no recovery. This is especially dangerous in certain attacks, such as SQL Injects, where a malicious attacker could potentially inject SQL fragments to delete other uninteded entries, causing havoc.</li>
 </ul>
 </blockquote>
+<ul>
+<li>In the print statements, what is the "f" and what does {uid} do?
+The f represents a formatted a string, while {uid} documents a variable to be inserted into the string, where uid is the name of the variable</li>
+</ul>
 
 </div>
 </div>
@@ -517,10 +564,24 @@ The data types in SQL table could be integers, string, boolean, float.</p>
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#delete()</span>
+<span class="n">delete</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The row with uid hello was successfully deleted
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -536,10 +597,14 @@ The data types in SQL table could be integers, string, boolean, float.</p>
 <blockquote>
 <p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
 <ul>
-<li>Why does the menu repeat?</li>
-<li>Could you refactor this menu?  Make it work with a List?</li>
+<li>Why does the menu repeat?
+This menu repeats itself until the escape key is pressed because it calls itself again repeatedly via recursion</li>
 </ul>
 </blockquote>
+<ul>
+<li>Could you refactor this menu?  Make it work with a List?
+We could refactor this menu, by changing it such that we include a list of possible options that the user could select from, instead of having repeated if and elif statements.</li>
+</ul>
 
 </div>
 </div>
@@ -576,6 +641,32 @@ The data types in SQL table could be integers, string, boolean, float.</p>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(1, 'Thomas Edison', 'toby', 'sha256$FoHLPtedMpxdqJrr$66c5838b1f22cf5d4cf817c7c5ca48c14d66158389800c27c53418bf91ae9f48', '1847-02-11')
+(2, 'Nikola Tesla', 'niko', 'sha256$MLCVRGYthfpVc90e$f92dad99ae5247b3f45fe67d2507c99bc80c06ad63e1e64e6839ccd8fd6aff21', '2023-03-15')
+(3, 'Alexander Graham Bell', 'lex', 'sha256$jyFcciR95qE5p8pX$fee5792f08c8bb49d0f8a30ae259a83b2610fb93547368a32d606dd7a22d0f4d', '2023-03-15')
+(4, 'Eli Whitney', 'whit', 'sha256$1bXusK6IGK4TcRPp$50a55eab98cc92004977fa4acd40afc94a0555294d64d2e14858d6543678b449', '2023-03-15')
+(5, 'Indiana Jones', 'indi', 'sha256$rgi79Y7WtIa0Ilzh$6ba6b378f7559096ea9bb98690c326adacdbe0bde3db08a5145bc661078c9446', '1920-10-21')
+(6, 'Marion Ravenwood', 'raven', 'sha256$sR3QVChBXzq8nuDG$157b6d06e1ed7b2d9555d2ef99a1eccac717eb79503b6d97b233703b9ae77d0b', '1921-10-21')
+(7, 'Peter Parker', 'spiderman', 'MJ', '2001-08-10')
+(8, 'test', '123', 'abc', '1111-11-11')
+(0, 'id', 'INTEGER', 1, None, 1)
+(1, '_name', 'VARCHAR(255)', 1, None, 0)
+(2, '_uid', 'VARCHAR(255)', 1, None, 0)
+(3, '_password', 'VARCHAR(255)', 1, None, 0)
+(4, '_dob', 'DATE', 0, None, 0)
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
