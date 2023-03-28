@@ -12,3 +12,6 @@ comments: true
 As stated at the beginning of the Trimester 3, I plan to distinguish my code from the rest of my group and others so that it does not looked copied and so it can also reflect what I have learned.
 
 I plan to incorporate the lessons we have learned in the past few weeks like the the spacetime complexity, extracting data, image compression, etc. where possible. I am also planning on adding a working update and delete in my frontend code.
+
+Here is my current CPT outline and changes will be made according to what I change.
+[CPT](https://chewyboba10.github.io/sushi-burrito/t2/post/2023/02/27/CPT.html)
