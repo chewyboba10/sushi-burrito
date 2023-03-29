@@ -11,8 +11,10 @@ comments: true
 # CSUSM NOTES
 
 ## Ashley
-- smaller campus
-- got to know students and professors better
+- First generation college student
+- Raised in Palm Springs
+- Had little knowledge of college
+- smaller campus so she got to know students and professors better
 
 ## John
 - CS major
@@ -24,7 +26,7 @@ comments: true
 ## Different Pathways
 - Chem
 - Biochemistry 
-- Phyiscs
+- Physics
 - Applied Physics
 - Biology
 - Comp Sci
