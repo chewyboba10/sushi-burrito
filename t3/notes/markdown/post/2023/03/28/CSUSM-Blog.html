@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>CSUSM Notes | Evan Aparri</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="CSUSM Notes" />
+<meta name="author" content="Evan Aparri" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Notes taken during the CSUSM Talk" />
+<meta property="og:description" content="Notes taken during the CSUSM Talk" />
+<link rel="canonical" href="https://chewyboba10.github.io/sushi-burrito/t3/notes/markdown/post/2023/03/28/CSUSM-Blog.html" />
+<meta property="og:url" content="https://chewyboba10.github.io/sushi-burrito/t3/notes/markdown/post/2023/03/28/CSUSM-Blog.html" />
+<meta property="og:site_name" content="Evan Aparri" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-03-28T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="CSUSM Notes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Evan Aparri"},"dateModified":"2023-03-28T00:00:00-05:00","datePublished":"2023-03-28T00:00:00-05:00","description":"Notes taken during the CSUSM Talk","headline":"CSUSM Notes","mainEntityOfPage":{"@type":"WebPage","@id":"https://chewyboba10.github.io/sushi-burrito/t3/notes/markdown/post/2023/03/28/CSUSM-Blog.html"},"url":"https://chewyboba10.github.io/sushi-burrito/t3/notes/markdown/post/2023/03/28/CSUSM-Blog.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/sushi-burrito/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://chewyboba10.github.io/sushi-burrito/feed.xml" title="Evan Aparri" /><link rel="shortcut icon" type="image/x-icon" href="/sushi-burrito/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/sushi-burrito/">Evan Aparri</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/sushi-burrito/about/">About</a><a class="page-link" href="/sushi-burrito/api/overview">API</a><a class="page-link" href="/sushi-burrito/_pages/lecture-notes.html">Lecture Notes</a><a class="page-link" href="/sushi-burrito/search/">Search</a><a class="page-link" href="/sushi-burrito/submenu">Submenu</a><a class="page-link" href="/sushi-burrito/categories/">Tags</a><a class="page-link" href="/sushi-burrito/vocab">Vocab</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">CSUSM Notes</h1><p class="page-description">Notes taken during the CSUSM Talk</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-03-28T00:00:00-05:00" itemprop="datePublished">
+        Mar 28, 2023
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Evan Aparri</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/sushi-burrito/categories/#T3">T3</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/sushi-burrito/categories/#Notes">Notes</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/sushi-burrito/categories/#markdown">markdown</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/sushi-burrito/categories/#post">post</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#csusm-notes">CSUSM NOTES</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#ashley">Ashley</a></li>
+<li class="toc-entry toc-h2"><a href="#john">John</a></li>
+<li class="toc-entry toc-h2"><a href="#different-pathways">Different Pathways</a></li>
+<li class="toc-entry toc-h2"><a href="#clubs">Clubs</a></li>
+<li class="toc-entry toc-h2"><a href="#internships">Internships</a></li>
+<li class="toc-entry toc-h2"><a href="#programs">Programs</a></li>
+<li class="toc-entry toc-h2"><a href="#research-at-csusm">Research at CSUSM</a></li>
+<li class="toc-entry toc-h2"><a href="#paying-for-college">Paying for college</a></li>
+<li class="toc-entry toc-h2"><a href="#scholarships-and-grants">Scholarships and Grants</a></li>
+<li class="toc-entry toc-h2"><a href="#life-after-csusm">Life after CSUSM</a></li>
+<li class="toc-entry toc-h2"><a href="#upcoming-events-at-csusm">Upcoming Events at CSUSM</a></li>
+</ul>
+</li>
+</ul><h1 id="csusm-notes">
+<a class="anchor" href="#csusm-notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>CSUSM NOTES</h1>
+
+<h2 id="ashley">
+<a class="anchor" href="#ashley" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ashley</h2>
+<ul>
+  <li>smaller campus</li>
+  <li>got to know students and professors better</li>
+</ul>
+
+<h2 id="john">
+<a class="anchor" href="#john" aria-hidden="true"><span class="octicon octicon-link"></span></a>John</h2>
+<ul>
+  <li>CS major</li>
+  <li>cal state san marcos was a poultry farm before it was built</li>
+  <li>their have built a new engineering building and plan to build more</li>
+  <li>college with biggest socio economic change</li>
+  <li>Debt free college student</li>
+</ul>
+
+<h2 id="different-pathways">
+<a class="anchor" href="#different-pathways" aria-hidden="true"><span class="octicon octicon-link"></span></a>Different Pathways</h2>
+<ul>
+  <li>Chem</li>
+  <li>Biochemistry</li>
+  <li>Phyiscs</li>
+  <li>Applied Physics</li>
+  <li>Biology</li>
+  <li>Comp Sci</li>
+  <li>Comp engineering</li>
+  <li>Electrical Engineering</li>
+  <li>Mechanical Engineering</li>
+</ul>
+
+<h2 id="clubs">
+<a class="anchor" href="#clubs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Clubs</h2>
+<ul>
+  <li>Cybersecurity</li>
+  <li>Robotics</li>
+  <li>3D printing</li>
+  <li>Women in STEM</li>
+  <li>Society of Women Engineers</li>
+</ul>
+
+<h2 id="internships">
+<a class="anchor" href="#internships" aria-hidden="true"><span class="octicon octicon-link"></span></a>Internships</h2>
+<ul>
+  <li>Period of work experience offered by an organization for a limited period if time</li>
+  <li>Can be found by joining clubs, checking emails, attending campus events, googling</li>
+  <li>Apply even if you feel unqualified</li>
+  <li>Ask others to look over your essays in your application</li>
+</ul>
+
+<h2 id="programs">
+<a class="anchor" href="#programs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programs</h2>
+<ul>
+  <li>Summer Scholars Program
+10 week summer program that provides research experience aimed at career development and preparation for graduate school</li>
+  <li>Quantum Bridge Program
+4 week program for those in CSUSM</li>
+</ul>
+
+<h2 id="research-at-csusm">
+<a class="anchor" href="#research-at-csusm" aria-hidden="true"><span class="octicon octicon-link"></span></a>Research at CSUSM</h2>
+<ul>
+  <li>Terrestrial Ecosystem</li>
+  <li>Algae</li>
+  <li>Cancer Cell</li>
+</ul>
+
+<h2 id="paying-for-college">
+<a class="anchor" href="#paying-for-college" aria-hidden="true"><span class="octicon octicon-link"></span></a>Paying for college</h2>
+<p>two typed of loans: subsidized and unsubsidized. Direct subsidized and direct unsubsidized loans are federal student loans offered by the US Department of Education to help eligible students cover for the cost of college</p>
+<ul>
+  <li>Subsidized Loans do not accrue interest while you are in school at lease half time or during deferment periods</li>
+  <li>Unsubsidized Loans does accrue interest while you are in school and during grace periods</li>
+</ul>
+
+<p>it is on you to look for your scholarships</p>
+
+<p>Try to Pay back loans 6 months after you graduate</p>
+
+<h2 id="scholarships-and-grants">
+<a class="anchor" href="#scholarships-and-grants" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scholarships and Grants</h2>
+<ul>
+  <li>apply for FAFSA, studentaid.gov</li>
+  <li>check email for scholarship opportunities</li>
+  <li>Google</li>
+  <li>financial aid office</li>
+</ul>
+
+<h2 id="life-after-csusm">
+<a class="anchor" href="#life-after-csusm" aria-hidden="true"><span class="octicon octicon-link"></span></a>Life after CSUSM</h2>
+<ul>
+  <li>Continue to graduate school or other professional programs</li>
+  <li>Become educators</li>
+  <li>Careers in the field</li>
+</ul>
+
+<h2 id="upcoming-events-at-csusm">
+<a class="anchor" href="#upcoming-events-at-csusm" aria-hidden="true"><span class="octicon octicon-link"></span></a>Upcoming Events at CSUSM</h2>
+<ul>
+  <li>Cougar Blue Day
+Saturday April 8</li>
+</ul>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="chewyboba10/sushi-burrito"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/sushi-burrito/t3/notes/markdown/post/2023/03/28/CSUSM-Blog.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/sushi-burrito/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://chewyboba10.github.io/sushi-burrito/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/sushi-burrito/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>My first blogging site.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
