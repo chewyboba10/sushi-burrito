@@ -80,5 +80,10 @@ Try to Pay back loans 6 months after you graduate
 - Cougar Blue Day
 Saturday April 8
 
+## STEM Activity
+In this STEM activity, we used batteries, electrical wires, tape, and a something that looked like a toothbrush head to and wire it so that the toothbrush head would vibrate. The project itself was not that difficult, so I thought outside the box and borrowed other people's tooth brushes, batteries, and wires. Stacking the batteries the wiring the the toothbrushes would increase the intensity that the toothbrush vibrated at and it was possible to wire two toothbrushes with one battery. Unfortunately, I only have the video of the initial project.
+
+[Video Link](https://www.wevideo.com/view/3014705898)
+
 # Conclusion
 I think I might apply for CSUSM, but I don't think I will choose it as my college if I get in but have other choices. However, I did learn a lot of new things about college, especially regarding student loans. It is useful to know that there are different types of loans, and that one could accumulate interest during your time in school and one that doesn't.
