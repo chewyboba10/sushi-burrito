@@ -79,3 +79,6 @@ Try to Pay back loans 6 months after you graduate
 ## Upcoming Events at CSUSM
 - Cougar Blue Day
 Saturday April 8
+
+# Conclusion
+I think I might apply for CSUSM, but I don't think I will choose it as my college if I get in but have other choices. However, I did learn a lot of new things about college, especially regarding student loans. It is useful to know that there are different types of loans, and that one could accumulate interest during your time in school and one that doesn't.
