@@ -2,7 +2,7 @@
   
     
         "post0": {
-            "title": "College Board MC",
+            "title": "College Board MCQ 4",
             "content": "My Score: 47/50 . Mistakes . Question: 9 . . I got the part where the file is broke into packets for transmission, but I originally thought that the browser would have to request each packet to recieve it, but really the packets are just reassembled upon reciept. | . Question: 20 . . I understood that II is correct because it is clear that the data could estimate the numebr of phone calls between 10:30 am and noon, but really statement II is also correct because the metadata stores the phone numbers into two parties of a call. Therefore if we get one phone number, the metadata will process all numbers assigned to that person. | . Question: 43 . . This was just a really silly mistake, the whole point of procedural extraction is to reduce the amount of the same code with different numbers or variables, I probably just sped through this problem. | .",
             "url": "https://chewyboba10.github.io/sushi-burrito/notes/2023/04/02/MCQ4.html",
             "relUrl": "/notes/2023/04/02/MCQ4.html",
