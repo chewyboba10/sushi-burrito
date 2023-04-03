@@ -152,19 +152,19 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="c1">// Define some color variables</span>
+<span class="nv">$primary-color</span><span class="o">:</span> <span class="mh">#007bff</span><span class="p">;</span>
+<span class="nv">$secondary-color</span><span class="o">:</span> <span class="mh">#6c757d</span><span class="p">;</span>
 
-<pre><code>// Define some color variables
-$primary-color: #007bff;
-$secondary-color: #6c757d;
+<span class="c1">// Use the variables in your styles</span>
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nt">background-color</span><span class="nd">:</span> <span class="err">$</span><span class="nt">secondary-color</span><span class="o">;</span>
+<span class="p">}</span>
 
-// Use the variables in your styles
-body {
-  background-color: $secondary-color;
-}
-
-h1 {
-  color: $primary-color;
-}</code></pre>
+<span class="nt">h1</span> <span class="p">{</span>
+  <span class="nt">color</span><span class="nd">:</span> <span class="err">$</span><span class="nt">primary-color</span><span class="o">;</span>
+<span class="p">}</span>
+</pre></div>
 
 </div>
 </div>
@@ -181,29 +181,29 @@ h1 {
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="c1">// Nesting selectors</span>
+<span class="nt">nav</span> <span class="p">{</span>
+  <span class="nt">ul</span> <span class="p">{</span>
+    <span class="nt">list-style</span><span class="nd">:</span> <span class="nt">none</span><span class="o">;</span>
+    <span class="nt">margin</span><span class="nd">:</span> <span class="nt">0</span><span class="o">;</span>
+    <span class="nt">padding</span><span class="nd">:</span> <span class="nt">0</span><span class="o">;</span>
 
-<pre><code>// Nesting selectors
-nav {
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    <span class="nt">li</span> <span class="p">{</span>
+      <span class="nt">display</span><span class="nd">:</span> <span class="nt">inline-block</span><span class="o">;</span>
 
-    li {
-      display: inline-block;
+      <span class="nt">a</span> <span class="p">{</span>
+        <span class="nt">color</span><span class="nd">:</span> <span class="err">$</span><span class="nt">primary-color</span><span class="o">;</span>
+        <span class="nt">text-decoration</span><span class="nd">:</span> <span class="nt">none</span><span class="o">;</span>
+        <span class="nt">padding</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.5rem</span><span class="o">;</span>
 
-      a {
-        color: $primary-color;
-        text-decoration: none;
-        padding: 0.5rem;
-
-        &amp;:hover {
-          background-color: $secondary-color;
-        }
-      }
-    }
-  }
-}</code></pre>
+        <span class="k">&amp;</span><span class="nd">:hover</span> <span class="p">{</span>
+          <span class="nt">background-color</span><span class="nd">:</span> <span class="err">$</span><span class="nt">secondary-color</span><span class="o">;</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
 
 </div>
 </div>
@@ -220,27 +220,27 @@ nav {
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="c1">// Define a mixin for button styles</span>
+<span class="k">@mixin</span><span class="nf"> button-styles</span> <span class="p">{</span>
+  <span class="nt">display</span><span class="nd">:</span> <span class="nt">inline-block</span><span class="o">;</span>
+  <span class="nt">padding</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.5rem</span><span class="o">;</span>
+  <span class="nt">font-size</span><span class="nd">:</span> <span class="nt">1rem</span><span class="o">;</span>
+  <span class="nt">font-weight</span><span class="nd">:</span> <span class="nt">bold</span><span class="o">;</span>
+  <span class="nt">text-decoration</span><span class="nd">:</span> <span class="nt">none</span><span class="o">;</span>
+  <span class="nt">border-radius</span><span class="nd">:</span> <span class="nt">0</span><span class="nc">.25rem</span><span class="o">;</span>
+  <span class="nt">color</span><span class="nd">:</span> <span class="nt">white</span><span class="o">;</span>
+  <span class="nt">background-color</span><span class="nd">:</span> <span class="err">$</span><span class="nt">primary-color</span><span class="o">;</span>
 
-<pre><code>// Define a mixin for button styles
-@mixin button-styles {
-  display: inline-block;
-  padding: 0.5rem;
-  font-size: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 0.25rem;
-  color: white;
-  background-color: $primary-color;
+  <span class="k">&amp;</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="nt">background-color</span><span class="nd">:</span> <span class="err">$</span><span class="nt">secondary-color</span><span class="o">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-  &amp;:hover {
-    background-color: $secondary-color;
-  }
-}
-
-// Use the mixin to style a button
-button {
-  @include button-styles;
-}</code></pre>
+<span class="c1">// Use the mixin to style a button</span>
+<span class="nt">button</span> <span class="p">{</span>
+  <span class="k">@include</span><span class="nd"> button-styles</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
 
 </div>
 </div>
