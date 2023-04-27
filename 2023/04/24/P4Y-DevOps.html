@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>P4-Y 4/24 DevOps Hacks | Evan Aparri</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="P4-Y 4/24 DevOps Hacks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Devops Hacks" />
+<meta property="og:description" content="Devops Hacks" />
+<link rel="canonical" href="https://chewyboba10.github.io/sushi-burrito/2023/04/24/P4Y-DevOps.html" />
+<meta property="og:url" content="https://chewyboba10.github.io/sushi-burrito/2023/04/24/P4Y-DevOps.html" />
+<meta property="og:site_name" content="Evan Aparri" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-04-24T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="P4-Y 4/24 DevOps Hacks" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-04-24T00:00:00-05:00","datePublished":"2023-04-24T00:00:00-05:00","description":"Devops Hacks","headline":"P4-Y 4/24 DevOps Hacks","mainEntityOfPage":{"@type":"WebPage","@id":"https://chewyboba10.github.io/sushi-burrito/2023/04/24/P4Y-DevOps.html"},"url":"https://chewyboba10.github.io/sushi-burrito/2023/04/24/P4Y-DevOps.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/sushi-burrito/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://chewyboba10.github.io/sushi-burrito/feed.xml" title="Evan Aparri" /><link rel="shortcut icon" type="image/x-icon" href="/sushi-burrito/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/sushi-burrito/">Evan Aparri</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/sushi-burrito/about/">About</a><a class="page-link" href="/sushi-burrito/api/overview">API</a><a class="page-link" href="/sushi-burrito/_pages/lecture-notes.html">Lecture Notes</a><a class="page-link" href="/sushi-burrito/search/">Search</a><a class="page-link" href="/sushi-burrito/submenu">Submenu</a><a class="page-link" href="/sushi-burrito/categories/">Tags</a><a class="page-link" href="/sushi-burrito/vocab">Vocab</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">P4-Y 4/24 DevOps Hacks</h1><p class="page-description">Devops Hacks</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-04-24T00:00:00-05:00" itemprop="datePublished">
+        Apr 24, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      14 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/chewyboba10/sushi-burrito/tree/master/_notebooks/2023-04-24-P4Y-DevOps.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/sushi-burrito/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/chewyboba10/sushi-burrito/master?filepath=_notebooks%2F2023-04-24-P4Y-DevOps.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/sushi-burrito/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/chewyboba10/sushi-burrito/blob/master/_notebooks/2023-04-24-P4Y-DevOps.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/sushi-burrito/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fchewyboba10%2Fsushi-burrito%2Fblob%2Fmaster%2F_notebooks%2F2023-04-24-P4Y-DevOps.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/sushi-burrito/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-04-24-P4Y-DevOps.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>KASM HACKS</strong>:</p>
+<ol>
+<li>
+<p>In 3-4 sentences, please explain the significance of virtual desktops and KASM. How can virtual desktops such as these be utilized in our AP CSP environment? (0.45)</p>
+</li>
+<li>
+<p>Attempt to work through the KASM setup with your team. Attach two screenshots to show that you have successfully gone through the setup: The first screenshot of KASM generating your credentials, and the second screenshot of the KASM workspace once you have logged in. (0.45)</p>
+</li>
+</ol>
+<p><strong>AWS DATABASES HACKS</strong>:</p>
+<ol>
+<li>QUIZ: <a href="https://vardaansinha.github.io/devops/2023/04/23/DifferentAWS.html">https://vardaansinha.github.io/devops/2023/04/23/DifferentAWS.html</a>
+</li>
+</ol>
+<p>Quiz
+What is the main difference between relational and non-relational databases?</p>
+<p>A. Relational databases are only used for structured data, while non-relational databases are only used for unstructured data.</p>
+<p>B. Relational databases can easily handle high data volumes, while non-relational databases cannot.</p>
+<p><strong>C. Relational databases are based on tables and use SQL, while non-relational databases are based on collections and use JSON-like documents.</strong></p>
+<p>D. Relational databases are more expensive than non-relational databases.</p>
+<p>The main difference between relational and non-relational databases is that relational databases are based on tables and use SQL, while non-relational databases are based on collections and use JSON-like documents. Therefore, option C is correct.</p>
+<p>Which AWS database service is best suited for applications that require low-latency speed?</p>
+<p><strong>A. Amazon ElastiCache</strong></p>
+<p>B. Amazon Neptune</p>
+<p>C. Amazon DocumentDB</p>
+<p>D. Amazon RDS</p>
+<p>The AWS database service that is best suited for applications that require low-latency speed is Amazon ElastiCache, so option A is correct.</p>
+<p>What is the purpose of the code example provided in the lesson?</p>
+<p>A. To demonstrate how to create a table in Amazon Aurora.</p>
+<p>B. To show how to query data from a DynamoDB table.</p>
+<p><strong>C. To provide an example of how to connect to a database instance in RDS using Python.</strong></p>
+<p>D. To showcase how to insert data into a MySQL table.</p>
+<p>The purpose of the code example provided in the lesson is to provide an example of how to connect to a database instance in RDS using Python. Therefore, option C is correct.</p>
+<p>Results: 3/3</p>
+<ol>
+<li>QUIZ #2: <a href="https://vardaansinha.github.io/devops/2023/04/02/AWSSQL.html">https://vardaansinha.github.io/devops/2023/04/02/AWSSQL.html</a>
+</li>
+</ol>
+<p>Quiz
+Which of the following is not an AWS database option?</p>
+<p>A. Amazon RDS</p>
+<p>B. Amazon Neptune</p>
+<p><strong>C. SQLite</strong></p>
+<p>D. Amazon DynamoDB</p>
+<p>The option that is not an AWS database option is C. SQLite. Amazon RDS, Amazon Neptune, and Amazon DynamoDB are all AWS database options.</p>
+<p>Which of the following is a file-based, lightweight RDBMS?</p>
+<p>A. Amazon RDS</p>
+<p>B. Amazon Neptune</p>
+<p>C Amazon DynamoDB</p>
+<p><strong>D. SQLite</strong></p>
+<p>The file-based, lightweight RDBMS is D. SQLite. Amazon RDS, Amazon Neptune, and Amazon DynamoDB are not file-based or lightweight.</p>
+<p>Which AWS service enables you to store and query highly connected datasets?</p>
+<p>A. Amazon Relational Database Service (RDS)</p>
+<p>B. Amazon DynamoDB</p>
+<p><strong>C. Amazon Neptune</strong></p>
+<p>D. Amazon DocumentDB</p>
+<p>The AWS service that enables you to store and query highly connected datasets is C. Amazon Neptune. Amazon RDS and Amazon DocumentDB are relational database services, while Amazon DynamoDB is a NoSQL database service.</p>
+<p><strong>DuckDNS and AWS HACKS</strong>:</p>
+<ol>
+<li>HACK 1: Create a diagram (Canva). What are the pros and cons of using DuckDNS? Show a diagram of an application running on AWS using a DuckDNS system.</li>
+</ol>
+<p><img src="/sushi-burrito/images/copied_from_nb/images/duckdns.png" alt="duckdns.png"></p>
+<ol>
+<li>HACK 2: Write a reflection. Why do we use DNS? How does DuckDNS work? What makes DuckDNS unique? How is DuckDNS useful for our projects? What are the steps to setup DuckDNS? </li>
+</ol>
+<p>DNS is an essential component of the internet infrastructure that enables us to access websites and services using human-readable domain names instead of IP addresses. Without DNS, navigating the internet would be a much more complicated process. DuckDNS is a free dynamic DNS service that allows users to assign a custom domain name to a dynamic IP address. DuckDNS is unique in that it is completely free and open-source, making it an accessible option for individuals and small businesses who cannot afford paid DNS services. Additionally, DuckDNS offers a simple and easy-to-use API that allows users to update their DNS records programmatically, making it a flexible option for developers and automation. DuckDNS is useful for projects that require remote access to a network or server using a custom domain name. Setting up DuckDNS involves signing up for an account, choosing a subdomain, downloading a client software or using the API to update DNS records, configuring your router, and testing your setup. Overall, DuckDNS is a useful tool for anyone looking for a free and accessible dynamic DNS solution that allows them to assign custom domain names to dynamic IP addresses.</p>
+<ol>
+<li>
+<p>HACK 3: (EXTRA CREDIT): Create your own DuckDNS setup video.</p>
+</li>
+<li>
+<p>HACK 4: In 2-3 complete sentences, talk about any outdated Nginx/Docker functionalities that may need to be addressed or any confusions you may have in regards to the deployment process from Trimesters 1 and 2.</p>
+</li>
+</ol>
+<p>Nginx/Docker has an old command called "docker run" command that should be changed because it's been replaced with "docker container run". Also, watch out for those outdated configurations because they might be using weak SSL protocols and ciphers that could mess with your security. It's a good idea to update them to use modern and secure options.</p>
+<ol>
+<li>HACK 5: Create a Venn Diagram comparing Nginx with Lighttpd.</li>
+</ol>
+<p><img src="/sushi-burrito/images/copied_from_nb/images/nginx.png" alt="nginx.png"></p>
+<ol>
+<li>HACK 6: Complete the Python quiz and attach your output from the notebook (should be done once you do the quiz.)</li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span>
+
+<span class="c1"># method to display question and get user's answers</span>
+<span class="k">def</span> <span class="nf">question_with_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">qCount</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">qCount</span><span class="p">)</span>  <span class="o">+</span> <span class="s2">" : "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">msg</span>
+
+<span class="c1"># dictionary to hold questions and answers as key : value pairs</span>
+<span class="n">questionsDict</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"What does Domain Name Server represent?"</span><span class="p">:</span> <span class="s2">"DNS"</span><span class="p">,</span>
+    <span class="s2">"What does this Represent: Amazon Web Services, which is a cloud computing platform provided by Amazon."</span><span class="p">:</span> <span class="s2">"AWS"</span><span class="p">,</span> 
+    <span class="s2">"What is the first Step to setting up an AWS Server? 1: Connecting to a Ubuntu EC2 Instance, 2: Start updating the system, 3: Clone the repository which one wishes to deploy, 4: Run the command: main.py to start the project"</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
+    <span class="s2">"What is the third Step to setting up an AWS Server? 1: Connecting to a Ubuntu EC2 Instance, 2: Start updating the system, 3: Clone the repository which one wishes to deploy, 4: Run the command: main.py to start the project"</span><span class="p">:</span> <span class="s2">"3"</span><span class="p">,</span>
+    <span class="s2">"What is the fourth Step to setting up an AWS Server? 1: Connecting to a Ubuntu EC2 Instance, 2: Start updating the system, 3: Clone the repository which one wishes to deploy, 4: Run the command: main.py to start the project"</span><span class="p">:</span> <span class="s2">"4"</span><span class="p">,</span>
+    <span class="s2">"What is the second Step to setting up an AWS Server? 1: Connecting to a Ubuntu EC2 Instance, 2: Start updating the system, 3: Clone the repository which one wishes to deploy, 4: Run the command: main.py to start the project"</span><span class="p">:</span> <span class="s2">"2"</span><span class="p">,</span>
+    <span class="s2">"What files are you supposed to edit after finishing the first steps of setting up the server and cloning it within the AWS Server? 1: Edit the docker files and docker.yml, 2: Edit the main.py file to change the characteristcs."</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
+    <span class="s2">"What is the first step to setting up a DuckDNS Server? 1: Sign in with your DuckDNS account using Github, 2: Configure current ip to the IP address that you want to access and click update ip button , 3: Create the subdomain, 4: Access site by typing in subdomain.duckdns.org"</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
+    <span class="s2">"What is the second step to setting up a DuckDNS Server? 1: Sign in with your DuckDNS account using Github, 2: Configure current ip to the IP address that you want to access and click update ip button , 3: Create the subdomain, 4: Access site by typing in subdomain.duckdns.org"</span><span class="p">:</span> <span class="s2">"3"</span><span class="p">,</span>
+    <span class="s2">"What is the third step to setting up a DuckDNS Server? 1: Sign in with your DuckDNS account using Github, 2: Configure current ip to the IP address that you want to access and click update ip button , 3: Create the subdomain, 4: Access site by typing in subdomain.duckdns.org"</span><span class="p">:</span> <span class="s2">"2"</span><span class="p">,</span>
+    <span class="s2">"What is the fourth step to setting up a DuckDNS Server? 1: Sign in with your DuckDNS account using Github, 2: Configure current ip to the IP address that you want to access and click update ip button , 3: Create the subdomain, 4: Access site by typing in subdomain.duckdns.org"</span><span class="p">:</span> <span class="s2">"4"</span>
+<span class="p">}</span>
+
+<span class="c1"># number of questions as length of the dictionary</span>
+<span class="n">questions</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">questionsDict</span><span class="p">)</span>
+
+<span class="c1"># set correct to 0</span>
+<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Hello, '</span> <span class="o">+</span> <span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">" running "</span> <span class="o">+</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You will be asked "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" questions."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Are you ready to take a test! Press Enter key to begin. Best of luck :)"</span><span class="p">)</span>
+<span class="nb">input</span><span class="p">()</span>
+
+<span class="n">questionCount</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c1"># iterate over list of keys from the dictionary. pass dictionary key as question to the question_with_response function</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">questionsDict</span><span class="p">:</span>
+    <span class="n">questionCount</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">questionCount</span><span class="p">)</span>
+    <span class="c1"># compare the value from the dictionary to the user's input</span>
+    <span class="k">if</span> <span class="n">rsp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">questionsDict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct! Good Job!"</span><span class="p">)</span>
+        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect! Better Luck next time."</span><span class="p">)</span>
+
+<span class="c1"># print final score    </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">" you scored "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span><span class="s2">"/"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span>
+
+<span class="c1"># calculate percentage</span>
+<span class="n">page</span> <span class="o">=</span> <span class="n">correct</span><span class="o">/</span><span class="n">questions</span> <span class="o">*</span> <span class="mi">100</span>
+
+<span class="c1"># print percentage</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Total Percentage: "</span> <span class="o">+</span> <span class="nb">str</span> <span class="p">(</span><span class="nb">format</span><span class="p">(</span><span class="n">page</span><span class="p">,</span><span class="s2">".2f"</span><span class="p">))</span> <span class="o">+</span> <span class="s2">"%"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello, chewyboba10 running /root/anaconda3/bin/python
+You will be asked 11 questions.
+Are you ready to take a test! Press Enter key to begin. Best of luck :)
+Question 1 : What does Domain Name Server represent?
+DNS is correct! Good Job!
+Question 2 : What does this Represent: Amazon Web Services, which is a cloud computing platform provided by Amazon.
+AWS is correct! Good Job!
+Question 3 : What is the first Step to setting up an AWS Server? 1: Connecting to a Ubuntu EC2 Instance, 2: Start updating the system, 3: Clone the repository which one wishes to deploy, 4: Run the command: main.py to start the project
+1 is correct! Good Job!
+Question 4 : What is the third Step to setting up an AWS Server? 1: Connecting to a Ubuntu EC2 Instance, 2: Start updating the system, 3: Clone the repository which one wishes to deploy, 4: Run the command: main.py to start the project
+3 is correct! Good Job!
+Question 5 : What is the fourth Step to setting up an AWS Server? 1: Connecting to a Ubuntu EC2 Instance, 2: Start updating the system, 3: Clone the repository which one wishes to deploy, 4: Run the command: main.py to start the project
+4 is correct! Good Job!
+Question 6 : What is the second Step to setting up an AWS Server? 1: Connecting to a Ubuntu EC2 Instance, 2: Start updating the system, 3: Clone the repository which one wishes to deploy, 4: Run the command: main.py to start the project
+2 is correct! Good Job!
+Question 7 : What files are you supposed to edit after finishing the first steps of setting up the server and cloning it within the AWS Server? 1: Edit the docker files and docker.yml, 2: Edit the main.py file to change the characteristcs.
+1 is correct! Good Job!
+Question 8 : What is the first step to setting up a DuckDNS Server? 1: Sign in with your DuckDNS account using Github, 2: Configure current ip to the IP address that you want to access and click update ip button , 3: Create the subdomain, 4: Access site by typing in subdomain.duckdns.org
+1 is correct! Good Job!
+Question 9 : What is the second step to setting up a DuckDNS Server? 1: Sign in with your DuckDNS account using Github, 2: Configure current ip to the IP address that you want to access and click update ip button , 3: Create the subdomain, 4: Access site by typing in subdomain.duckdns.org
+3 is correct! Good Job!
+Question 10 : What is the third step to setting up a DuckDNS Server? 1: Sign in with your DuckDNS account using Github, 2: Configure current ip to the IP address that you want to access and click update ip button , 3: Create the subdomain, 4: Access site by typing in subdomain.duckdns.org
+2 is correct! Good Job!
+Question 11 : What is the fourth step to setting up a DuckDNS Server? 1: Sign in with your DuckDNS account using Github, 2: Configure current ip to the IP address that you want to access and click update ip button , 3: Create the subdomain, 4: Access site by typing in subdomain.duckdns.org
+3 is incorrect! Better Luck next time.
+chewyboba10 you scored 10/11
+Total Percentage: 90.91%
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>CERTBOT HACKS</strong>:</p>
+<ol>
+<li>Follow the instructions below and provide a full screenshot of all terminal commands after and including sudo certbot --apache all the way until it asks for the domain you want to secure. At this point you can take a screenshot and cancel the process. If you choose to continue the setup process and get Certbot fully working and show a before and after screenshot of your domain with http amd https connection we will grant extra credit points on hacks, or make up for lost points in other areas.</li>
+</ol>
+<p>could not get further than this
+<img src="/sushi-burrito/images/copied_from_nb/images/cerbot.png" alt="cerbot.png"></p>
+<ol>
+<li>Research and compare the security features of OpenSSL and LibreSSL, and write about the recent vulnerabilities within it. Write about your research in a fastpages blog post. It can be the same post that has your screenshot for the Certbot Hacks.</li>
+</ol>
+<p>OpenSSL and LibreSSL are both open-source libraries that provide cryptographic functions for applications. While OpenSSL has been widely used for many years, LibreSSL is a fork of OpenSSL that was created in response to concerns about the security and development practices of OpenSSL. One notable difference between OpenSSL and LibreSSL is the approach to security. LibreSSL focuses on improving the security of the codebase, while OpenSSL prioritizes backwards compatibility and interoperability. For example, LibreSSL removed support for several outdated protocols and ciphers, while OpenSSL continued to support them. Both OpenSSL and LibreSSL have been affected by several vulnerabilities. One notable vulnerability in OpenSSL was the "Heartbleed" bug, which allowed an attacker to access sensitive information from a server's memory. In response, the OpenSSL project increased its focus on security and created a dedicated team to perform security audits and reviews. On the other hand, LibreSSL has also faced vulnerabilities such as "LibreSSL RNG bug", "LibreSSL malloc() bug" and more. It has since then adopted more rigorous coding standards and has a more focused approach to security, including extensive testing and auditing of the codebase. In conclusion, both OpenSSL and LibreSSL provide important security functions for applications, but there are differences in their approach to security. OpenSSL prioritizes compatibility and interoperability, while LibreSSL places more emphasis on improving security. It is important for developers to stay up-to-date on the latest vulnerabilities and updates for both libraries to ensure the security of their applications.</p>
+<p><strong>SCORING GUIDELINES</strong>:</p>
+<p>As talked about in class, we'll be looking for effort in the hacks. Though some setups may inevitably not work, we want to see that you took a stab at it and that you understand what the errors you're getting might mean.</p>
+<p>FOR 2/4 SECTIONS OF HACKS COMPLETE: <strong>HIGHEST WILL BE A 3.2/4 POSSIBLE --&gt; 0.8/1</strong></p>
+<p>FOR 3/4 SECTIONS OF HACKS COMPLETE: <strong>HIGHEST WILL BE A 3.6/4 POSSIBLE --&gt; 0.9/1</strong></p>
+<p>FOR 4/4 SECTIONS OF HACKS COMPLETE: <strong>YOU CAN GET UP TO A 4/4 --&gt; 1/1</strong></p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/sushi-burrito/2023/04/24/P4Y-DevOps.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/sushi-burrito/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://chewyboba10.github.io/sushi-burrito/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/sushi-burrito/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>My first blogging site.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
