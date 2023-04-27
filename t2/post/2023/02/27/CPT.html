@@ -117,24 +117,24 @@ The function of the program is to to all the past pong games from most recent to
 The input will be the usernames of the two players, the score each player earned, the result of each player, and the date the game was played. The output will be the json data that can later be used to create a table sorted from most recent to oldest.</p>
 
 <p>3.b.i.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>game1 = Pong('AAA', 'BBB', '1', '5', 'Loss', 'Win', date(2023, 1, 22))
-game2 = Pong('AAB', 'ABC', '2', '5', 'Loss', 'Win', date(2023, 1, 21))
-game3 = Pong('AAC', 'GHI', '5', '4', 'Win', 'Loss', date(2023, 1, 20))
-game4 = Pong('AAD', 'FGH', '5', '1', 'Win', 'Loss', date(2023, 1, 19))
-game5 = Pong('AAE', 'TYU', '3','5', 'Loss', 'Win', date(2023, 1, 22))
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">game1</span> <span class="o">=</span> <span class="n">Pong</span><span class="p">(</span><span class="s">'AAA'</span><span class="p">,</span> <span class="s">'BBB'</span><span class="p">,</span> <span class="s">'1'</span><span class="p">,</span> <span class="s">'5'</span><span class="p">,</span> <span class="s">'Loss'</span><span class="p">,</span> <span class="s">'Win'</span><span class="p">,</span> <span class="n">date</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">22</span><span class="p">))</span>
+<span class="n">game2</span> <span class="o">=</span> <span class="n">Pong</span><span class="p">(</span><span class="s">'AAB'</span><span class="p">,</span> <span class="s">'ABC'</span><span class="p">,</span> <span class="s">'2'</span><span class="p">,</span> <span class="s">'5'</span><span class="p">,</span> <span class="s">'Loss'</span><span class="p">,</span> <span class="s">'Win'</span><span class="p">,</span> <span class="n">date</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">))</span>
+<span class="n">game3</span> <span class="o">=</span> <span class="n">Pong</span><span class="p">(</span><span class="s">'AAC'</span><span class="p">,</span> <span class="s">'GHI'</span><span class="p">,</span> <span class="s">'5'</span><span class="p">,</span> <span class="s">'4'</span><span class="p">,</span> <span class="s">'Win'</span><span class="p">,</span> <span class="s">'Loss'</span><span class="p">,</span> <span class="n">date</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+<span class="n">game4</span> <span class="o">=</span> <span class="n">Pong</span><span class="p">(</span><span class="s">'AAD'</span><span class="p">,</span> <span class="s">'FGH'</span><span class="p">,</span> <span class="s">'5'</span><span class="p">,</span> <span class="s">'1'</span><span class="p">,</span> <span class="s">'Win'</span><span class="p">,</span> <span class="s">'Loss'</span><span class="p">,</span> <span class="n">date</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">19</span><span class="p">))</span>
+<span class="n">game5</span> <span class="o">=</span> <span class="n">Pong</span><span class="p">(</span><span class="s">'AAE'</span><span class="p">,</span> <span class="s">'TYU'</span><span class="p">,</span> <span class="s">'3'</span><span class="p">,</span><span class="s">'5'</span><span class="p">,</span> <span class="s">'Loss'</span><span class="p">,</span> <span class="s">'Win'</span><span class="p">,</span> <span class="n">date</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">22</span><span class="p">))</span>
 
-games = [game1, game2, game3, game4, game5]
+<span class="n">games</span> <span class="o">=</span> <span class="p">[</span><span class="n">game1</span><span class="p">,</span> <span class="n">game2</span><span class="p">,</span> <span class="n">game3</span><span class="p">,</span> <span class="n">game4</span><span class="p">,</span> <span class="n">game5</span><span class="p">]</span>
 </code></pre></div></div>
 
 <p>3.b.ii.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"""Builds sample user/note(s) data"""
-for game in games:
-    try:
-        user.create()
-    except IntegrityError:
-        '''fails with bad or duplicate data'''
-        db.session.remove()
-        print(f"Records exist, duplicate email, or error in {game.user1} and/or {game.user2}")
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">"""Builds sample user/note(s) data"""</span>
+<span class="k">for</span> <span class="n">game</span> <span class="ow">in</span> <span class="n">games</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">user</span><span class="p">.</span><span class="n">create</span><span class="p">()</span>
+    <span class="k">except</span> <span class="n">IntegrityError</span><span class="p">:</span>
+        <span class="s">'''fails with bad or duplicate data'''</span>
+        <span class="n">db</span><span class="p">.</span><span class="n">session</span><span class="p">.</span><span class="n">remove</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Records exist, duplicate email, or error in </span><span class="si">{</span><span class="n">game</span><span class="p">.</span><span class="n">user1</span><span class="si">}</span><span class="s"> and/or </span><span class="si">{</span><span class="n">game</span><span class="p">.</span><span class="n">user2</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>3.b.iii.
@@ -147,136 +147,136 @@ The data that my list contains represents a game that was played in pong.</p>
 The dictionary in the variable body helps to create separate, distinct packets of information specifically for each game played. Without the use of this dictionary, the database would not be able to distinguish which game users participate in. This can make the program code harder to create as there would have to be a separate, more complex algorithm which manually sorts the data already present in the database.</p>
 
 <p>3.c.i.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class PongAPI:
-    class PongCreate(Resource):    
-        def post(self):
-            data = request.get_json()
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">PongAPI</span><span class="p">:</span>
+    <span class="k">class</span> <span class="nc">PongCreate</span><span class="p">(</span><span class="n">Resource</span><span class="p">):</span>    
+        <span class="k">def</span> <span class="nf">post</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">request</span><span class="p">.</span><span class="n">get_json</span><span class="p">()</span>
 
-            user1 = data.get('user1')
-            if user1 is None or len(user1) != 3:
-                return {'message': f'username 1 is missing or longer than 3 characters'}, 210
+            <span class="n">user1</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'user1'</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">user1</span> <span class="ow">is</span> <span class="bp">None</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">user1</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s">'username 1 is missing or longer than 3 characters'</span><span class="p">},</span> <span class="mi">210</span>
                 
-            user2 = data.get('user2')
-            if user2 is None or len(user2) != 3:
-                return {'message': f'username 2 is missing or longer than 3 characters'}, 210
+            <span class="n">user2</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'user2'</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">user2</span> <span class="ow">is</span> <span class="bp">None</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">user2</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s">'username 2 is missing or longer than 3 characters'</span><span class="p">},</span> <span class="mi">210</span>
             
-            # Change later to exclude negative scores
-            score1 = data.get('score1')
-            if score1 is None or len(score1) &lt;= 0:
-                return {'message': f'Score 1 does not exist, is missing, or is invalid'}, 210 
+            <span class="c1"># Change later to exclude negative scores
+</span>            <span class="n">score1</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'score1'</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">score1</span> <span class="ow">is</span> <span class="bp">None</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">score1</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s">'Score 1 does not exist, is missing, or is invalid'</span><span class="p">},</span> <span class="mi">210</span> 
 
-            score2 = data.get('score2')
-            if score2 is None or len(score2) &lt;= 0:
-                return {'message': f'Score 2 does not exist, is missing, or is invalid'}, 210 
+            <span class="n">score2</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'score2'</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">score2</span> <span class="ow">is</span> <span class="bp">None</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">score2</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s">'Score 2 does not exist, is missing, or is invalid'</span><span class="p">},</span> <span class="mi">210</span> 
                 
-            result1 = data.get('result1')
-            if result1 is None:
-                return {'message': f'Game result does not exist or is missing'}, 210 
+            <span class="n">result1</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'result1'</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">result1</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s">'Game result does not exist or is missing'</span><span class="p">},</span> <span class="mi">210</span> 
             
-            result2 = data.get('result2')
-            if result2 is None:
-                return {'message': f'Game result does not exist or is missing'}, 210 
+            <span class="n">result2</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'result2'</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">result2</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span><span class="s">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s">'Game result does not exist or is missing'</span><span class="p">},</span> <span class="mi">210</span> 
             
-            scoreDate = data.get('scoreDate')
+            <span class="n">scoreDate</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'scoreDate'</span><span class="p">)</span>
 
-            pongProfile = Pong(user1=user1, user2=user2, score1=score1, score2=score2, result1=result1, result2=result2)
+            <span class="n">pongProfile</span> <span class="o">=</span> <span class="n">Pong</span><span class="p">(</span><span class="n">user1</span><span class="o">=</span><span class="n">user1</span><span class="p">,</span> <span class="n">user2</span><span class="o">=</span><span class="n">user2</span><span class="p">,</span> <span class="n">score1</span><span class="o">=</span><span class="n">score1</span><span class="p">,</span> <span class="n">score2</span><span class="o">=</span><span class="n">score2</span><span class="p">,</span> <span class="n">result1</span><span class="o">=</span><span class="n">result1</span><span class="p">,</span> <span class="n">result2</span><span class="o">=</span><span class="n">result2</span><span class="p">)</span>
 
-            if scoreDate is not None:
-                try:
-                    pongProfile.scoreDate = datetime.strptime(scoreDate, '%m-%d-%Y').date()
-                except:
-                    return {'message': f'Date obtained score format error {scoreDate}, must be mm-dd-yyyy'}, 210
+            <span class="k">if</span> <span class="n">scoreDate</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">pongProfile</span><span class="p">.</span><span class="n">scoreDate</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">scoreDate</span><span class="p">,</span> <span class="s">'%m-%d-%Y'</span><span class="p">).</span><span class="n">date</span><span class="p">()</span>
+                <span class="k">except</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="p">{</span><span class="s">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s">'Date obtained score format error </span><span class="si">{</span><span class="n">scoreDate</span><span class="si">}</span><span class="s">, must be mm-dd-yyyy'</span><span class="p">},</span> <span class="mi">210</span>
             
-            user = pongProfile.create()
-            if user:
-                return jsonify(user.make_dict())
-            return {'message': f'Processed {user1} and/or {user2}, either a format error or Usernames {user1} and/or {user2} is duplicate'}, 210
+            <span class="n">user</span> <span class="o">=</span> <span class="n">pongProfile</span><span class="p">.</span><span class="n">create</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">user</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">user</span><span class="p">.</span><span class="n">make_dict</span><span class="p">())</span>
+            <span class="k">return</span> <span class="p">{</span><span class="s">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s">'Processed </span><span class="si">{</span><span class="n">user1</span><span class="si">}</span><span class="s"> and/or </span><span class="si">{</span><span class="n">user2</span><span class="si">}</span><span class="s">, either a format error or Usernames </span><span class="si">{</span><span class="n">user1</span><span class="si">}</span><span class="s"> and/or </span><span class="si">{</span><span class="n">user2</span><span class="si">}</span><span class="s"> is duplicate'</span><span class="p">},</span> <span class="mi">210</span>
 </code></pre></div></div>
 
 <p>3.c.ii.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  function read_users() {
-    // prepare fetch options
-    const read_options = {
-      method: 'GET', // *GET, POST, PUT, DELETE, etc.
-      mode: 'cors', // no-cors, *cors, same-origin
-      cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: 'omit', // include, *same-origin, omit
-      headers: {
-        'Content-Type': 'application/json'
-      },
-    };
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">function</span> <span class="nx">read_users</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// prepare fetch options</span>
+    <span class="kd">const</span> <span class="nx">read_options</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">GET</span><span class="dl">'</span><span class="p">,</span> <span class="c1">// *GET, POST, PUT, DELETE, etc.</span>
+      <span class="na">mode</span><span class="p">:</span> <span class="dl">'</span><span class="s1">cors</span><span class="dl">'</span><span class="p">,</span> <span class="c1">// no-cors, *cors, same-origin</span>
+      <span class="na">cache</span><span class="p">:</span> <span class="dl">'</span><span class="s1">default</span><span class="dl">'</span><span class="p">,</span> <span class="c1">// *default, no-cache, reload, force-cache, only-if-cached</span>
+      <span class="na">credentials</span><span class="p">:</span> <span class="dl">'</span><span class="s1">omit</span><span class="dl">'</span><span class="p">,</span> <span class="c1">// include, *same-origin, omit</span>
+      <span class="na">headers</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">'</span><span class="s1">Content-Type</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">application/json</span><span class="dl">'</span>
+      <span class="p">},</span>
+    <span class="p">};</span>
 
-    // fetch the data from API
-    fetch(read_fetch, read_options)
-      // response is a RESTful "promise" on any successful fetch
-      .then(response =&gt; {
-        // check for response errors
-        if (response.status !== 200) {
-          const errorMsg = 'Database read error: ' + response.status;
-          console.log(errorMsg);
-          const tr = document.createElement("tr");
-          const td = document.createElement("td");
-          td.innerHTML = errorMsg;
-          tr.appendChild(td);
-          resultContainer.appendChild(tr);
-          return;
-        }
-        // valid response will have json data
-        response.json().then(data =&gt; {
-          console.log(data);
-          data.sort(function(a, b) {
-            return new Date(b.scoreDate) - new Date(a.scoreDate);
-          });
-          for (let i = 0; i &lt; data.length; i++) {
-            const row = data[i];
-            console.log(row);
-            add_row(row);
-          }
-        })
-      })
-      // catch fetch errors (ie ACCESS to server blocked)
-      .catch(err =&gt; {
-        console.error(err);
-        const tr = document.createElement("tr");
-        const td = document.createElement("td");
-        td.innerHTML = err;
-        tr.appendChild(td);
-        resultContainer.appendChild(tr);
-      });
-  }
+    <span class="c1">// fetch the data from API</span>
+    <span class="nx">fetch</span><span class="p">(</span><span class="nx">read_fetch</span><span class="p">,</span> <span class="nx">read_options</span><span class="p">)</span>
+      <span class="c1">// response is a RESTful "promise" on any successful fetch</span>
+      <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="c1">// check for response errors</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span> <span class="o">!==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
+          <span class="kd">const</span> <span class="nx">errorMsg</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Database read error: </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="p">;</span>
+          <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">errorMsg</span><span class="p">);</span>
+          <span class="kd">const</span> <span class="nx">tr</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">tr</span><span class="dl">"</span><span class="p">);</span>
+          <span class="kd">const</span> <span class="nx">td</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">td</span><span class="dl">"</span><span class="p">);</span>
+          <span class="nx">td</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">errorMsg</span><span class="p">;</span>
+          <span class="nx">tr</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">td</span><span class="p">);</span>
+          <span class="nx">resultContainer</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">tr</span><span class="p">);</span>
+          <span class="k">return</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="c1">// valid response will have json data</span>
+        <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
+          <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+          <span class="nx">data</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">b</span><span class="p">.</span><span class="nx">scoreDate</span><span class="p">)</span> <span class="o">-</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">scoreDate</span><span class="p">);</span>
+          <span class="p">});</span>
+          <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">data</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">const</span> <span class="nx">row</span> <span class="o">=</span> <span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">row</span><span class="p">);</span>
+            <span class="nx">add_row</span><span class="p">(</span><span class="nx">row</span><span class="p">);</span>
+          <span class="p">}</span>
+        <span class="p">})</span>
+      <span class="p">})</span>
+      <span class="c1">// catch fetch errors (ie ACCESS to server blocked)</span>
+      <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+        <span class="kd">const</span> <span class="nx">tr</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">tr</span><span class="dl">"</span><span class="p">);</span>
+        <span class="kd">const</span> <span class="nx">td</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">td</span><span class="dl">"</span><span class="p">);</span>
+        <span class="nx">td</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">err</span><span class="p">;</span>
+        <span class="nx">tr</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">td</span><span class="p">);</span>
+        <span class="nx">resultContainer</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">tr</span><span class="p">);</span>
+      <span class="p">});</span>
+  <span class="p">}</span>
 
 
-  function add_row(data) {
-    const tr = document.createElement("tr");
-    const user1 = document.createElement("td");
-    const user2 = document.createElement("td");
-    const score1 = document.createElement("td");
-    const score2 = document.createElement("td");
-    const result1 = document.createElement("td");
-    const result2 = document.createElement("td");
-    const scoreDate = document.createElement("td");
+  <span class="kd">function</span> <span class="nx">add_row</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">tr</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">tr</span><span class="dl">"</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">user1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">td</span><span class="dl">"</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">user2</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">td</span><span class="dl">"</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">score1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">td</span><span class="dl">"</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">score2</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">td</span><span class="dl">"</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">result1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">td</span><span class="dl">"</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">result2</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">td</span><span class="dl">"</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">scoreDate</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">td</span><span class="dl">"</span><span class="p">);</span>
 
   
-    // obtain data that is specific to the API
-    user1.innerHTML = data.user1; 
-    user2.innerHTML = data.user2; 
-    score1.innerHTML = data.score1;
-    score2.innerHTML = data.score2;
-    result1.innerHTML = data.result1;
-    result2.innerHTML = data.result2;
-    scoreDate.innerHTML = data.scoreDate;
+    <span class="c1">// obtain data that is specific to the API</span>
+    <span class="nx">user1</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">user1</span><span class="p">;</span> 
+    <span class="nx">user2</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">user2</span><span class="p">;</span> 
+    <span class="nx">score1</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">score1</span><span class="p">;</span>
+    <span class="nx">score2</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">score2</span><span class="p">;</span>
+    <span class="nx">result1</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">result1</span><span class="p">;</span>
+    <span class="nx">result2</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">result2</span><span class="p">;</span>
+    <span class="nx">scoreDate</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">scoreDate</span><span class="p">;</span>
 
-    // add HTML to container
-    tr.appendChild(user1);
-    tr.appendChild(user2);
-    tr.appendChild(score1);
-    tr.appendChild(score2);
-    tr.appendChild(result1);
-    tr.appendChild(result2);
-    tr.appendChild(scoreDate);
+    <span class="c1">// add HTML to container</span>
+    <span class="nx">tr</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">user1</span><span class="p">);</span>
+    <span class="nx">tr</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">user2</span><span class="p">);</span>
+    <span class="nx">tr</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">score1</span><span class="p">);</span>
+    <span class="nx">tr</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">score2</span><span class="p">);</span>
+    <span class="nx">tr</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">result1</span><span class="p">);</span>
+    <span class="nx">tr</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">result2</span><span class="p">);</span>
+    <span class="nx">tr</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">scoreDate</span><span class="p">);</span>
 
-    resultContainer.appendChild(tr);
-  }
+    <span class="nx">resultContainer</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">tr</span><span class="p">);</span>
+  <span class="p">}</span>
 </code></pre></div></div>
 
 <p>3.c.iii.
@@ -286,24 +286,19 @@ The procedure add_row() adds a row on the table of the game history, and display
 The algorithm fetches the API using its URL to execute the GET method. It then checks that a successful fetch will be guaranteed, and if it is, then a response is carried out. An if statement is used to check if the response has an error with reading the database. If there is an error, an error message is displayed on the table of the game history, and the entire function fetching the API is stopped. However, if there is no error, the algorithm proceeds to check that the response contains JSON data. If it does contain JSON data, the algorithm proceeds to sort the users, where the most recent game is displayed first and the oldest game is displayed last. Finally, the algorithm checks for any fetch errors, and if there is a fetch error, an error message is displayed onto the table of the game history.</p>
 
 <p>3.d.i.
-First example will be when the users inputs a score that is not part of the top 5.</p>
+First Call: The first call is when the user clicks submit to submit information from the completed game.</p>
 
-<p>Second example will be when the user reaches a score in the top 5 and replaces the previous holder and pushes the rest down.</p>
-
-<p>3.d.i.
-First Call: The first call is when the user clicks on the game history website, which calls the function that fetches the API with a functional URL.</p>
-
-<p>Second Call: The second call is when the user clicks on the game history website, which calls the function that fetches the API while the URL is down.’</p>
+<p>Second Call: The second call is when the user clicks on the game history page, which calls the read_games function that displays the past games from most recent to oldest</p>
 
 <p>3.d.ii
-Condition(s) tested by first call: The first call checks the errors and successfully determines that there are no errors with fetching the data. As a result, the data from the user input is sorted based on the date the game was played using the response.json().then() command.</p>
+Condition(s) tested by first call: The first call checks the errors and successfully determines that there are no errors with fetching the data. If there are no errors, the API will add the game to the database.</p>
 
-<p>Condition(s) tested by second call: The second call checks fetch errors using the .catch() command. Since the URL to the API is down, a fetch error will prompt the .catch() command to function.</p>
+<p>Condition(s) tested by second call: The second call checks fetch errors using the .catch() command. Since if no errors are found, it will use the database and the arguments of the data to create the table.</p>
 
 <p>3.d.iii
-Results of first call: The first call displays the games onto the game history given from newest to oldest.</p>
+Results of first call: The first call displays that the game has successfully been added to the database games</p>
 
-<p>Results of the second call: An error message is displayed on the game history and no user data is displayed.</p>
+<p>Results of the second call: The page shows sorts the database from the newest game recorded to the oldest.</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
