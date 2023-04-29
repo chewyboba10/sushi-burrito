@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      6 min read
     
 </span></p>
 
@@ -133,6 +133,8 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h3"><a href="#Conversion-Exercises">Conversion Exercises </a></li>
 <li class="toc-entry toc-h2"><a href="#Binary-Math-Hacks">Binary Math Hacks </a></li>
+<li class="toc-entry toc-h2"><a href="#API-Hacks">API Hacks </a></li>
+<li class="toc-entry toc-h2"><a href="#Fetching-Hacks">Fetching Hacks </a></li>
 </ul>
 </li>
 </ul><body>
@@ -167,6 +169,143 @@ window.onload = wrap_img;
 <a class="anchor" href="#Binary-Logic-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binary Logic Hacks<a class="anchor-link" href="#Binary-Logic-Hacks"> </a>
 </h1>
 <p><img src="/sushi-burrito/images/copied_from_nb/images/binary-quiz.png" alt="binary quiz"></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'random_numbers_1000.csv'</span><span class="p">)</span>
+<span class="n">mean</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'number'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The mean of the data is </span><span class="si">{</span><span class="n">mean</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+
+<span class="n">filtered_sum</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">'number'</span><span class="p">]:</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">continue</span>
+    <span class="k">elif</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">*=</span> <span class="mi">2</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="n">filtered_sum</span> <span class="o">+=</span> <span class="n">num</span> 
+    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="k">if</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">filtered_mean</span> <span class="o">=</span> <span class="n">filtered_sum</span> <span class="o">/</span> <span class="n">count</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">filtered_mean</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The mean of the filtered data is </span><span class="si">{</span><span class="n">filtered_mean</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s2"> numbers meet the first criteria"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/chewyboba10/vscode/sushi-burrito/_notebooks/2023-04-26-binary-hacks.ipynb Cell 3</span> in <span class="ansi-cyan-fg">&lt;cell line: 3&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/chewyboba10/vscode/sushi-burrito/_notebooks/2023-04-26-binary-hacks.ipynb#W5sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> import pandas as pd
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/chewyboba10/vscode/sushi-burrito/_notebooks/2023-04-26-binary-hacks.ipynb#W5sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span> df = pd.read_csv('random_numbers_1000.csv')
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/chewyboba10/vscode/sushi-burrito/_notebooks/2023-04-26-binary-hacks.ipynb#W5sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span> mean = df['number'].mean()
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/chewyboba10/vscode/sushi-burrito/_notebooks/2023-04-26-binary-hacks.ipynb#W5sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span> print(f"The mean of the data is {mean}")
+
+File <span class="ansi-green-fg">/root/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py:311</span>, in <span class="ansi-cyan-fg">deprecate_nonkeyword_arguments.&lt;locals&gt;.decorate.&lt;locals&gt;.wrapper</span><span class="ansi-blue-fg">(*args, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    305</span> if len(args) &gt; num_allow_args:
+<span class="ansi-green-intense-fg ansi-bold">    306</span>     warnings.warn(
+<span class="ansi-green-intense-fg ansi-bold">    307</span>         msg.format(arguments=arguments),
+<span class="ansi-green-intense-fg ansi-bold">    308</span>         FutureWarning,
+<span class="ansi-green-intense-fg ansi-bold">    309</span>         stacklevel=stacklevel,
+<span class="ansi-green-intense-fg ansi-bold">    310</span>     )
+<span class="ansi-green-fg">--&gt; 311</span> return func(*args, **kwargs)
+
+File <span class="ansi-green-fg">/root/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:680</span>, in <span class="ansi-cyan-fg">read_csv</span><span class="ansi-blue-fg">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
+<span class="ansi-green-intense-fg ansi-bold">    665</span> kwds_defaults = _refine_defaults_read(
+<span class="ansi-green-intense-fg ansi-bold">    666</span>     dialect,
+<span class="ansi-green-intense-fg ansi-bold">    667</span>     delimiter,
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">    676</span>     defaults={"delimiter": ","},
+<span class="ansi-green-intense-fg ansi-bold">    677</span> )
+<span class="ansi-green-intense-fg ansi-bold">    678</span> kwds.update(kwds_defaults)
+<span class="ansi-green-fg">--&gt; 680</span> return _read(filepath_or_buffer, kwds)
+
+File <span class="ansi-green-fg">/root/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:575</span>, in <span class="ansi-cyan-fg">_read</span><span class="ansi-blue-fg">(filepath_or_buffer, kwds)</span>
+<span class="ansi-green-intense-fg ansi-bold">    572</span> _validate_names(kwds.get("names", None))
+<span class="ansi-green-intense-fg ansi-bold">    574</span> # Create the parser.
+<span class="ansi-green-fg">--&gt; 575</span> parser = TextFileReader(filepath_or_buffer, **kwds)
+<span class="ansi-green-intense-fg ansi-bold">    577</span> if chunksize or iterator:
+<span class="ansi-green-intense-fg ansi-bold">    578</span>     return parser
+
+File <span class="ansi-green-fg">/root/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:933</span>, in <span class="ansi-cyan-fg">TextFileReader.__init__</span><span class="ansi-blue-fg">(self, f, engine, **kwds)</span>
+<span class="ansi-green-intense-fg ansi-bold">    930</span>     self.options["has_index_names"] = kwds["has_index_names"]
+<span class="ansi-green-intense-fg ansi-bold">    932</span> self.handles: IOHandles | None = None
+<span class="ansi-green-fg">--&gt; 933</span> self._engine = self._make_engine(f, self.engine)
+
+File <span class="ansi-green-fg">/root/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:1217</span>, in <span class="ansi-cyan-fg">TextFileReader._make_engine</span><span class="ansi-blue-fg">(self, f, engine)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1213</span>     mode = "rb"
+<span class="ansi-green-intense-fg ansi-bold">   1214</span> # error: No overload variant of "get_handle" matches argument types
+<span class="ansi-green-intense-fg ansi-bold">   1215</span> # "Union[str, PathLike[str], ReadCsvBuffer[bytes], ReadCsvBuffer[str]]"
+<span class="ansi-green-intense-fg ansi-bold">   1216</span> # , "str", "bool", "Any", "Any", "Any", "Any", "Any"
+<span class="ansi-green-fg">-&gt; 1217</span> self.handles = get_handle(  # type: ignore[call-overload]
+<span class="ansi-green-intense-fg ansi-bold">   1218</span>     f,
+<span class="ansi-green-intense-fg ansi-bold">   1219</span>     mode,
+<span class="ansi-green-intense-fg ansi-bold">   1220</span>     encoding=self.options.get("encoding", None),
+<span class="ansi-green-intense-fg ansi-bold">   1221</span>     compression=self.options.get("compression", None),
+<span class="ansi-green-intense-fg ansi-bold">   1222</span>     memory_map=self.options.get("memory_map", False),
+<span class="ansi-green-intense-fg ansi-bold">   1223</span>     is_text=is_text,
+<span class="ansi-green-intense-fg ansi-bold">   1224</span>     errors=self.options.get("encoding_errors", "strict"),
+<span class="ansi-green-intense-fg ansi-bold">   1225</span>     storage_options=self.options.get("storage_options", None),
+<span class="ansi-green-intense-fg ansi-bold">   1226</span> )
+<span class="ansi-green-intense-fg ansi-bold">   1227</span> assert self.handles is not None
+<span class="ansi-green-intense-fg ansi-bold">   1228</span> f = self.handles.handle
+
+File <span class="ansi-green-fg">/root/anaconda3/lib/python3.9/site-packages/pandas/io/common.py:789</span>, in <span class="ansi-cyan-fg">get_handle</span><span class="ansi-blue-fg">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="ansi-green-intense-fg ansi-bold">    784</span> elif isinstance(handle, str):
+<span class="ansi-green-intense-fg ansi-bold">    785</span>     # Check whether the filename is to be opened in binary mode.
+<span class="ansi-green-intense-fg ansi-bold">    786</span>     # Binary mode does not support 'encoding' and 'newline'.
+<span class="ansi-green-intense-fg ansi-bold">    787</span>     if ioargs.encoding and "b" not in ioargs.mode:
+<span class="ansi-green-intense-fg ansi-bold">    788</span>         # Encoding
+<span class="ansi-green-fg">--&gt; 789</span>         handle = open(
+<span class="ansi-green-intense-fg ansi-bold">    790</span>             handle,
+<span class="ansi-green-intense-fg ansi-bold">    791</span>             ioargs.mode,
+<span class="ansi-green-intense-fg ansi-bold">    792</span>             encoding=ioargs.encoding,
+<span class="ansi-green-intense-fg ansi-bold">    793</span>             errors=errors,
+<span class="ansi-green-intense-fg ansi-bold">    794</span>             newline="",
+<span class="ansi-green-intense-fg ansi-bold">    795</span>         )
+<span class="ansi-green-intense-fg ansi-bold">    796</span>     else:
+<span class="ansi-green-intense-fg ansi-bold">    797</span>         # Binary mode
+<span class="ansi-green-intense-fg ansi-bold">    798</span>         handle = open(handle, ioargs.mode)
+
+<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: 'random_numbers_1000.csv'</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Github-Pages-Hacks">
 <a class="anchor" href="#Github-Pages-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Github Pages Hacks<a class="anchor-link" href="#Github-Pages-Hacks"> </a>
 </h1>
@@ -247,7 +386,9 @@ window.onload = wrap_img;
 <p>|---------|---------|
 | <strong>1/1</strong> | <strong>0/1</strong> |
 |     1    |    0    |</p>
-
+<h2 id="API-Hacks">
+<a class="anchor" href="#API-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>API Hacks<a class="anchor-link" href="#API-Hacks"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -326,6 +467,71 @@ total_cases_per_1m_population: 139
 deaths_per_1m_population: 3
 total_tests: 160,000,000
 tests_per_1m_population: 111,163
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Fetching-Hacks">
+<a class="anchor" href="#Fetching-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fetching Hacks<a class="anchor-link" href="#Fetching-Hacks"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">students</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Billy"</span><span class="p">,</span> <span class="s2">"age"</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s2">"major"</span><span class="p">:</span> <span class="s2">"Computer Science"</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Bob"</span><span class="p">,</span> <span class="s2">"age"</span><span class="p">:</span> <span class="mi">22</span><span class="p">,</span> <span class="s2">"major"</span><span class="p">:</span> <span class="s2">"Mathematics"</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Joe"</span><span class="p">,</span> <span class="s2">"age"</span><span class="p">:</span> <span class="mi">19</span><span class="p">,</span> <span class="s2">"major"</span><span class="p">:</span> <span class="s2">"Physics"</span><span class="p">}</span>
+<span class="p">]</span>
+
+<span class="c1"># sort the list of dictionaries by age</span>
+<span class="n">age_sorted</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">students</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">student</span><span class="p">:</span> <span class="n">student</span><span class="p">[</span><span class="s2">"age"</span><span class="p">])</span>
+
+<span class="c1"># fetch data from the sorted list of dictionaries and print it</span>
+<span class="k">for</span> <span class="n">student</span> <span class="ow">in</span> <span class="n">age_sorted</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Name:"</span><span class="p">,</span> <span class="n">student</span><span class="p">[</span><span class="s2">"name"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Age:"</span><span class="p">,</span> <span class="n">student</span><span class="p">[</span><span class="s2">"age"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Major:"</span><span class="p">,</span> <span class="n">student</span><span class="p">[</span><span class="s2">"major"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Name: Joe
+Age: 19
+Major: Physics
+
+Name: Billy
+Age: 20
+Major: Computer Science
+
+Name: Bob
+Age: 22
+Major: Mathematics
+
 </pre>
 </div>
 </div>
