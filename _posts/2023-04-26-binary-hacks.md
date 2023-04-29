@@ -1,6 +1,6 @@
 ---
 keywords: fastai
-title: API Binary Hacks
+title: Binary Hacks
 toc: true 
 badges: true
 comments: true
@@ -46,7 +46,7 @@ layout: notebook
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;random_numbers_1000.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;files/random_numbers_1000.csv&#39;</span><span class="p">)</span>
 <span class="n">mean</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;number&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The mean of the data is </span><span class="si">{</span><span class="n">mean</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
@@ -81,83 +81,11 @@ layout: notebook
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/chewyboba10/vscode/sushi-burrito/_notebooks/2023-04-26-binary-hacks.ipynb Cell 3</span> in <span class="ansi-cyan-fg">&lt;cell line: 3&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/chewyboba10/vscode/sushi-burrito/_notebooks/2023-04-26-binary-hacks.ipynb#W5sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0&#39;&gt;1&lt;/a&gt;</span> import pandas as pd
-<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/chewyboba10/vscode/sushi-burrito/_notebooks/2023-04-26-binary-hacks.ipynb#W5sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2&#39;&gt;3&lt;/a&gt;</span> df = pd.read_csv(&#39;random_numbers_1000.csv&#39;)
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/chewyboba10/vscode/sushi-burrito/_notebooks/2023-04-26-binary-hacks.ipynb#W5sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt;</span> mean = df[&#39;number&#39;].mean()
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/chewyboba10/vscode/sushi-burrito/_notebooks/2023-04-26-binary-hacks.ipynb#W5sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4&#39;&gt;5&lt;/a&gt;</span> print(f&#34;The mean of the data is {mean}&#34;)
-
-File <span class="ansi-green-fg">/root/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py:311</span>, in <span class="ansi-cyan-fg">deprecate_nonkeyword_arguments.&lt;locals&gt;.decorate.&lt;locals&gt;.wrapper</span><span class="ansi-blue-fg">(*args, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    305</span> if len(args) &gt; num_allow_args:
-<span class="ansi-green-intense-fg ansi-bold">    306</span>     warnings.warn(
-<span class="ansi-green-intense-fg ansi-bold">    307</span>         msg.format(arguments=arguments),
-<span class="ansi-green-intense-fg ansi-bold">    308</span>         FutureWarning,
-<span class="ansi-green-intense-fg ansi-bold">    309</span>         stacklevel=stacklevel,
-<span class="ansi-green-intense-fg ansi-bold">    310</span>     )
-<span class="ansi-green-fg">--&gt; 311</span> return func(*args, **kwargs)
-
-File <span class="ansi-green-fg">/root/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:680</span>, in <span class="ansi-cyan-fg">read_csv</span><span class="ansi-blue-fg">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">    665</span> kwds_defaults = _refine_defaults_read(
-<span class="ansi-green-intense-fg ansi-bold">    666</span>     dialect,
-<span class="ansi-green-intense-fg ansi-bold">    667</span>     delimiter,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">    676</span>     defaults={&#34;delimiter&#34;: &#34;,&#34;},
-<span class="ansi-green-intense-fg ansi-bold">    677</span> )
-<span class="ansi-green-intense-fg ansi-bold">    678</span> kwds.update(kwds_defaults)
-<span class="ansi-green-fg">--&gt; 680</span> return _read(filepath_or_buffer, kwds)
-
-File <span class="ansi-green-fg">/root/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:575</span>, in <span class="ansi-cyan-fg">_read</span><span class="ansi-blue-fg">(filepath_or_buffer, kwds)</span>
-<span class="ansi-green-intense-fg ansi-bold">    572</span> _validate_names(kwds.get(&#34;names&#34;, None))
-<span class="ansi-green-intense-fg ansi-bold">    574</span> # Create the parser.
-<span class="ansi-green-fg">--&gt; 575</span> parser = TextFileReader(filepath_or_buffer, **kwds)
-<span class="ansi-green-intense-fg ansi-bold">    577</span> if chunksize or iterator:
-<span class="ansi-green-intense-fg ansi-bold">    578</span>     return parser
-
-File <span class="ansi-green-fg">/root/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:933</span>, in <span class="ansi-cyan-fg">TextFileReader.__init__</span><span class="ansi-blue-fg">(self, f, engine, **kwds)</span>
-<span class="ansi-green-intense-fg ansi-bold">    930</span>     self.options[&#34;has_index_names&#34;] = kwds[&#34;has_index_names&#34;]
-<span class="ansi-green-intense-fg ansi-bold">    932</span> self.handles: IOHandles | None = None
-<span class="ansi-green-fg">--&gt; 933</span> self._engine = self._make_engine(f, self.engine)
-
-File <span class="ansi-green-fg">/root/anaconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:1217</span>, in <span class="ansi-cyan-fg">TextFileReader._make_engine</span><span class="ansi-blue-fg">(self, f, engine)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1213</span>     mode = &#34;rb&#34;
-<span class="ansi-green-intense-fg ansi-bold">   1214</span> # error: No overload variant of &#34;get_handle&#34; matches argument types
-<span class="ansi-green-intense-fg ansi-bold">   1215</span> # &#34;Union[str, PathLike[str], ReadCsvBuffer[bytes], ReadCsvBuffer[str]]&#34;
-<span class="ansi-green-intense-fg ansi-bold">   1216</span> # , &#34;str&#34;, &#34;bool&#34;, &#34;Any&#34;, &#34;Any&#34;, &#34;Any&#34;, &#34;Any&#34;, &#34;Any&#34;
-<span class="ansi-green-fg">-&gt; 1217</span> self.handles = get_handle(  # type: ignore[call-overload]
-<span class="ansi-green-intense-fg ansi-bold">   1218</span>     f,
-<span class="ansi-green-intense-fg ansi-bold">   1219</span>     mode,
-<span class="ansi-green-intense-fg ansi-bold">   1220</span>     encoding=self.options.get(&#34;encoding&#34;, None),
-<span class="ansi-green-intense-fg ansi-bold">   1221</span>     compression=self.options.get(&#34;compression&#34;, None),
-<span class="ansi-green-intense-fg ansi-bold">   1222</span>     memory_map=self.options.get(&#34;memory_map&#34;, False),
-<span class="ansi-green-intense-fg ansi-bold">   1223</span>     is_text=is_text,
-<span class="ansi-green-intense-fg ansi-bold">   1224</span>     errors=self.options.get(&#34;encoding_errors&#34;, &#34;strict&#34;),
-<span class="ansi-green-intense-fg ansi-bold">   1225</span>     storage_options=self.options.get(&#34;storage_options&#34;, None),
-<span class="ansi-green-intense-fg ansi-bold">   1226</span> )
-<span class="ansi-green-intense-fg ansi-bold">   1227</span> assert self.handles is not None
-<span class="ansi-green-intense-fg ansi-bold">   1228</span> f = self.handles.handle
-
-File <span class="ansi-green-fg">/root/anaconda3/lib/python3.9/site-packages/pandas/io/common.py:789</span>, in <span class="ansi-cyan-fg">get_handle</span><span class="ansi-blue-fg">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">    784</span> elif isinstance(handle, str):
-<span class="ansi-green-intense-fg ansi-bold">    785</span>     # Check whether the filename is to be opened in binary mode.
-<span class="ansi-green-intense-fg ansi-bold">    786</span>     # Binary mode does not support &#39;encoding&#39; and &#39;newline&#39;.
-<span class="ansi-green-intense-fg ansi-bold">    787</span>     if ioargs.encoding and &#34;b&#34; not in ioargs.mode:
-<span class="ansi-green-intense-fg ansi-bold">    788</span>         # Encoding
-<span class="ansi-green-fg">--&gt; 789</span>         handle = open(
-<span class="ansi-green-intense-fg ansi-bold">    790</span>             handle,
-<span class="ansi-green-intense-fg ansi-bold">    791</span>             ioargs.mode,
-<span class="ansi-green-intense-fg ansi-bold">    792</span>             encoding=ioargs.encoding,
-<span class="ansi-green-intense-fg ansi-bold">    793</span>             errors=errors,
-<span class="ansi-green-intense-fg ansi-bold">    794</span>             newline=&#34;&#34;,
-<span class="ansi-green-intense-fg ansi-bold">    795</span>         )
-<span class="ansi-green-intense-fg ansi-bold">    796</span>     else:
-<span class="ansi-green-intense-fg ansi-bold">    797</span>         # Binary mode
-<span class="ansi-green-intense-fg ansi-bold">    798</span>         handle = open(handle, ioargs.mode)
-
-<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;random_numbers_1000.csv&#39;</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The mean of the data is 0.4904628425744203
+The mean of the filtered data is 0
+0 numbers meet the first criteria
+</pre>
 </div>
 </div>
 
