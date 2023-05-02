@@ -56,10 +56,14 @@ layout: notebook
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Questions:</p>
 <ol>
-<li>Give an example of iteration.</li>
-<li>What is the difference between a for loop and while loop? That is, when would you use a for loop and when would you use a while loop?</li>
-<li>In the APCSP AP exam, what number do indexes start with? <strong>important to know</strong></li>
-<li>Are dictionaries and lists mutable?</li>
+<li>Give an example of iteration.
+An example of iteration would be using a for loop to go through a list of numbers and print each one out.</li>
+<li>What is the difference between a for loop and while loop? That is, when would you use a for loop and when would you use a while loop?
+A for loop is used when the number of iterations is known in advance, and a while loop is used when the number of iterations is not known and depends on a condition. For example, a for loop would be used to iterate through a list, while a while loop would be used to keep running a program until a certain condition is met.</li>
+<li>In the APCSP AP exam, what number do indexes start with? <strong>important to know</strong>
+In the APCSP AP exam, indexes start with 1. This means that the first item in a list or array would have an index of 1.</li>
+<li>Are dictionaries and lists mutable?
+Dictionaries and lists are mutable. This means that they can be changed or modified after they are created. For example, you can add or remove items from a list or dictionary.</li>
 </ol>
 
 </div>
@@ -96,8 +100,10 @@ layout: notebook
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Questions:</p>
 <ol>
-<li>Explain an example of something you could simulate.</li>
-<li>Why are simulations useful and important?</li>
+<li>Explain an example of something you could simulate.
+One example of something that can be simulated in computer science is traffic flow. Using a traffic simulation program, developers can model traffic patterns and test the impact of changes to traffic signals, road configurations, or vehicle speeds. This can help city planners optimize traffic flow and improve safety.</li>
+<li>Why are simulations useful and important?
+Simulations are useful and important because they allow developers to model and test complex systems in a controlled environment. Simulations can be used to evaluate the behavior of systems under different conditions and to test the impact of changes before implementing them in the real world. This can save time and resources by identifying potential problems early and allowing for adjustments before significant investments are made. Simulations can also provide insights into complex phenomena that are difficult to observe or measure in the real world, such as the behavior of subatomic particles or the interactions of large groups of people. Additionally, simulations can be used to train individuals in a safe and controlled environment, such as pilots learning to fly a plane or surgeons practicing surgical techniques.</li>
 </ol>
 
 </div>
@@ -207,8 +213,10 @@ layout: notebook
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Questions:</p>
 <ol>
-<li>Describe a situation where you would need iteration.</li>
-<li>Describe the difference between a "REPEAT n TIMES" loop VS a "REPEAT UNTIL (condition)" loop. <mark>it is important you know this for the AP Exam</mark></li>
+<li>Describe a situation where you would need iteration.
+Iteration is required in various programming scenarios, such as when performing a repetitive task that needs to be executed multiple times. For instance, iterating through a list of items to perform a specific action on each item.</li>
+<li>Describe the difference between a "REPEAT n TIMES" loop VS a "REPEAT UNTIL (condition)" loop. <mark>it is important you know this for the AP Exam</mark>
+The "REPEAT n TIMES" loop executes a set of instructions a fixed number of times, while the "REPEAT UNTIL (condition)" loop executes the instructions until the specified condition is met. The former is suitable when a set number of iterations is known in advance, while the latter is useful when it's not certain how many iterations are needed to accomplish the task. It's important to note that a "REPEAT UNTIL" loop should include instructions that ensure the condition eventually becomes true to avoid an infinite loop.</li>
 </ol>
 
 </div>
@@ -235,7 +243,9 @@ layout: notebook
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Questions:</p>
 <ol>
-<li>What are some libraries that we've learned about? What are their advantages/disadvantages?</li>
+<li>What are some libraries that we've learned about? What are their advantages/disadvantages?
+Flask - This is a popular Python web framework used for building web applications. It is lightweight and easy to learn, but it can be difficult to scale for larger applications.
+Requests - This is a popular Python library used for making HTTP requests. It is easy to use and can handle complex requests, but it is not ideal for large-scale web scraping.</li>
 </ol>
 
 </div>
@@ -282,8 +292,14 @@ layout: notebook
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Questions:</p>
 <ol>
-<li>Compare and contrast lists and dictionaries.</li>
-<li>Do dictionary keys need to be unique?</li>
+<li>Compare and contrast lists and dictionaries.
+Lists and dictionaries are both data structures in Python, but they have different uses and properties.
+A list is an ordered collection of items, represented by square brackets [], and each item in a list is indexed with an integer starting from 0. Lists can contain duplicates, and their items can be of different data types. Lists are mutable, which means that their elements can be modified after the list is created. Lists are useful for storing and manipulating data in a sequential manner.
+A dictionary, on the other hand, is an unordered collection of key-value pairs, represented by curly braces {}. Each key in a dictionary is unique, and its corresponding value can be of any data type. Dictionaries are also mutable, and their keys and values can be added, removed, or modified after the dictionary is created. Dictionaries are useful for representing data in a way that can be easily accessed and updated using keys.</li>
+</ol>
+<ol>
+<li>Do dictionary keys need to be unique?
+Yes, dictionary keys must be unique. Each key in a dictionary maps to a unique value, and if two keys are the same, the second key will overwrite the first one. If you try to add a key-value pair to a dictionary using a key that already exists, the value of the existing key will be updated with the new value.</li>
 </ol>
 
 </div>
@@ -619,12 +635,169 @@ List after reverse :  [5, 4, 3, 2, 1]
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Questions:</p>
 <ol>
-<li>How is list comprehension similar to iteration?</li>
+<li>How is list comprehension similar to iteration?
+List comprehension is a concise way of creating a new list by performing a specific operation on each element of an existing list or iterable, using a compact and easy-to-read syntax. In a sense, list comprehension can be seen as a form of iteration, as it iterates over the elements of an existing list or iterable and applies a transformation to each element to create a new list. However, unlike traditional iteration, list comprehension provides a more concise and readable way of performing this operation, without the need for explicit loop constructs or temporary variables.</li>
 </ol>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hacks">Hacks<a class="anchor-link" href="#Hacks"> </a></h1><p>Hacks
+(0.1 points) Create a visual or written description. Objective is to compare lists and dictionaries.
+Lists and dictionaries are both data structures in Python, but they have different uses and properties.
+A list is an ordered collection of items, represented by square brackets [], and each item in a list is indexed with an integer starting from 0. Lists can contain duplicates, and their items can be of different data types. Lists are mutable, which means that their elements can be modified after the list is created. Lists are useful for storing and manipulating data in a sequential manner.
+A dictionary, on the other hand, is an unordered collection of key-value pairs, represented by curly braces {}. Each key in a dictionary is unique, and its corresponding value can be of any data type. Dictionaries are also mutable, and their keys and values can be added, removed, or modified after the dictionary is created. Dictionaries are useful for representing data in a way that can be easily accessed and updated using keys.</p>
+<p>(0.6 points) Create your own dictionary/list and use sorting algorithms to perform operations on them. (Use playlist maker as an example of what we expect ~ Make something creative and useful)</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">playlist</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;song1&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Shake It Off&quot;</span><span class="p">,</span> <span class="s2">&quot;artist&quot;</span><span class="p">:</span> <span class="s2">&quot;Taylor Swift&quot;</span><span class="p">,</span> <span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="mi">219</span><span class="p">},</span>
+    <span class="s2">&quot;song2&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Love Story&quot;</span><span class="p">,</span> <span class="s2">&quot;artist&quot;</span><span class="p">:</span> <span class="s2">&quot;Taylor Swift&quot;</span><span class="p">,</span> <span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="mi">235</span><span class="p">},</span>
+    <span class="s2">&quot;song3&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;You Belong With Me&quot;</span><span class="p">,</span> <span class="s2">&quot;artist&quot;</span><span class="p">:</span> <span class="s2">&quot;Taylor Swift&quot;</span><span class="p">,</span> <span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="mi">231</span><span class="p">},</span>
+    <span class="s2">&quot;song4&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Blank Space&quot;</span><span class="p">,</span> <span class="s2">&quot;artist&quot;</span><span class="p">:</span> <span class="s2">&quot;Taylor Swift&quot;</span><span class="p">,</span> <span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="mi">231</span><span class="p">},</span>
+    <span class="s2">&quot;song5&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Delicate&quot;</span><span class="p">,</span> <span class="s2">&quot;artist&quot;</span><span class="p">:</span> <span class="s2">&quot;Taylor Swift&quot;</span><span class="p">,</span> <span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="mi">223</span><span class="p">},</span>
+    <span class="s2">&quot;song6&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;ME!&quot;</span><span class="p">,</span> <span class="s2">&quot;artist&quot;</span><span class="p">:</span> <span class="s2">&quot;Taylor Swift ft. Brendon Urie&quot;</span><span class="p">,</span> <span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="mi">198</span><span class="p">},</span>
+    <span class="s2">&quot;song7&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Bad Blood&quot;</span><span class="p">,</span> <span class="s2">&quot;artist&quot;</span><span class="p">:</span> <span class="s2">&quot;Taylor Swift&quot;</span><span class="p">,</span> <span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="mi">214</span><span class="p">},</span>
+    <span class="s2">&quot;song8&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Style&quot;</span><span class="p">,</span> <span class="s2">&quot;artist&quot;</span><span class="p">:</span> <span class="s2">&quot;Taylor Swift&quot;</span><span class="p">,</span> <span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="mi">231</span><span class="p">},</span>
+    <span class="s2">&quot;song9&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;I Knew You Were Trouble&quot;</span><span class="p">,</span> <span class="s2">&quot;artist&quot;</span><span class="p">:</span> <span class="s2">&quot;Taylor Swift&quot;</span><span class="p">,</span> <span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="mi">221</span><span class="p">},</span>
+    <span class="s2">&quot;song10&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;We Are Never Ever Getting Back Together&quot;</span><span class="p">,</span> <span class="s2">&quot;artist&quot;</span><span class="p">:</span> <span class="s2">&quot;Taylor Swift&quot;</span><span class="p">,</span> <span class="s2">&quot;duration&quot;</span><span class="p">:</span> <span class="mi">193</span><span class="p">},</span>
+<span class="p">}</span>
+
+<span class="c1"># Create a list of tuples to sort the songs by title</span>
+<span class="n">song_titles</span> <span class="o">=</span> <span class="p">[(</span><span class="n">song_id</span><span class="p">,</span> <span class="n">song_data</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">])</span> <span class="k">for</span> <span class="n">song_id</span><span class="p">,</span> <span class="n">song_data</span> <span class="ow">in</span> <span class="n">playlist</span><span class="o">.</span><span class="n">items</span><span class="p">()]</span>
+<span class="n">sorted_titles</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">song_titles</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Songs sorted by title:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">song_id</span><span class="p">,</span> <span class="n">title</span> <span class="ow">in</span> <span class="n">sorted_titles</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2"> by </span><span class="si">{</span><span class="n">playlist</span><span class="p">[</span><span class="n">song_id</span><span class="p">][</span><span class="s1">&#39;artist&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Create a list of tuples to sort the songs by duration</span>
+<span class="n">song_durations</span> <span class="o">=</span> <span class="p">[(</span><span class="n">song_id</span><span class="p">,</span> <span class="n">song_data</span><span class="p">[</span><span class="s2">&quot;duration&quot;</span><span class="p">])</span> <span class="k">for</span> <span class="n">song_id</span><span class="p">,</span> <span class="n">song_data</span> <span class="ow">in</span> <span class="n">playlist</span><span class="o">.</span><span class="n">items</span><span class="p">()]</span>
+<span class="n">sorted_durations</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">song_durations</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Songs sorted by duration (longest to shortest):&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">song_id</span><span class="p">,</span> <span class="n">duration</span> <span class="ow">in</span> <span class="n">sorted_durations</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">playlist</span><span class="p">[</span><span class="n">song_id</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> by </span><span class="si">{</span><span class="n">playlist</span><span class="p">[</span><span class="n">song_id</span><span class="p">][</span><span class="s1">&#39;artist&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">duration</span><span class="si">}</span><span class="s2"> seconds&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Songs sorted by title:
+Bad Blood by Taylor Swift
+Blank Space by Taylor Swift
+Delicate by Taylor Swift
+I Knew You Were Trouble by Taylor Swift
+Love Story by Taylor Swift
+ME! by Taylor Swift ft. Brendon Urie
+Shake It Off by Taylor Swift
+Style by Taylor Swift
+We Are Never Ever Getting Back Together by Taylor Swift
+You Belong With Me by Taylor Swift
+
+Songs sorted by duration (longest to shortest):
+Love Story by Taylor Swift: 235 seconds
+You Belong With Me by Taylor Swift: 231 seconds
+Blank Space by Taylor Swift: 231 seconds
+Style by Taylor Swift: 231 seconds
+Delicate by Taylor Swift: 223 seconds
+I Knew You Were Trouble by Taylor Swift: 221 seconds
+Shake It Off by Taylor Swift: 219 seconds
+Bad Blood by Taylor Swift: 214 seconds
+ME! by Taylor Swift ft. Brendon Urie: 198 seconds
+We Are Never Ever Getting Back Together by Taylor Swift: 193 seconds
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>(0.2 points) Build your own simulation such as a random number generator or slot machine (Try using a list!)</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">population</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">)]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">infected</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">population</span><span class="p">)),</span> <span class="mi">5</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="n">infected</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">population</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">population</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">population</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">population</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mf">0.05</span><span class="p">:</span>
+                <span class="n">population</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+        <span class="k">elif</span> <span class="n">population</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mf">0.25</span><span class="p">:</span>
+                <span class="n">population</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
+        <span class="k">elif</span> <span class="n">population</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mf">0.15</span><span class="p">:</span>
+                <span class="n">population</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Day&quot;</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Infected:&quot;</span><span class="p">,</span> <span class="n">population</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="s2">&quot;Asymptomatic:&quot;</span><span class="p">,</span> <span class="n">population</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="s2">&quot;Mild:&quot;</span><span class="p">,</span> <span class="n">population</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="s2">&quot;Severe:&quot;</span><span class="p">,</span> <span class="n">population</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="s2">&quot;Healthy:&quot;</span><span class="p">,</span> <span class="n">population</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Day 1 Infected: 483 Asymptomatic: 29 Mild: 0 Severe: 0 Healthy: 488
+Day 2 Infected: 454 Asymptomatic: 51 Mild: 9 Severe: 0 Healthy: 486
+Day 3 Infected: 438 Asymptomatic: 62 Mild: 17 Severe: 0 Healthy: 483
+Day 4 Infected: 418 Asymptomatic: 64 Mild: 33 Severe: 2 Healthy: 483
+Day 5 Infected: 393 Asymptomatic: 81 Mild: 39 Severe: 6 Healthy: 481
+Day 6 Infected: 370 Asymptomatic: 88 Mild: 52 Severe: 12 Healthy: 478
+Day 7 Infected: 353 Asymptomatic: 88 Mild: 57 Severe: 25 Healthy: 477
+Day 8 Infected: 335 Asymptomatic: 90 Mild: 66 Severe: 33 Healthy: 476
+Day 9 Infected: 324 Asymptomatic: 79 Mild: 88 Severe: 36 Healthy: 473
+Day 10 Infected: 314 Asymptomatic: 73 Mild: 95 Severe: 49 Healthy: 469
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 
