@@ -142,6 +142,8 @@ The "network" layer is responsible for ***routing data packets between networks*
 - <b>Complete the network activity, summarize your understanding of fault tolerance.</b>
 Fault tolerance refers to a network's capacity to resist disruptions. Networks achieve this by utilizing multiple interconnected nodes to ensure that the failure of one or two connections does not result in a system-wide outage. The fault tolerance of a network can be determined by verifying that all devices can communicate with each other even if one path is down.
 
+
+
 ### Parallel and Distributed Computing
 > Review previous lecture on Parallel Computing and watch Daily vidoe 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
 
