@@ -182,10 +182,10 @@ layout: notebook
 
 
 
-<div id="82dead2c-1706-4a61-9af3-32c624ea3abd"></div>
+<div id="567d8509-6c6b-4ae7-a852-ebe9d3bd8195"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#82dead2c-1706-4a61-9af3-32c624ea3abd');
+var element = $('#567d8509-6c6b-4ae7-a852-ebe9d3bd8195');
 console.log("JavaScript/Jupyter Output Intro");
 
 // Browser Console output; debugging or tracing
@@ -260,10 +260,10 @@ element.append('<br><b>Hello World Again!');
 
 
 
-<div id="4547d56c-c2df-4552-8882-33ffdd529399"></div>
+<div id="d5b029bd-b5d3-4848-b5a4-dfbab4f95aea"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#4547d56c-c2df-4552-8882-33ffdd529399');
+var element = $('#d5b029bd-b5d3-4848-b5a4-dfbab4f95aea');
 console.log("Variable Definition");
 
 var msg = "Hello, World!";
@@ -345,10 +345,10 @@ element.text(msg);
 
 
 
-<div id="1855ec93-1eca-4f68-aae6-524d04a01bbb"></div>
+<div id="b0fb15c3-a1ac-4a04-b3bb-5c54e21e5bda"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#1855ec93-1eca-4f68-aae6-524d04a01bbb');
+var element = $('#b0fb15c3-a1ac-4a04-b3bb-5c54e21e5bda');
 console.log("Function Definition");
 
 /* Function: logIt
@@ -456,10 +456,10 @@ logIt(msg + "  " + classOf); // concatenation of strings
 
 
 
-<div id="beb87857-ddbb-43e4-8c4d-cdea8a15f78c"></div>
+<div id="da296a74-9608-4322-a525-a12f4bb41e14"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#beb87857-ddbb-43e4-8c4d-cdea8a15f78c');
+var element = $('#da296a74-9608-4322-a525-a12f4bb41e14');
 console.log("Examine Data Types");
 
 // Function to add typeof to output
@@ -706,10 +706,10 @@ logIt(JSON.stringify(person));  //method used to convert this object into readab
 
 
 
-<div id="3fce9352-c166-44f3-9dbc-38d66ceeea38"></div>
+<div id="f14da5fa-65e5-4da3-b67d-d708d2bcdde0"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#3fce9352-c166-44f3-9dbc-38d66ceeea38');
+var element = $('#f14da5fa-65e5-4da3-b67d-d708d2bcdde0');
 console.log("Person objects");
 
 /* class: Person
@@ -927,10 +927,10 @@ student.logIt(); // log to console
 
 
 
-<div id="7cee86c5-35e6-4281-8d74-a012f5cf5883"></div>
+<div id="d0a31c84-3514-4460-9150-42538ffeb283"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#7cee86c5-35e6-4281-8d74-a012f5cf5883');
+var element = $('#d0a31c84-3514-4460-9150-42538ffeb283');
 console.log("Classroom object");
 
 /* class: Person
@@ -1119,10 +1119,10 @@ $('#jsonText').text(compsci.json);  // posts/embeds/writes compsci.json to HTML 
 
 
 
-<div id="04ed8ef0-4991-49f1-84ee-37c50bc254b2"></div>
+<div id="d76866a1-cf77-4773-8e64-06e75009ee58"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#04ed8ef0-4991-49f1-84ee-37c50bc254b2');
+var element = $('#d76866a1-cf77-4773-8e64-06e75009ee58');
 console.log("Classroom Web Page");
 
 // extract JSON text from HTML page
@@ -1390,11 +1390,14 @@ for (var row of classroom) {
 <span class="kr">const</span> <span class="nx">item3</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Item</span><span class="p">(</span><span class="s2">&quot;Lettuce&quot;</span><span class="p">,</span> <span class="s2">&quot;$4.49&quot;</span><span class="p">,</span> <span class="s2">&quot;https://1.bp.blogspot.com/-HvopToh5PPw/U4pIYsTd3hI/AAAAAAAAKN8/ia9XFCvAAWw/s1600/DSC05232.jpg&quot;</span><span class="p">);</span>
 <span class="kr">const</span> <span class="nx">item4</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Item</span><span class="p">(</span><span class="s2">&quot;Eggs&quot;</span><span class="p">,</span> <span class="s2">&quot;$5.39&quot;</span><span class="p">,</span> <span class="s2">&quot;https://prod-cdn-thekrazycouponlady.imgix.net/wp-content/uploads/2023/03/costco-kirkland-cage-free-eggs-mar-2023-1678127351-1678127351.jpg?auto=format&amp;fit=crop&quot;</span><span class="p">);</span>
 <span class="kr">const</span> <span class="nx">item5</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Item</span><span class="p">(</span><span class="s2">&quot;Milk&quot;</span><span class="p">,</span> <span class="s2">&quot;$3.50&quot;</span><span class="p">,</span> <span class="s2">&quot;https://i.insider.com/622ba7ed8f97ab0018751e87?width=750&amp;format=jpeg&amp;auto=webp&quot;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">item6</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Item</span><span class="p">(</span><span class="s2">&quot;Rotisserie Chicken&quot;</span><span class="p">,</span> <span class="s2">&quot;$4.99&quot;</span><span class="p">,</span> <span class="s2">&quot;https://www.eatthis.com/wp-content/uploads/sites/4/2021/06/Costco-Rotisserie-Chicken.jpg?quality=82&amp;strip=all&amp;w=640&quot;</span><span class="p">);</span>
 
 <span class="nx">shoppingList</span><span class="p">.</span><span class="nx">addItem</span><span class="p">(</span><span class="nx">item1</span><span class="p">);</span>
 <span class="nx">shoppingList</span><span class="p">.</span><span class="nx">addItem</span><span class="p">(</span><span class="nx">item2</span><span class="p">);</span>
 <span class="nx">shoppingList</span><span class="p">.</span><span class="nx">addItem</span><span class="p">(</span><span class="nx">item3</span><span class="p">);</span>
 <span class="nx">shoppingList</span><span class="p">.</span><span class="nx">addItem</span><span class="p">(</span><span class="nx">item4</span><span class="p">);</span>
+<span class="nx">shoppingList</span><span class="p">.</span><span class="nx">addItem</span><span class="p">(</span><span class="nx">item5</span><span class="p">);</span>
+<span class="nx">shoppingList</span><span class="p">.</span><span class="nx">addItem</span><span class="p">(</span><span class="nx">item6</span><span class="p">);</span>
 <span class="nx">shoppingList</span><span class="p">.</span><span class="nx">generateTable</span><span class="p">();</span>
 </pre></div>
 
@@ -1410,10 +1413,10 @@ for (var row of classroom) {
 
 
 
-<div id="9f385873-ae2f-4cef-97aa-b3fe8d07d5b3"></div>
+<div id="fec31c7e-6afe-4153-8607-38a632d48916"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#9f385873-ae2f-4cef-97aa-b3fe8d07d5b3');
+var element = $('#fec31c7e-6afe-4153-8607-38a632d48916');
 console.log("This is a class for a shopping list");
 
 class Item {
